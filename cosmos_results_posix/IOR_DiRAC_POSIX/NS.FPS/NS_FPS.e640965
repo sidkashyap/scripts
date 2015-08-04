@@ -1,0 +1,10 @@
+Cannot open display "default display"
+/opt/torque/home/mom_priv/jobs/640965.cosmos.private.damtp.cam.ac.uk.SC: line 17: module: command not found
+/opt/torque/home/mom_priv/jobs/640965.cosmos.private.damtp.cam.ac.uk.SC: line 18: module: command not found
+/opt/torque/home/mom_priv/jobs/640965.cosmos.private.damtp.cam.ac.uk.SC: line 19: module: command not found
+/opt/torque/home/mom_priv/jobs/640965.cosmos.private.damtp.cam.ac.uk.SC: line 20: module: command not found
+MPT ERROR: invalid option -ppn
+MPT ERROR: invalid option -ppn
+MPT ERROR: invalid option -ppn
+MPT ERROR: invalid option -ppn
+MPT ERROR: invalid option -ppn

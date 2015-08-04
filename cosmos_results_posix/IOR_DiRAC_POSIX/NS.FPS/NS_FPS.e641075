@@ -1,0 +1,3 @@
+Cannot open display "default display"
+MPT: MPI_COMM_WORLD rank 2 has terminated without calling MPI_Finalize()
+	aborting job

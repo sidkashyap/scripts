@@ -1,0 +1,529 @@
+cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos cosmos
+lo       AF_PACKET (17)
+		tx_packets =  188489786; rx_packets =  188489786
+		tx_bytes   = 2239452129; rx_bytes   = 2239452129
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825984
+		tx_bytes   =  442326014; rx_bytes   = 1443293519
+lo       AF_PACKET (17)
+		tx_packets =  188489786; rx_packets =  188489786
+		tx_bytes   = 2239452129; rx_bytes   = 2239452129
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825984
+		tx_bytes   =  442326014; rx_bytes   = 1443293519
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+lo       AF_PACKET (17)
+		tx_packets =  188489786; rx_packets =  188489786
+		tx_bytes   = 2239452129; rx_bytes   = 2239452129
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825984
+		tx_bytes   =  442326014; rx_bytes   = 1443293519
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+lo       AF_PACKET (17)
+		tx_packets =  188489786; rx_packets =  188489786
+		tx_bytes   = 2239452129; rx_bytes   = 2239452129
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825984
+		tx_bytes   =  442326014; rx_bytes   = 1443293519
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+lo       AF_PACKET (17)
+		tx_packets =  188489801; rx_packets =  188489801
+		tx_bytes   = 2239456414; rx_bytes   = 2239456414
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+lo       AF_PACKET (17)
+		tx_packets =  188489801; rx_packets =  188489801
+		tx_bytes   = 2239456414; rx_bytes   = 2239456414
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+lo       AF_PACKET (17)
+		tx_packets =  188489801; rx_packets =  188489801
+		tx_bytes   = 2239456414; rx_bytes   = 2239456414
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+lo       AF_PACKET (17)
+		tx_packets =  188489812; rx_packets =  188489812
+		tx_bytes   = 2239460451; rx_bytes   = 2239460451
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+lo       AF_PACKET (17)
+		tx_packets =  188489813; rx_packets =  188489813
+		tx_bytes   = 2239460503; rx_bytes   = 2239460503
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+lo       AF_PACKET (17)
+		tx_packets =  188489825; rx_packets =  188489825
+		tx_bytes   = 2239464612; rx_bytes   = 2239464612
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+lo       AF_PACKET (17)
+		tx_packets =  188489826; rx_packets =  188489826
+		tx_bytes   = 2239464664; rx_bytes   = 2239464664
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+lo       AF_PACKET (17)
+		tx_packets =  188489786; rx_packets =  188489786
+		tx_bytes   = 2239452129; rx_bytes   = 2239452129
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825984
+		tx_bytes   =  442326014; rx_bytes   = 1443293519
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+lo       AF_PACKET (17)
+		tx_packets =  188489786; rx_packets =  188489786
+		tx_bytes   = 2239452129; rx_bytes   = 2239452129
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825984
+		tx_bytes   =  442326014; rx_bytes   = 1443293519
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+lo       AF_PACKET (17)
+		tx_packets =  188489801; rx_packets =  188489801
+		tx_bytes   = 2239456414; rx_bytes   = 2239456414
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+lo       AF_PACKET (17)
+		tx_packets =  188489813; rx_packets =  188489813
+		tx_bytes   = 2239460503; rx_bytes   = 2239460503
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>
+lo       AF_PACKET (17)
+		tx_packets =  188489812; rx_packets =  188489812
+		tx_bytes   = 2239460451; rx_bytes   = 2239460451
+eth0     AF_PACKET (17)
+		tx_packets = 4071859265; rx_packets =  713825985
+		tx_bytes   =  442326014; rx_bytes   = 1443293579
+eth3     AF_PACKET (17)
+		tx_packets =          0; rx_packets =          0
+		tx_bytes   =          0; rx_bytes   =          0
+eth1     AF_PACKET (17)
+		tx_packets =  245909075; rx_packets =   77588677
+		tx_bytes   = 4179975997; rx_bytes   = 1756937974
+eth2     AF_PACKET (17)
+		tx_packets =  459752245; rx_packets =  551976130
+		tx_bytes   = 3386880128; rx_bytes   = 2493470658
+lo       AF_INET (2)
+		address: <127.0.0.1>
+lo       AF_INET (2)
+		address: <127.0.0.2>
+eth0     AF_INET (2)
+		address: <131.111.18.112>
+eth1     AF_INET (2)
+		address: <10.18.0.4>
+eth2     AF_INET (2)
+		address: <172.25.64.2>
+lo       AF_INET6 (10)
+		address: <::1>
+eth0     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c50%eth0>
+eth1     AF_INET6 (10)
+		address: <fe80::2e0:edff:fe18:5c51%eth1>
+eth2     AF_INET6 (10)
+		address: <fe80::a00:69ff:fe15:c9bd%eth2>

@@ -1,0 +1,8 @@
+Cannot open display "default display"
+/opt/torque/home/mom_priv/jobs/641019.cosmos.private.damtp.cam.ac.uk.SC: line 17: module: command not found
+Commencing write performance test: Fri Jul 31 20:02:38 2015
+Commencing write performance test: Fri Jul 31 21:47:29 2015
+Commencing write performance test: Fri Jul 31 23:12:33 2015
+Commencing write performance test: Sat Aug  1 00:24:18 2015
+Commencing write performance test: Sat Aug  1 01:39:32 2015
+Commencing read performance test: Sat Aug  1 02:35:53 2015

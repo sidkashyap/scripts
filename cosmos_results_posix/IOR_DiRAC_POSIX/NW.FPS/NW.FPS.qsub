@@ -1,0 +1,30 @@
+#!/bin/bash
+
+#PBS -l nodes=16:ppn=1
+#PBS -l walltime=10:00:00
+#PBS -A dr002
+#PBS -N NW_FPS
+#PBS -m bea
+#PBS -M sid.kashyap@ed.ac.uk
+
+
+TARGET="/fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.FPS"
+IOR="/fast/space/projects/dr002/dc-kash1/ior/bin/ior"
+IOR_SCRIPT="$TARGET/con.ior"
+export MPI_DSM_PPM=1
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+numNodes=(  16 8 4  2 1 )
+blockSize=( 16 16 16 16 16 )
+
+for test in `seq 5` 
+do 
+    test=$(( $test - 1 ))
+    cmd="$IOR -vvv  -b ${blockSize[$test]}g -f $IOR_SCRIPT"
+    mpirun -np ${numNodes[$test]} $IOR -vvv  -b ${blockSize[$test]}g -f $IOR_SCRIPT
+done
+popd

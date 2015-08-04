@@ -1,0 +1,119 @@
+2015070152826
+/scratch/dr002/shared/IOR_DiRAC/NS.FPS ~
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Mon Jul  6 15:28:28 2015
+Command line used: /scratch/dr002/shared/DiRAC3-testsuite/bin/ior -vvv -b 32g -f /scratch/dr002/shared/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux dnode094
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Mon Jul  6 15:28:28 2015
+Path: /panfs/dirac.panfs.cluster/scratch/dr002/shared/IOR_DiRAC/NS.FPS/testDir
+FS: 710.1 TiB   Used FS: 64.7%   Inodes: 177.5 Mi   Used Inodes: 64.7%
+Participating tasks: 1
+Summary:
+	api                = POSIX
+	test filename      = /scratch/dr002/shared/IOR_DiRAC/NS.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 32 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+ior ERROR: write() failed, errno 5, Input/output error (/scratch/dr002/shared/DiRAC3-testsuite/src/ior/aiori-POSIX.c:335)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Mon Jul  6 15:28:38 2015
+Command line used: /scratch/dr002/shared/DiRAC3-testsuite/bin/ior -vvv -b 32g -f /scratch/dr002/shared/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux dnode094
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Mon Jul  6 15:28:38 2015
+Path: /panfs/dirac.panfs.cluster/scratch/dr002/shared/IOR_DiRAC/NS.FPS/testDir
+FS: 710.1 TiB   Used FS: 64.7%   Inodes: 177.5 Mi   Used Inodes: 64.7%
+Participating tasks: 2
+Summary:
+	api                = POSIX
+	test filename      = /scratch/dr002/shared/IOR_DiRAC/NS.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 64 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+ior ERROR: write() failed, errno 5, Input/output error (/scratch/dr002/shared/DiRAC3-testsuite/src/ior/aiori-POSIX.c:335)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Mon Jul  6 15:28:58 2015
+Command line used: /scratch/dr002/shared/DiRAC3-testsuite/bin/ior -vvv -b 32g -f /scratch/dr002/shared/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux dnode094
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Mon Jul  6 15:28:58 2015
+Path: /panfs/dirac.panfs.cluster/scratch/dr002/shared/IOR_DiRAC/NS.FPS/testDir
+FS: 710.1 TiB   Used FS: 64.7%   Inodes: 177.5 Mi   Used Inodes: 64.7%
+Participating tasks: 4
+Summary:
+	api                = POSIX
+	test filename      = /scratch/dr002/shared/IOR_DiRAC/NS.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 128 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+ior ERROR: write() failed, errno 5, Input/output error (/scratch/dr002/shared/DiRAC3-testsuite/src/ior/aiori-POSIX.c:335)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Mon Jul  6 15:29:19 2015
+Command line used: /scratch/dr002/shared/DiRAC3-testsuite/bin/ior -vvv -b 32g -f /scratch/dr002/shared/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux dnode094
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Mon Jul  6 15:29:19 2015
+Path: /panfs/dirac.panfs.cluster/scratch/dr002/shared/IOR_DiRAC/NS.FPS/testDir
+FS: 710.1 TiB   Used FS: 64.7%   Inodes: 177.5 Mi   Used Inodes: 64.7%
+Participating tasks: 8
+Summary:
+	api                = POSIX
+	test filename      = /scratch/dr002/shared/IOR_DiRAC/NS.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+ior ERROR: write() failed, errno 5, Input/output error (/scratch/dr002/shared/DiRAC3-testsuite/src/ior/aiori-POSIX.c:335)
+~

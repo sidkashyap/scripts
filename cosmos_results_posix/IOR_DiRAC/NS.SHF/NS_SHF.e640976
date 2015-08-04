@@ -1,0 +1,16 @@
+Cannot open display "default display"
+/bin/sh: line 0: exec: 1: not found
+MPT ERROR: could not run executable
+/opt/torque/home/mom_priv/jobs/640976.cosmos.private.damtp.cam.ac.uk.SC: line 30: 75047 Killed                  mpirun -np ${numNodes[$test]} 1 $IOR -vvv -b ${blockSize[$test]}g -f $IOR_SCRIPT
+/bin/sh: line 0: exec: 1: not found
+MPT ERROR: could not run executable
+/opt/torque/home/mom_priv/jobs/640976.cosmos.private.damtp.cam.ac.uk.SC: line 30: 75068 Killed                  mpirun -np ${numNodes[$test]} 1 $IOR -vvv -b ${blockSize[$test]}g -f $IOR_SCRIPT
+/bin/sh: line 0: exec: 1: not found
+MPT ERROR: could not run executable
+/opt/torque/home/mom_priv/jobs/640976.cosmos.private.damtp.cam.ac.uk.SC: line 30: 75089 Killed                  mpirun -np ${numNodes[$test]} 1 $IOR -vvv -b ${blockSize[$test]}g -f $IOR_SCRIPT
+/bin/sh: line 0: exec: 1: not found
+MPT ERROR: could not run executable
+/opt/torque/home/mom_priv/jobs/640976.cosmos.private.damtp.cam.ac.uk.SC: line 30: 75110 Killed                  mpirun -np ${numNodes[$test]} 1 $IOR -vvv -b ${blockSize[$test]}g -f $IOR_SCRIPT
+/bin/sh: line 0: exec: 1: not found
+MPT ERROR: could not run executable
+/opt/torque/home/mom_priv/jobs/640976.cosmos.private.damtp.cam.ac.uk.SC: line 30: 75131 Killed                  mpirun -np ${numNodes[$test]} 1 $IOR -vvv -b ${blockSize[$test]}g -f $IOR_SCRIPT

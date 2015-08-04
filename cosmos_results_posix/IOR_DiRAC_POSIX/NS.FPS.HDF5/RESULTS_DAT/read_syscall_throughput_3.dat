@@ -1,0 +1,13 @@
+# This data file contains the throughput in MB/s of each read syscall 
+#   call versus time for a specific file. 
+# The x axis data is time relative to the beginning of the run 
+#   where 0 is the start of the run. 
+# The y axis data is the throughput in MB/s for each read syscall  
+#   for each file. 
+# 
+# File: ./test.sh 
+# 
+# It is best to plot this data as a scatter chart with no lines 
+#   connecting the data points. 
+# 
+0.0 0.0 

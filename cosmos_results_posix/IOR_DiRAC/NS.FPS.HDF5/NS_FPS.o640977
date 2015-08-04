@@ -1,0 +1,240 @@
+20150730184640
+/fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS /nfs/home/users/dc-kash1
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Jul 30 18:46:40 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Jul 30 18:46:40 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS
+FS: 145.5 TiB   Used FS: 99.1%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 16
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (16 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     237.49     16777216   4096       0.017412   1103.82    0.000085   1103.82    0   
+Verifying contents of the file(s) just written.
+Thu Jul 30 19:05:14 2015
+
+delaying 10 seconds . . .
+read      271.75     16777216   4096       0.000781   964.64     0.000041   964.64     0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Thu Jul 30 19:38:17 2015
+
+remove    -          -          -          -          -          -          0.041004   0   
+
+Max Write: 237.49 MiB/sec (249.02 MB/sec)
+Max Read:  271.75 MiB/sec (284.95 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         237.49     237.49     237.49       0.00 1103.82433 0 16 16 1 1 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+read          271.75     271.75     271.75       0.00  964.64067 0 16 16 1 1 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+
+Finished: Thu Jul 30 20:13:01 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Jul 30 20:13:02 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Jul 30 20:13:02 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS
+FS: 145.5 TiB   Used FS: 99.8%   Inodes: 1290.2 Mi   Used Inodes: 0.5%
+Participating tasks: 8
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (8 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     572.40     33554432   4096       0.015499   457.97     0.000118   457.97     0   
+Verifying contents of the file(s) just written.
+Thu Jul 30 20:20:50 2015
+
+delaying 10 seconds . . .
+read      346.72     33554432   4096       0.000504   756.06     0.000019   756.06     0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Thu Jul 30 20:50:13 2015
+
+remove    -          -          -          -          -          -          0.021559   0   
+
+Max Write: 572.40 MiB/sec (600.21 MB/sec)
+Max Read:  346.72 MiB/sec (363.57 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         572.40     572.40     572.40       0.00  457.97098 0 8 8 1 1 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+read          346.72     346.72     346.72       0.00  756.05877 0 8 8 1 1 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+
+Finished: Thu Jul 30 21:31:06 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Jul 30 21:31:07 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 64g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Jul 30 21:31:07 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS
+FS: 145.5 TiB   Used FS: 99.5%   Inodes: 2889.3 Mi   Used Inodes: 0.2%
+Participating tasks: 4
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (4 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 64 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     214.09     67108864   4096       0.005225   1224.45    0.000030   1224.45    0   
+Verifying contents of the file(s) just written.
+Thu Jul 30 21:51:41 2015
+
+delaying 10 seconds . . .
+read      290.00     67108864   4096       0.000342   903.95     0.000023   903.95     0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Thu Jul 30 22:27:15 2015
+
+remove    -          -          -          -          -          -          0.011988   0   
+
+Max Write: 214.09 MiB/sec (224.49 MB/sec)
+Max Read:  290.00 MiB/sec (304.08 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         214.09     214.09     214.09       0.00 1224.44863 0 4 4 1 1 0 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
+read          290.00     290.00     290.00       0.00  903.95449 0 4 4 1 1 0 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
+
+Finished: Thu Jul 30 23:12:06 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Jul 30 23:12:07 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 128g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Jul 30 23:12:07 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS
+FS: 145.5 TiB   Used FS: 99.6%   Inodes: 2395.6 Mi   Used Inodes: 0.2%
+Participating tasks: 2
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (2 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 128 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     510.98     134217728  4096       0.007594   513.02     0.000034   513.02     0   
+Verifying contents of the file(s) just written.
+Thu Jul 30 23:20:50 2015
+
+delaying 10 seconds . . .
+read      184.98     134217728  4096       0.000458   1417.18    0.000010   1417.18    0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Fri Jul 31 00:10:13 2015
+
+remove    -          -          -          -          -          -          0.007072   0   
+
+Max Write: 510.98 MiB/sec (535.80 MB/sec)
+Max Read:  184.98 MiB/sec (193.96 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         510.98     510.98     510.98       0.00  513.02191 0 2 2 1 1 0 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
+read          184.98     184.98     184.98       0.00 1417.17847 0 2 2 1 1 0 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
+
+Finished: Fri Jul 31 00:56:47 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Fri Jul 31 00:56:48 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 256g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Jul 31 00:56:48 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS
+FS: 145.5 TiB   Used FS: 99.6%   Inodes: 2260.2 Mi   Used Inodes: 0.3%
+Participating tasks: 1
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 256 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     434.12     268435456  4096       0.001756   603.85     0.000029   603.85     0   
+Verifying contents of the file(s) just written.
+Fri Jul 31 01:07:02 2015
+
+delaying 10 seconds . . .
+read      121.05     268435456  4096       0.000225   2165.58    0.000008   2165.58    0   
+remove    -          -          -          -          -          -          0.004020   0   
+
+Max Write: 434.12 MiB/sec (455.21 MB/sec)
+Max Read:  121.05 MiB/sec (126.93 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         434.12     434.12     434.12       0.00  603.84796 0 1 1 1 1 0 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
+read          121.05     121.05     121.05       0.00 2165.58164 0 1 1 1 1 0 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
+
+Finished: Fri Jul 31 02:24:49 2015
+/nfs/home/users/dc-kash1

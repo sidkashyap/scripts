@@ -1,0 +1,3 @@
+Cannot open display "default display"
+MPT ERROR: could not run executable
+/opt/torque/home/mom_priv/jobs/641072.cosmos.private.damtp.cam.ac.uk.SC: line 25: 221972 Killed                  mpirun -np 16 dplace -o /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/place_log.txt0 /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/test.sh
