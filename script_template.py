@@ -1,65 +1,221 @@
+from __future__ import division
 import matplotlib.pyplot as plt
 import numpy as np 
 import sys
+import re
 
-fig,axs = plt.subplots(nrows=1,ncols=1)
 
-read_file = open(str(sys.argv[1]))
-write_file = open(str(sys.argv[2]))
-# If you need to open a file instead:
-#f = open('your.file')
 
+grep_pattern = re.compile(r'Summary of all tests:')
+
+i=0
 write = []
 read = []
-time_r = []
-time_w = []
-count = 0
-flag = 0
+API=[]
 
-for line in read_file:
-    line.rstrip()
-    if (count == 0):
-        count = count + 1
-        continue
-    fields = line.strip().split(',')
-    if (len(fields)<4):
-        continue
-    time_r.append(fields[3])
-    read.append(fields[4])
 
-count = 0
-for line in write_file:
-    line.rstrip()
-    if (count == 0):
-        count = count + 1 
-        continue
-    fields = line.strip().split(',')
-    if (len(fields)<4):
-        continue
-    time_w.append(fields[3])
-    write.append(fields[4])
+write=[]
+read=[]
+flag=0
 
-write_S = [str(x) for x in write]
-read_S = [str(x) for x in read]
-time_r = [str(x) for x in time_r]
-time_w = [str(x) for x in time_w]
+transferSize=0
+fileSize=0
+filePP=0
+tasksPerNode=0
+readMax=0.0
+readMin=0.0
+readMean=0.0
+writeMax=0.0
+writeMin=0.0
+writeMean=0.0
+NumberOfNodes=0
+blockSize=0.0
 
-axs.plot(time_w,write,  label='Write',ls='',marker='+')
-axs.plot(time_r,read, label='Read',color='r',ls='',marker='o')
 
-#axs.set_xticks(np.log2(nodes))
-#axs.set_xticklabels(nodes_s)
+write_nodes = []
+read_nodes = []
 
-#for x,y,z in zip(np.log2(nodes),write,write_S):
-#    axs.text(x,y,z)
-#for x,y,z in zip(np.log2(nodes),read,read_S):
-#    axs.text(x,y,z)
 
-#axs.set_xlim([0,8])
-#axs.set_ylim([50,800])
+read_bandwidth_max = []
+write_bandwidth_max = []
 
-plt.xlabel('Time')
-plt.ylabel('Max BW, MiB/s')
-plt.title('Graph')
-plt.legend()
+read_bandwidth_min = []
+write_bandwidth_min = []
+
+read_bandwidth_mean = []
+
+
+chartTitle=""
+
+
+write_bandwidth_mean = []
+
+colors = ['b','g','r','c','m','y','k']
+
+#IOR_Summary = Enum('Operation','Max','Min','Mean','StdDev','Mean','TestNum','Tasks','tPN','reps','fPP','reord','reordoff','reordrand','seed', 'segcnt', 'blksiz', 'xsize', 'aggsize', 'API', 'RefNum')
+class IOR_Summary:
+    Operation=0
+    Max=1
+    Min=2
+    Mean=3
+    StdDev=4
+    Mean=5
+    TestNum=6
+    Tasks=7
+    tPN=8
+    reps=9
+    fPP=10
+    reord=11
+    reordoff=12
+    reordrand=13
+    seed=14
+    segcnt=15
+    blksiz=16
+    xsize=17
+    aggsize=18
+    API=19
+    RefNum=20
+    
+
+fig,axs = plt.subplots()
+rects=[]
+
+
+def autolabel(rects):
+        # attach some text labels
+        for rect in rects:
+            height = rect.get_height()
+            axs.text(rect.get_x()+rect.get_width()/2., 1.05*height, '%d'%int(height),
+                    ha='center', va='bottom')
+
+
+def processFile(file_contents):
+    line_count=len(file_contents)
+    flag=0
+    for i in range(line_count):
+        line = read_file[i]
+        line.rstrip()
+        line_check = re.search(grep_pattern, line)
+        if(line_check):
+            i=i+2
+            write = read_file[i].split()
+            i=i+1
+            read = read_file[i].split()
+            transferSize=float(read[IOR_Summary.xsize])/(1024*1024)
+            fileSize=int(read[IOR_Summary.aggsize])
+
+            fileSize= fileSize / (1024*1024*1024)
+            blockSize= int(read[IOR_Summary.blksiz]) / (1024*1024*1024)
+            filePP=int(read[IOR_Summary.fPP])
+            tasksPerNode=int(read[IOR_Summary.tPN])
+            
+            if(flag==0):
+                rAPI=read[IOR_Summary.API]
+                rAPI=rAPI+" read "
+
+                wAPI= write[IOR_Summary.API]
+                wAPI = wAPI+" write "
+
+
+                API.append(wAPI)
+                API.append(rAPI)
+
+
+                global chartTitle
+                chartTitle ="FilePerProcess = %d\n fileSize = %d gB \n transferSize=%d mB" % (filePP, fileSize, transferSize)
+                flag=1
+
+
+
+
+           
+            if(read[IOR_Summary.Max]=="inf"):
+                read[IOR_Summary.Max]= 0
+            if(write[IOR_Summary.Max]=="inf"):
+                write[IOR_Summary.Max]= 0
+
+            readMax=float(read[IOR_Summary.Max])
+            writeMax=float(write[IOR_Summary.Max])
+            NumberOfNodes=int(read[IOR_Summary.Tasks])
+
+            
+
+            write_nodes.append(NumberOfNodes)
+            read_nodes.append(NumberOfNodes)
+
+            write_bandwidth_max.append(writeMax)
+           
+            read_bandwidth_max.append(readMax)
+
+def plotFile(counter):
+
+    one=[]
+    two=[]
+    basewidth=0.1
+    init = counter -1;
+
+
+    
+    width1 = counter/10 + (counter-1)/10
+    width2= width1+basewidth
+
+    color1 = colors[counter+init]
+    color2 = colors[counter+init+1]
+    
+    one = np.log2(read_nodes)+width1
+    rects1 = axs.bar(one, write_bandwidth_max, basewidth,color=color1)
+    rects.append(rects1)
+
+    two = np.log2(read_nodes)+width2
+    rects2 = axs.bar(two, read_bandwidth_max, basewidth,color=color2)
+    rects.append(rects2)
+
+
+
+
+### MAIN #####
+
+
+width=0.1
+counter=1
+for IOR_file_i in sys.argv[1:]:
+
+
+    write_bandwidth_max=[]
+    read_bandwidth_max=[] 
+    read_nodes=[]
+
+    
+    IOR_file = open(str(IOR_file_i))
+    read_file = IOR_file.readlines()
+    line_count=len(read_file)
+    processFile(read_file)
+    plotFile(counter)
+    counter=counter+1
+
+
+# add some text for labels, title and axes ticks
+axs.set_ylabel('Max Bandwidth, MiB/s')
+axs.set_xlabel('Number of Nodes')
+
+
+plt.title("cosmos2\n"+chartTitle, fontsize=10, y=0.80)
+axs.set_xticks(np.log2(read_nodes)+0.1)
+axs.set_xticklabels(read_nodes)
+axs.legend(API)
+
+
+for i in rects:
+    autolabel(i)
+
 plt.show()
+
+
+
+
+
+
+
+
+
+
