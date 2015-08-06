@@ -1,0 +1,195 @@
+2015070013410
+/scratch/dr002/shared/IOR_DiRAC/NW.FPS ~
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Tue Jul  7 01:34:11 2015
+Command line used: /scratch/dr002/shared/DiRAC3-testsuite/bin/ior -vvv -b 32g -f /scratch/dr002/shared/IOR_DiRAC/NW.FPS/con.ior
+Machine: Linux dnode271
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Tue Jul  7 01:34:11 2015
+Path: /panfs/dirac.panfs.cluster/scratch/dr002/shared/IOR_DiRAC/NW.FPS/testDir
+FS: 710.1 TiB   Used FS: 64.7%   Inodes: 177.5 Mi   Used Inodes: 64.7%
+Participating tasks: 1
+Summary:
+	api                = POSIX
+	test filename      = /scratch/dr002/shared/IOR_DiRAC/NW.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 32 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     328.47     33554432   4096       0.010732   99.60      0.153544   99.76      0   
+Verifying contents of the file(s) just written.
+Tue Jul  7 01:36:00 2015
+
+delaying 10 seconds . . .
+read      4504       33554432   4096       0.000068   7.28       0.000031   7.28       0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Tue Jul  7 01:36:42 2015
+
+remove    -          -          -          -          -          -          2.34       0   
+
+Max Write: 328.47 MiB/sec (344.42 MB/sec)
+Max Read:  4503.75 MiB/sec (4722.53 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         328.47     328.47     328.47       0.00   99.76068 0 1 1 1 1 0 1 0 0 1 34359738368 4194304 34359738368 POSIX 0
+read         4503.75    4503.75    4503.75       0.00    7.27571 0 1 1 1 1 0 1 0 0 1 34359738368 4194304 34359738368 POSIX 0
+
+Finished: Tue Jul  7 01:37:35 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Tue Jul  7 01:37:35 2015
+Command line used: /scratch/dr002/shared/DiRAC3-testsuite/bin/ior -vvv -b 32g -f /scratch/dr002/shared/IOR_DiRAC/NW.FPS/con.ior
+Machine: Linux dnode271
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Tue Jul  7 01:37:35 2015
+Path: /panfs/dirac.panfs.cluster/scratch/dr002/shared/IOR_DiRAC/NW.FPS/testDir
+FS: 710.1 TiB   Used FS: 64.8%   Inodes: 177.5 Mi   Used Inodes: 64.8%
+Participating tasks: 2
+Summary:
+	api                = POSIX
+	test filename      = /scratch/dr002/shared/IOR_DiRAC/NW.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 64 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     517.98     33554432   4096       0.005647   126.29     0.227309   126.52     0   
+Verifying contents of the file(s) just written.
+Tue Jul  7 01:39:52 2015
+
+delaying 10 seconds . . .
+read      7845       33554432   4096       0.000142   8.35       0.000075   8.35       0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Tue Jul  7 01:40:42 2015
+
+remove    -          -          -          -          -          -          2.73       0   
+
+Max Write: 517.98 MiB/sec (543.14 MB/sec)
+Max Read:  7845.06 MiB/sec (8226.15 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         517.98     517.98     517.98       0.00  126.52267 0 2 1 1 1 0 1 0 0 1 34359738368 4194304 68719476736 POSIX 0
+read         7845.06    7845.06    7845.06       0.00    8.35379 0 2 1 1 1 0 1 0 0 1 34359738368 4194304 68719476736 POSIX 0
+
+Finished: Tue Jul  7 01:42:06 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Tue Jul  7 01:42:06 2015
+Command line used: /scratch/dr002/shared/DiRAC3-testsuite/bin/ior -vvv -b 32g -f /scratch/dr002/shared/IOR_DiRAC/NW.FPS/con.ior
+Machine: Linux dnode271
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Tue Jul  7 01:42:06 2015
+Path: /panfs/dirac.panfs.cluster/scratch/dr002/shared/IOR_DiRAC/NW.FPS/testDir
+FS: 710.1 TiB   Used FS: 64.8%   Inodes: 177.5 Mi   Used Inodes: 64.8%
+Participating tasks: 4
+Summary:
+	api                = POSIX
+	test filename      = /scratch/dr002/shared/IOR_DiRAC/NW.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 128 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     1065.03    33554432   4096       0.007653   122.83     0.232110   123.07     0   
+Verifying contents of the file(s) just written.
+Tue Jul  7 01:44:19 2015
+
+delaying 10 seconds . . .
+read      17879      33554432   4096       0.000479   7.33       0.000579   7.33       0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Tue Jul  7 01:45:12 2015
+
+remove    -          -          -          -          -          -          2.77       0   
+
+Max Write: 1065.03 MiB/sec (1116.77 MB/sec)
+Max Read:  17879.45 MiB/sec (18747.96 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1065.03    1065.03    1065.03       0.00  123.06828 0 4 1 1 1 0 1 0 0 1 34359738368 4194304 137438953472 POSIX 0
+read        17879.45   17879.45   17879.45       0.00    7.33087 0 4 1 1 1 0 1 0 0 1 34359738368 4194304 137438953472 POSIX 0
+
+Finished: Tue Jul  7 01:46:19 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Tue Jul  7 01:46:20 2015
+Command line used: /scratch/dr002/shared/DiRAC3-testsuite/bin/ior -vvv -b 32g -f /scratch/dr002/shared/IOR_DiRAC/NW.FPS/con.ior
+Machine: Linux dnode271
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Tue Jul  7 01:46:20 2015
+Path: /panfs/dirac.panfs.cluster/scratch/dr002/shared/IOR_DiRAC/NW.FPS/testDir
+FS: 710.1 TiB   Used FS: 64.8%   Inodes: 177.5 Mi   Used Inodes: 64.8%
+Participating tasks: 8
+Summary:
+	api                = POSIX
+	test filename      = /scratch/dr002/shared/IOR_DiRAC/NW.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     1738.54    33554432   4096       0.008696   150.16     0.620581   150.78     0   
+Verifying contents of the file(s) just written.
+Tue Jul  7 01:49:01 2015
+
+delaying 10 seconds . . .
+read      35680      33554432   4096       0.000291   7.35       0.000589   7.35       0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Tue Jul  7 01:49:52 2015
+
+remove    -          -          -          -          -          -          2.73       0   
+
+Max Write: 1738.54 MiB/sec (1822.99 MB/sec)
+Max Read:  35680.43 MiB/sec (37413.65 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1738.54    1738.54    1738.54       0.00  150.78397 0 8 1 1 1 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+read        35680.43   35680.43   35680.43       0.00    7.34700 0 8 1 1 1 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+
+Finished: Tue Jul  7 01:51:06 2015
+~

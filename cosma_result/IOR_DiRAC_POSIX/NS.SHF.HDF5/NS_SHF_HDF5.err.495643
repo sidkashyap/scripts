@@ -1,0 +1,2 @@
+/cosma5/data/dr002/dc-kash1/DiRAC3-testsuite/bin/ior: symbol lookup error: /cosma5/data/dr002/dc-kash1/DiRAC3-testsuite/bin/ior: undefined symbol: H5Pset_fapl_mpio
+MPI Application rank 0 exited before MPI_Finalize() with status 127

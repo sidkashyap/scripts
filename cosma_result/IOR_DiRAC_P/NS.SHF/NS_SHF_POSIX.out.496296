@@ -1,0 +1,148 @@
+20150806042252
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF /cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF 
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Aug  6 04:22:54 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:22:54 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Aug  6 04:22:57 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:22:57 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Aug  6 04:23:00 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 64g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:23:00 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Aug  6 04:23:02 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 128g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:23:02 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Aug  6 04:23:02 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 256g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:23:02 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF 
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5001>
+Subject: Job 496296: <NS_SHF_POSIX> Done
+
+Job <NS_SHF_POSIX> was submitted from host <cosma-c> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <1*m5001>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <1*m5002>
+                            <1*m5003>
+                            <1*m5010>
+                            <1*m5011>
+                            <1*m5012>
+                            <1*m5013>
+                            <1*m5014>
+                            <1*m5051>
+                            <1*m5052>
+                            <1*m5053>
+                            <1*m5054>
+                            <1*m5055>
+                            <1*m5056>
+                            <1*m5057>
+                            <1*m5058>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF> was used as the working directory.
+Started at Thu Aug  6 04:22:52 2015
+Results reported at Thu Aug  6 04:23:19 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 16
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NS_SHF_POSIX
+#BSUB -oo NS_SHF_POSIX.out.%J
+#BSUB -eo NS_SHF_POSIX.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 08:00
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.SHF"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/con.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+set POSIX_DISABLE_VERSION_CHECK=1
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 32 64 128 256 )
+
+foreach test (`seq 5`)
+    set cmd="$IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT"
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     41.69 sec.
+    Max Memory :         2 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NS_SHF_POSIX.err.496296> for stderr output of this job.
+

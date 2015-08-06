@@ -1,0 +1,143 @@
+20150806042308
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF 
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 04:23:09 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5250
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:23:09 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 04:23:11 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5250
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:23:11 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 04:23:13 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 64g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5250
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:23:13 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 04:23:16 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 128g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5250
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:23:16 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 04:23:17 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 256g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5250
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 04:23:17 2015
+ior ERROR: unable to statfs() file system, errno 2, No such file or directory (utilities.c:325)
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF 
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5250>
+Subject: Job 496300: <NS_SHF_MPIIO> Done
+
+Job <NS_SHF_MPIIO> was submitted from host <cosma-c> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <1*m5250>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <1*m5251>
+                            <1*m5252>
+                            <1*m5253>
+                            <1*m5254>
+                            <1*m5255>
+                            <1*m5257>
+                            <1*m5258>
+                            <1*m5260>
+                            <1*m5261>
+                            <1*m5262>
+                            <1*m5263>
+                            <1*m5266>
+                            <1*m5267>
+                            <1*m5268>
+                            <1*m5269>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF> was used as the working directory.
+Started at Thu Aug  6 04:23:08 2015
+Results reported at Thu Aug  6 04:23:34 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 16
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NS_SHF_MPIIO
+#BSUB -oo NS_SHF_MPIIO.out.%J
+#BSUB -eo NS_SHF_MPIIO.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 08:00
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/con.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+set HDF5_DISABLE_VERSION_CHECK=1
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 32 64 128 256 )
+
+foreach test (`seq 5`)
+    set cmd="$IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT"
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     34.44 sec.
+    Max Memory :         2 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NS_SHF_MPIIO.err.496300> for stderr output of this job.
+

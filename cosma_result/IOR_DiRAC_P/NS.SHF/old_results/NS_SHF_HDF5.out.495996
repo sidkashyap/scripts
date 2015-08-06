@@ -1,0 +1,768 @@
+20150805095755
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF.HDF5 /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF 
+
+Synopsis:	mpirun [options] {-srun | <cmd> | -f <app> }
+Description:	Startup an MPI application.
+Run styles:
+
+Options (all platforms):
+		-help               Print this message.
+		-d                  Turn on debugging.
+		-version            Print version number.
+		-j                  Print the job ID.
+		-p                  Pretend to take action.
+		-ck                 Pretend to take action, but check host
+		                    connectivity and program availability.
+		-dbgspin            Application spins in MPI_Init() until user
+		                    sets mpi_debug_cont.  See mpidebug(1).
+		-v                  Be verbose.
+		-i <spec>           Set instrumentation specification.
+		-spawn              Include runtime support for spawn.
+		-1sided             Include runtime support for 1sided.
+		-commd              Route off-host messages via comm daemon.
+		-subnet <net-path>  Use subnet associated with hostname
+		                    or ip address as returned by
+		                    'hostname -i <net-path>'
+		-netaddr <ip-designations>
+		                    Specifies what IP addresses to use,
+		                    like -subnet but with more control
+		                    ip-designation is comma separated:
+		                    rank:IP[/mask-IP]   - for rank-rank
+		                    mpirun:IP[/mask-IP] - for mpirun-*
+		                    IP[/mask-IP]        - for both
+		-hostlist <quoted-list-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts.  Can be used with
+		                    the -np # option.
+		-hostfile <filename-of-hosts>
+		-machinefile <filename-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts from the file.  Can
+		                    be used with the -np # option.
+		                    'machinefile' is a synonym for 'hostfile'.
+		-lsb_hosts | -lsb_mcpu_hosts
+		                    Constructs an appfile using the
+		                    LSB_HOSTS or LSB_MCPU_HOSTS env
+		                    vars.  Can be used with -np #.
+		                    Implies '-lsf' flag
+		-lsf
+		                    Use 'blaunch' instead of ssh/
+		                    Windows Remote Launch service to
+		                    launch remote processes.
+		-dd|-ndd            Turn on/off deferred memory deregistration
+		-TCP                Force to use tcp/ip interconnect
+		-srq|-rdma|-xrc|-sndrcv 
+		                    -srq: Use short message shared receive
+		                    queue(SRQ) protocol if available.
+		                    -rdma: Use short message RDMA protocol.
+		                    -sndrcv: Use short message Send-Receive 
+		                          protocol.
+		                    -xrc: Extended Reliable Connection AND -srq
+		                    (-xrc not supported by IBM Platform MPI for Windows.
+		-intra=shm|nic|mix
+		                    Specifies what communication method to
+		                    use for intra-host messages.  The default
+		                    is shared memory (shm) which should have
+		                    the best latency.  The second setting (nic)
+		                    causes the same interconnect being used for
+		                    inter-host transfers to be used for intra-
+		                    host transfers.  On some systems and some
+		                    interconnects this might give higher
+		                    bandwidth.  The third setting (mix) causes
+		                    shared memory to be used for short messages
+		                    (below 256K, or MPI_RDMA_INTRALEN if
+		                    specified) and the interconnect for longer
+		                    messages.
+		                    will be the best setting, nic is only
+		                    provided for completeness; mix is however
+		                    not supported on elan/psm/mx/tcp
+		-T                  Print ranks elapsed usr/sys times(2) data.
+		-prot               Print ranks communication protocols.
+		-cpu_bind[_mt][=arg]   Binds CPUs to ranks for ccNUMA arch.
+		-np #               Start '#' processes using 'file'.
+		-e <var>[=<val>]    Set env. var. for the processes.
+		-sp <paths>         Use <paths> to locate executables.
+		-mpi32 | mpi64      Used to indicate application bitness.
+		                    This is required for some IBM Platform MPI 
+		                    functionality.
+		-stdio=<modes>      Set StandardIO modes (See MPI StandardIO
+		                    manpage).
+		-universe_size=<#>  Set MPI_UNIVERSE_SIZE attribute.
+
+		-f <app>            Use <app> as application file.
+		-- [<extra_args>]   Use the remainder of the command line as
+		                    extra arguments to each <cmd> in <app>.
+
+		<cmd>               Use <cmd> as SPMD command line.
+
+Options (Linux Only):
+		-tv                 Run the application using the TotalView
+		                    debugger.
+		-ha[:opts]          Turn on High/Availability mode. 
+		-prun <options>     Use prun for quadrics support.
+		-srun <options>     Use srun for XC support.
+		-itapi|-ITAPI       (HP-UX) Causes the ITAPI (IB) protocol
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-hmp|-HMP           (HP-UX) No longer supported.
+		-elan|-ELAN         Causes the ELAN protocol (Quadrics)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-ibv|-IBV           Causes the IBV protocol (OpenFabric)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-vapi|-VAPI         Causes the VAPI protocol (Mellanox IB)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-udapl|-UDAPL       Causes the uDAPL protocol (IB + others)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-gm|-GM             Causes the GM protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-mx|-MX             Causes the MX protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-psm|-PSM           Causes the PSM protocol (QLogic) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+
+Application File:	            One per line: [options] <cmd>
+		                    Comment lines start with '#'.
+
+Options:	-np,
+		-e, -sp             See above.
+		<cmd>               Binary program name and arguments.
+NOTE: Not all options are supported on all architectures.
+
+Synopsis:	mpirun [options] {-srun | <cmd> | -f <app> }
+Description:	Startup an MPI application.
+Run styles:
+
+Options (all platforms):
+		-help               Print this message.
+		-d                  Turn on debugging.
+		-version            Print version number.
+		-j                  Print the job ID.
+		-p                  Pretend to take action.
+		-ck                 Pretend to take action, but check host
+		                    connectivity and program availability.
+		-dbgspin            Application spins in MPI_Init() until user
+		                    sets mpi_debug_cont.  See mpidebug(1).
+		-v                  Be verbose.
+		-i <spec>           Set instrumentation specification.
+		-spawn              Include runtime support for spawn.
+		-1sided             Include runtime support for 1sided.
+		-commd              Route off-host messages via comm daemon.
+		-subnet <net-path>  Use subnet associated with hostname
+		                    or ip address as returned by
+		                    'hostname -i <net-path>'
+		-netaddr <ip-designations>
+		                    Specifies what IP addresses to use,
+		                    like -subnet but with more control
+		                    ip-designation is comma separated:
+		                    rank:IP[/mask-IP]   - for rank-rank
+		                    mpirun:IP[/mask-IP] - for mpirun-*
+		                    IP[/mask-IP]        - for both
+		-hostlist <quoted-list-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts.  Can be used with
+		                    the -np # option.
+		-hostfile <filename-of-hosts>
+		-machinefile <filename-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts from the file.  Can
+		                    be used with the -np # option.
+		                    'machinefile' is a synonym for 'hostfile'.
+		-lsb_hosts | -lsb_mcpu_hosts
+		                    Constructs an appfile using the
+		                    LSB_HOSTS or LSB_MCPU_HOSTS env
+		                    vars.  Can be used with -np #.
+		                    Implies '-lsf' flag
+		-lsf
+		                    Use 'blaunch' instead of ssh/
+		                    Windows Remote Launch service to
+		                    launch remote processes.
+		-dd|-ndd            Turn on/off deferred memory deregistration
+		-TCP                Force to use tcp/ip interconnect
+		-srq|-rdma|-xrc|-sndrcv 
+		                    -srq: Use short message shared receive
+		                    queue(SRQ) protocol if available.
+		                    -rdma: Use short message RDMA protocol.
+		                    -sndrcv: Use short message Send-Receive 
+		                          protocol.
+		                    -xrc: Extended Reliable Connection AND -srq
+		                    (-xrc not supported by IBM Platform MPI for Windows.
+		-intra=shm|nic|mix
+		                    Specifies what communication method to
+		                    use for intra-host messages.  The default
+		                    is shared memory (shm) which should have
+		                    the best latency.  The second setting (nic)
+		                    causes the same interconnect being used for
+		                    inter-host transfers to be used for intra-
+		                    host transfers.  On some systems and some
+		                    interconnects this might give higher
+		                    bandwidth.  The third setting (mix) causes
+		                    shared memory to be used for short messages
+		                    (below 256K, or MPI_RDMA_INTRALEN if
+		                    specified) and the interconnect for longer
+		                    messages.
+		                    will be the best setting, nic is only
+		                    provided for completeness; mix is however
+		                    not supported on elan/psm/mx/tcp
+		-T                  Print ranks elapsed usr/sys times(2) data.
+		-prot               Print ranks communication protocols.
+		-cpu_bind[_mt][=arg]   Binds CPUs to ranks for ccNUMA arch.
+		-np #               Start '#' processes using 'file'.
+		-e <var>[=<val>]    Set env. var. for the processes.
+		-sp <paths>         Use <paths> to locate executables.
+		-mpi32 | mpi64      Used to indicate application bitness.
+		                    This is required for some IBM Platform MPI 
+		                    functionality.
+		-stdio=<modes>      Set StandardIO modes (See MPI StandardIO
+		                    manpage).
+		-universe_size=<#>  Set MPI_UNIVERSE_SIZE attribute.
+
+		-f <app>            Use <app> as application file.
+		-- [<extra_args>]   Use the remainder of the command line as
+		                    extra arguments to each <cmd> in <app>.
+
+		<cmd>               Use <cmd> as SPMD command line.
+
+Options (Linux Only):
+		-tv                 Run the application using the TotalView
+		                    debugger.
+		-ha[:opts]          Turn on High/Availability mode. 
+		-prun <options>     Use prun for quadrics support.
+		-srun <options>     Use srun for XC support.
+		-itapi|-ITAPI       (HP-UX) Causes the ITAPI (IB) protocol
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-hmp|-HMP           (HP-UX) No longer supported.
+		-elan|-ELAN         Causes the ELAN protocol (Quadrics)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-ibv|-IBV           Causes the IBV protocol (OpenFabric)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-vapi|-VAPI         Causes the VAPI protocol (Mellanox IB)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-udapl|-UDAPL       Causes the uDAPL protocol (IB + others)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-gm|-GM             Causes the GM protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-mx|-MX             Causes the MX protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-psm|-PSM           Causes the PSM protocol (QLogic) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+
+Application File:	            One per line: [options] <cmd>
+		                    Comment lines start with '#'.
+
+Options:	-np,
+		-e, -sp             See above.
+		<cmd>               Binary program name and arguments.
+NOTE: Not all options are supported on all architectures.
+
+Synopsis:	mpirun [options] {-srun | <cmd> | -f <app> }
+Description:	Startup an MPI application.
+Run styles:
+
+Options (all platforms):
+		-help               Print this message.
+		-d                  Turn on debugging.
+		-version            Print version number.
+		-j                  Print the job ID.
+		-p                  Pretend to take action.
+		-ck                 Pretend to take action, but check host
+		                    connectivity and program availability.
+		-dbgspin            Application spins in MPI_Init() until user
+		                    sets mpi_debug_cont.  See mpidebug(1).
+		-v                  Be verbose.
+		-i <spec>           Set instrumentation specification.
+		-spawn              Include runtime support for spawn.
+		-1sided             Include runtime support for 1sided.
+		-commd              Route off-host messages via comm daemon.
+		-subnet <net-path>  Use subnet associated with hostname
+		                    or ip address as returned by
+		                    'hostname -i <net-path>'
+		-netaddr <ip-designations>
+		                    Specifies what IP addresses to use,
+		                    like -subnet but with more control
+		                    ip-designation is comma separated:
+		                    rank:IP[/mask-IP]   - for rank-rank
+		                    mpirun:IP[/mask-IP] - for mpirun-*
+		                    IP[/mask-IP]        - for both
+		-hostlist <quoted-list-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts.  Can be used with
+		                    the -np # option.
+		-hostfile <filename-of-hosts>
+		-machinefile <filename-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts from the file.  Can
+		                    be used with the -np # option.
+		                    'machinefile' is a synonym for 'hostfile'.
+		-lsb_hosts | -lsb_mcpu_hosts
+		                    Constructs an appfile using the
+		                    LSB_HOSTS or LSB_MCPU_HOSTS env
+		                    vars.  Can be used with -np #.
+		                    Implies '-lsf' flag
+		-lsf
+		                    Use 'blaunch' instead of ssh/
+		                    Windows Remote Launch service to
+		                    launch remote processes.
+		-dd|-ndd            Turn on/off deferred memory deregistration
+		-TCP                Force to use tcp/ip interconnect
+		-srq|-rdma|-xrc|-sndrcv 
+		                    -srq: Use short message shared receive
+		                    queue(SRQ) protocol if available.
+		                    -rdma: Use short message RDMA protocol.
+		                    -sndrcv: Use short message Send-Receive 
+		                          protocol.
+		                    -xrc: Extended Reliable Connection AND -srq
+		                    (-xrc not supported by IBM Platform MPI for Windows.
+		-intra=shm|nic|mix
+		                    Specifies what communication method to
+		                    use for intra-host messages.  The default
+		                    is shared memory (shm) which should have
+		                    the best latency.  The second setting (nic)
+		                    causes the same interconnect being used for
+		                    inter-host transfers to be used for intra-
+		                    host transfers.  On some systems and some
+		                    interconnects this might give higher
+		                    bandwidth.  The third setting (mix) causes
+		                    shared memory to be used for short messages
+		                    (below 256K, or MPI_RDMA_INTRALEN if
+		                    specified) and the interconnect for longer
+		                    messages.
+		                    will be the best setting, nic is only
+		                    provided for completeness; mix is however
+		                    not supported on elan/psm/mx/tcp
+		-T                  Print ranks elapsed usr/sys times(2) data.
+		-prot               Print ranks communication protocols.
+		-cpu_bind[_mt][=arg]   Binds CPUs to ranks for ccNUMA arch.
+		-np #               Start '#' processes using 'file'.
+		-e <var>[=<val>]    Set env. var. for the processes.
+		-sp <paths>         Use <paths> to locate executables.
+		-mpi32 | mpi64      Used to indicate application bitness.
+		                    This is required for some IBM Platform MPI 
+		                    functionality.
+		-stdio=<modes>      Set StandardIO modes (See MPI StandardIO
+		                    manpage).
+		-universe_size=<#>  Set MPI_UNIVERSE_SIZE attribute.
+
+		-f <app>            Use <app> as application file.
+		-- [<extra_args>]   Use the remainder of the command line as
+		                    extra arguments to each <cmd> in <app>.
+
+		<cmd>               Use <cmd> as SPMD command line.
+
+Options (Linux Only):
+		-tv                 Run the application using the TotalView
+		                    debugger.
+		-ha[:opts]          Turn on High/Availability mode. 
+		-prun <options>     Use prun for quadrics support.
+		-srun <options>     Use srun for XC support.
+		-itapi|-ITAPI       (HP-UX) Causes the ITAPI (IB) protocol
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-hmp|-HMP           (HP-UX) No longer supported.
+		-elan|-ELAN         Causes the ELAN protocol (Quadrics)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-ibv|-IBV           Causes the IBV protocol (OpenFabric)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-vapi|-VAPI         Causes the VAPI protocol (Mellanox IB)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-udapl|-UDAPL       Causes the uDAPL protocol (IB + others)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-gm|-GM             Causes the GM protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-mx|-MX             Causes the MX protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-psm|-PSM           Causes the PSM protocol (QLogic) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+
+Application File:	            One per line: [options] <cmd>
+		                    Comment lines start with '#'.
+
+Options:	-np,
+		-e, -sp             See above.
+		<cmd>               Binary program name and arguments.
+NOTE: Not all options are supported on all architectures.
+
+Synopsis:	mpirun [options] {-srun | <cmd> | -f <app> }
+Description:	Startup an MPI application.
+Run styles:
+
+Options (all platforms):
+		-help               Print this message.
+		-d                  Turn on debugging.
+		-version            Print version number.
+		-j                  Print the job ID.
+		-p                  Pretend to take action.
+		-ck                 Pretend to take action, but check host
+		                    connectivity and program availability.
+		-dbgspin            Application spins in MPI_Init() until user
+		                    sets mpi_debug_cont.  See mpidebug(1).
+		-v                  Be verbose.
+		-i <spec>           Set instrumentation specification.
+		-spawn              Include runtime support for spawn.
+		-1sided             Include runtime support for 1sided.
+		-commd              Route off-host messages via comm daemon.
+		-subnet <net-path>  Use subnet associated with hostname
+		                    or ip address as returned by
+		                    'hostname -i <net-path>'
+		-netaddr <ip-designations>
+		                    Specifies what IP addresses to use,
+		                    like -subnet but with more control
+		                    ip-designation is comma separated:
+		                    rank:IP[/mask-IP]   - for rank-rank
+		                    mpirun:IP[/mask-IP] - for mpirun-*
+		                    IP[/mask-IP]        - for both
+		-hostlist <quoted-list-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts.  Can be used with
+		                    the -np # option.
+		-hostfile <filename-of-hosts>
+		-machinefile <filename-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts from the file.  Can
+		                    be used with the -np # option.
+		                    'machinefile' is a synonym for 'hostfile'.
+		-lsb_hosts | -lsb_mcpu_hosts
+		                    Constructs an appfile using the
+		                    LSB_HOSTS or LSB_MCPU_HOSTS env
+		                    vars.  Can be used with -np #.
+		                    Implies '-lsf' flag
+		-lsf
+		                    Use 'blaunch' instead of ssh/
+		                    Windows Remote Launch service to
+		                    launch remote processes.
+		-dd|-ndd            Turn on/off deferred memory deregistration
+		-TCP                Force to use tcp/ip interconnect
+		-srq|-rdma|-xrc|-sndrcv 
+		                    -srq: Use short message shared receive
+		                    queue(SRQ) protocol if available.
+		                    -rdma: Use short message RDMA protocol.
+		                    -sndrcv: Use short message Send-Receive 
+		                          protocol.
+		                    -xrc: Extended Reliable Connection AND -srq
+		                    (-xrc not supported by IBM Platform MPI for Windows.
+		-intra=shm|nic|mix
+		                    Specifies what communication method to
+		                    use for intra-host messages.  The default
+		                    is shared memory (shm) which should have
+		                    the best latency.  The second setting (nic)
+		                    causes the same interconnect being used for
+		                    inter-host transfers to be used for intra-
+		                    host transfers.  On some systems and some
+		                    interconnects this might give higher
+		                    bandwidth.  The third setting (mix) causes
+		                    shared memory to be used for short messages
+		                    (below 256K, or MPI_RDMA_INTRALEN if
+		                    specified) and the interconnect for longer
+		                    messages.
+		                    will be the best setting, nic is only
+		                    provided for completeness; mix is however
+		                    not supported on elan/psm/mx/tcp
+		-T                  Print ranks elapsed usr/sys times(2) data.
+		-prot               Print ranks communication protocols.
+		-cpu_bind[_mt][=arg]   Binds CPUs to ranks for ccNUMA arch.
+		-np #               Start '#' processes using 'file'.
+		-e <var>[=<val>]    Set env. var. for the processes.
+		-sp <paths>         Use <paths> to locate executables.
+		-mpi32 | mpi64      Used to indicate application bitness.
+		                    This is required for some IBM Platform MPI 
+		                    functionality.
+		-stdio=<modes>      Set StandardIO modes (See MPI StandardIO
+		                    manpage).
+		-universe_size=<#>  Set MPI_UNIVERSE_SIZE attribute.
+
+		-f <app>            Use <app> as application file.
+		-- [<extra_args>]   Use the remainder of the command line as
+		                    extra arguments to each <cmd> in <app>.
+
+		<cmd>               Use <cmd> as SPMD command line.
+
+Options (Linux Only):
+		-tv                 Run the application using the TotalView
+		                    debugger.
+		-ha[:opts]          Turn on High/Availability mode. 
+		-prun <options>     Use prun for quadrics support.
+		-srun <options>     Use srun for XC support.
+		-itapi|-ITAPI       (HP-UX) Causes the ITAPI (IB) protocol
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-hmp|-HMP           (HP-UX) No longer supported.
+		-elan|-ELAN         Causes the ELAN protocol (Quadrics)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-ibv|-IBV           Causes the IBV protocol (OpenFabric)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-vapi|-VAPI         Causes the VAPI protocol (Mellanox IB)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-udapl|-UDAPL       Causes the uDAPL protocol (IB + others)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-gm|-GM             Causes the GM protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-mx|-MX             Causes the MX protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-psm|-PSM           Causes the PSM protocol (QLogic) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+
+Application File:	            One per line: [options] <cmd>
+		                    Comment lines start with '#'.
+
+Options:	-np,
+		-e, -sp             See above.
+		<cmd>               Binary program name and arguments.
+NOTE: Not all options are supported on all architectures.
+
+Synopsis:	mpirun [options] {-srun | <cmd> | -f <app> }
+Description:	Startup an MPI application.
+Run styles:
+
+Options (all platforms):
+		-help               Print this message.
+		-d                  Turn on debugging.
+		-version            Print version number.
+		-j                  Print the job ID.
+		-p                  Pretend to take action.
+		-ck                 Pretend to take action, but check host
+		                    connectivity and program availability.
+		-dbgspin            Application spins in MPI_Init() until user
+		                    sets mpi_debug_cont.  See mpidebug(1).
+		-v                  Be verbose.
+		-i <spec>           Set instrumentation specification.
+		-spawn              Include runtime support for spawn.
+		-1sided             Include runtime support for 1sided.
+		-commd              Route off-host messages via comm daemon.
+		-subnet <net-path>  Use subnet associated with hostname
+		                    or ip address as returned by
+		                    'hostname -i <net-path>'
+		-netaddr <ip-designations>
+		                    Specifies what IP addresses to use,
+		                    like -subnet but with more control
+		                    ip-designation is comma separated:
+		                    rank:IP[/mask-IP]   - for rank-rank
+		                    mpirun:IP[/mask-IP] - for mpirun-*
+		                    IP[/mask-IP]        - for both
+		-hostlist <quoted-list-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts.  Can be used with
+		                    the -np # option.
+		-hostfile <filename-of-hosts>
+		-machinefile <filename-of-hosts>
+		                    Constructs an appfile using the
+		                    specified hosts from the file.  Can
+		                    be used with the -np # option.
+		                    'machinefile' is a synonym for 'hostfile'.
+		-lsb_hosts | -lsb_mcpu_hosts
+		                    Constructs an appfile using the
+		                    LSB_HOSTS or LSB_MCPU_HOSTS env
+		                    vars.  Can be used with -np #.
+		                    Implies '-lsf' flag
+		-lsf
+		                    Use 'blaunch' instead of ssh/
+		                    Windows Remote Launch service to
+		                    launch remote processes.
+		-dd|-ndd            Turn on/off deferred memory deregistration
+		-TCP                Force to use tcp/ip interconnect
+		-srq|-rdma|-xrc|-sndrcv 
+		                    -srq: Use short message shared receive
+		                    queue(SRQ) protocol if available.
+		                    -rdma: Use short message RDMA protocol.
+		                    -sndrcv: Use short message Send-Receive 
+		                          protocol.
+		                    -xrc: Extended Reliable Connection AND -srq
+		                    (-xrc not supported by IBM Platform MPI for Windows.
+		-intra=shm|nic|mix
+		                    Specifies what communication method to
+		                    use for intra-host messages.  The default
+		                    is shared memory (shm) which should have
+		                    the best latency.  The second setting (nic)
+		                    causes the same interconnect being used for
+		                    inter-host transfers to be used for intra-
+		                    host transfers.  On some systems and some
+		                    interconnects this might give higher
+		                    bandwidth.  The third setting (mix) causes
+		                    shared memory to be used for short messages
+		                    (below 256K, or MPI_RDMA_INTRALEN if
+		                    specified) and the interconnect for longer
+		                    messages.
+		                    will be the best setting, nic is only
+		                    provided for completeness; mix is however
+		                    not supported on elan/psm/mx/tcp
+		-T                  Print ranks elapsed usr/sys times(2) data.
+		-prot               Print ranks communication protocols.
+		-cpu_bind[_mt][=arg]   Binds CPUs to ranks for ccNUMA arch.
+		-np #               Start '#' processes using 'file'.
+		-e <var>[=<val>]    Set env. var. for the processes.
+		-sp <paths>         Use <paths> to locate executables.
+		-mpi32 | mpi64      Used to indicate application bitness.
+		                    This is required for some IBM Platform MPI 
+		                    functionality.
+		-stdio=<modes>      Set StandardIO modes (See MPI StandardIO
+		                    manpage).
+		-universe_size=<#>  Set MPI_UNIVERSE_SIZE attribute.
+
+		-f <app>            Use <app> as application file.
+		-- [<extra_args>]   Use the remainder of the command line as
+		                    extra arguments to each <cmd> in <app>.
+
+		<cmd>               Use <cmd> as SPMD command line.
+
+Options (Linux Only):
+		-tv                 Run the application using the TotalView
+		                    debugger.
+		-ha[:opts]          Turn on High/Availability mode. 
+		-prun <options>     Use prun for quadrics support.
+		-srun <options>     Use srun for XC support.
+		-itapi|-ITAPI       (HP-UX) Causes the ITAPI (IB) protocol
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-hmp|-HMP           (HP-UX) No longer supported.
+		-elan|-ELAN         Causes the ELAN protocol (Quadrics)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-ibv|-IBV           Causes the IBV protocol (OpenFabric)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-vapi|-VAPI         Causes the VAPI protocol (Mellanox IB)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-udapl|-UDAPL       Causes the uDAPL protocol (IB + others)
+		                    to be used if available.  Upper case option
+		                    causes exit if protocol not available
+		-gm|-GM             Causes the GM protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-mx|-MX             Causes the MX protocol (Myrinet) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+		-psm|-PSM           Causes the PSM protocol (QLogic) to be
+		                    used if available.  Upper case option
+		                    causes exit if protocol not available
+
+Application File:	            One per line: [options] <cmd>
+		                    Comment lines start with '#'.
+
+Options:	-np,
+		-e, -sp             See above.
+		<cmd>               Binary program name and arguments.
+NOTE: Not all options are supported on all architectures.
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF 
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5194>
+Subject: Job 495996: <NS_SHF_HDF5> Done
+
+Job <NS_SHF_HDF5> was submitted from host <cosma-a> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <16*m5194>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <16*m5195>
+                            <16*m5271>
+                            <16*m5276>
+                            <16*m5277>
+                            <16*m5280>
+                            <16*m5281>
+                            <16*m5284>
+                            <16*m5289>
+                            <16*m5384>
+                            <16*m5387>
+                            <16*m5388>
+                            <16*m5397>
+                            <16*m5401>
+                            <16*m5403>
+                            <16*m5404>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF> was used as the working directory.
+Started at Wed Aug  5 09:57:55 2015
+Results reported at Wed Aug  5 09:57:55 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 256
+#BSUB -x
+#BSUB -R "span[ptile=16]"
+#BSUB -J NS_SHF_HDF5
+#BSUB -oo NS_SHF_HDF5.out.%J
+#BSUB -eo NS_SHF_HDF5.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 08:00
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF.HDF5"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/conhdf5.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+set HDF5_DISABLE_VERSION_CHECK=1
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 32 64 128 256 )
+
+foreach test (`seq 5`)
+    set cmd="$IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT"
+    mpirun -np $numNodes[$test] -ppn 1 $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      0.21 sec.
+    Max Memory :         2 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NS_SHF_HDF5.err.495996> for stderr output of this job.
+
