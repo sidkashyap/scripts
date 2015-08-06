@@ -1,0 +1,4 @@
+Cannot open display "default display"
+/bin/sh: line 0: exec: echo cosmos: not found
+MPT ERROR: could not run executable
+/opt/torque/home/mom_priv/jobs/641069.cosmos.private.damtp.cam.ac.uk.SC: line 24: 198124 Killed                  mpirun -np 16 "echo ${HOSTNAME}"

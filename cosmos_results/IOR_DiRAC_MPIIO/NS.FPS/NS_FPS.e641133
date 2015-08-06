@@ -1,0 +1,21 @@
+Cannot open display "default display"
+/opt/torque/home/mom_priv/jobs/641133.cosmos.private.damtp.cam.ac.uk.SC: line 17: module: command not found
+Commencing write performance test: Wed Aug  5 17:50:28 2015
+MPT: Global rank 0 is aborting with error code -1.
+     Process ID: 344225, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: MPI_COMM_WORLD rank 8 has terminated without calling MPI_Finalize()
+	aborting job
+Commencing write performance test: Wed Aug  5 18:19:30 2015
+Commencing read performance test: Wed Aug  5 18:50:55 2015
+Commencing write performance test: Wed Aug  5 18:59:00 2015
+Commencing read performance test: Wed Aug  5 19:42:24 2015
+Commencing write performance test: Wed Aug  5 19:54:22 2015
+MPT: Global rank 1 is aborting with error code -1.
+     Process ID: 136112, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: MPI_COMM_WORLD rank 0 has terminated without calling MPI_Finalize()
+	aborting job
+Commencing write performance test: Wed Aug  5 20:40:05 2015

@@ -1,0 +1,347 @@
+20150805175017
+/fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF /nfs/home/users/dc-kash1
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Wed Aug  5 17:50:18 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug  5 17:50:18 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 145.5 TiB   Used FS: 97.7%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 16
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (16 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	direct_read = false
+	direct_write = false
+	cb_buffer_size = 16777216
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 1
+	romio_no_indep_rw = false
+	romio_cb_pfr = disable
+	romio_cb_fr_types = aar
+	romio_cb_fr_alignment = 1
+	romio_cb_ds_threshold = 0
+	romio_cb_alltoall = automatic
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+write     27.17      16777216   4096       0.037610   9649       202.64     9649       0   
+remove    -          -          -          -          -          -          0.005686   0   
+
+Max Write: 27.17 MiB/sec (28.49 MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          27.17      27.17      27.17       0.00 9649.29732 0 16 16 1 0 0 1 0 0 1 17179869184 4194304 274877906944 MPIIO 0
+read             inf        inf        inf       -nan    0.00000 0 16 16 1 0 0 1 0 0 1 17179869184 4194304 274877906944 MPIIO 0
+
+Finished: Wed Aug  5 20:31:16 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Wed Aug  5 20:31:17 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug  5 20:31:17 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 145.5 TiB   Used FS: 97.7%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 8
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (8 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	direct_read = false
+	direct_write = false
+	cb_buffer_size = 16777216
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 1
+	romio_no_indep_rw = false
+	romio_cb_pfr = disable
+	romio_cb_fr_types = aar
+	romio_cb_fr_alignment = 1
+	romio_cb_ds_threshold = 0
+	romio_cb_alltoall = automatic
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+WARNING: Expected aggregate file size       = 274877906944.
+WARNING: Stat() of aggregate file size      = 264580890624.
+WARNING: Using actual aggregate bytes moved = 274877906944.
+write     46.86      33554432   4096       0.011042   5574       24.71      5594       0   
+remove    -          -          -          -          -          -          0.245266   0   
+
+Max Write: 46.86 MiB/sec (49.14 MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          46.86      46.86      46.86       0.00 5594.09773 0 8 8 1 0 0 1 0 0 1 34359738368 4194304 274877906944 MPIIO 0
+read             inf        inf        inf       -nan    0.00000 0 8 8 1 0 0 1 0 0 1 34359738368 4194304 274877906944 MPIIO 0
+
+Finished: Wed Aug  5 22:04:41 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Wed Aug  5 22:04:42 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 64g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug  5 22:04:42 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 145.5 TiB   Used FS: 97.5%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 4
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (4 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 64 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	direct_read = false
+	direct_write = false
+	cb_buffer_size = 16777216
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 1
+	romio_no_indep_rw = false
+	romio_cb_pfr = disable
+	romio_cb_fr_types = aar
+	romio_cb_fr_alignment = 1
+	romio_cb_ds_threshold = 0
+	romio_cb_alltoall = automatic
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+WARNING: Expected aggregate file size       = 274877906944.
+WARNING: Stat() of aggregate file size      = 228400824320.
+WARNING: Using actual aggregate bytes moved = 274877906944.
+write     59.41      67108864   4096       0.008616   4394       21.40      4412       0   
+remove    -          -          -          -          -          -          0.132115   0   
+
+Max Write: 59.41 MiB/sec (62.30 MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          59.41      59.41      59.41       0.00 4412.13857 0 4 4 1 0 0 1 0 0 1 68719476736 4194304 274877906944 MPIIO 0
+read             inf        inf        inf       -nan    0.00000 0 4 4 1 0 0 1 0 0 1 68719476736 4194304 274877906944 MPIIO 0
+
+Finished: Wed Aug  5 23:18:23 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Wed Aug  5 23:18:24 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 128g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug  5 23:18:24 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 145.5 TiB   Used FS: 97.3%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 2
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (2 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 128 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	direct_read = false
+	direct_write = false
+	cb_buffer_size = 16777216
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 1
+	romio_no_indep_rw = false
+	romio_cb_pfr = disable
+	romio_cb_fr_types = aar
+	romio_cb_fr_alignment = 1
+	romio_cb_ds_threshold = 0
+	romio_cb_alltoall = automatic
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+WARNING: Expected aggregate file size       = 274877906944.
+WARNING: Stat() of aggregate file size      = 84435533824.
+WARNING: Using actual aggregate bytes moved = 274877906944.
+write     63.29      134217728  4096       0.012662   4125       16.95      4142       0   
+remove    -          -          -          -          -          -          0.003671   0   
+
+Max Write: 63.29 MiB/sec (66.36 MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          63.29      63.29      63.29       0.00 4141.95529 0 2 2 1 0 0 1 0 0 1 137438953472 4194304 274877906944 MPIIO 0
+read             inf        inf        inf       -nan    0.00000 0 2 2 1 0 0 1 0 0 1 137438953472 4194304 274877906944 MPIIO 0
+
+Finished: Thu Aug  6 00:27:35 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 00:27:36 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 256g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 00:27:36 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 145.5 TiB   Used FS: 97.4%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 1
+Summary:
+	api                = MPIIO (version=3, subversion=0)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 256 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	direct_read = false
+	direct_write = false
+	cb_buffer_size = 16777216
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 1
+	romio_no_indep_rw = false
+	romio_cb_pfr = disable
+	romio_cb_fr_types = aar
+	romio_cb_fr_alignment = 1
+	romio_cb_ds_threshold = 0
+	romio_cb_alltoall = automatic
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+write     211.04     268435456  4096       0.004743   1242.17    0.000205   1242.18    0   
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	direct_read = false
+	direct_write = false
+	cb_buffer_size = 16777216
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 1
+	romio_no_indep_rw = false
+	romio_cb_pfr = disable
+	romio_cb_fr_types = aar
+	romio_cb_fr_alignment = 1
+	romio_cb_ds_threshold = 0
+	romio_cb_alltoall = automatic
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+read      604.53     268435456  4096       0.000985   433.63     0.000107   433.63     0   
+remove    -          -          -          -          -          -          0.003755   0   
+
+Max Write: 211.04 MiB/sec (221.29 MB/sec)
+Max Read:  604.53 MiB/sec (633.89 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         211.04     211.04     211.04       0.00 1242.17584 0 1 1 1 0 0 1 0 0 1 274877906944 4194304 274877906944 MPIIO 0
+read          604.53     604.53     604.53       0.00  433.63352 0 1 1 1 0 0 1 0 0 1 274877906944 4194304 274877906944 MPIIO 0
+
+Finished: Thu Aug  6 00:55:51 2015
+/nfs/home/users/dc-kash1
