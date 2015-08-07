@@ -1,0 +1,44 @@
+#!/bin/bash
+# ior.pbs
+#   Invoke ior with typical arguments and default environment
+# vlaues
+
+
+
+#PBS -l nodes=2:ppn=16
+#PBS -l walltime=04:00:00
+#PBS -A dr002
+#PBS -N NS_FPS
+#PBS -m bea
+#PBS -M sid.kashyap@ed.ac.uk
+ 
+
+module load gcc/5.1.0
+module load openmpi/gcc/1.8.3
+  
+
+TARGET="/data/admin/IOR_DiRAC_HDF5/NS.FPS"
+IOR="/scratch/admin/ior/build/bin/ior"
+IOR_SCRIPT="/scratch/admin/IOR_DiRAC_HDF5/NS.FPS/con.ior"
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+rm -rf testDir
+mkdir testDir
+
+ls $TARGET/testDir
+
+
+numNodes=(  2 )
+blockSize=( 1 )
+
+for test in `seq 1` 
+do 
+    test=$(( $test - 1 ))
+    cmd="$IOR -vvv  -b ${blockSize[$test]}g -f $IOR_SCRIPT"
+    mpirun -np ${numNodes[$test]} -pernode $IOR -vvv  -b ${blockSize[$test]}g -f $IOR_SCRIPT
+done
+popd

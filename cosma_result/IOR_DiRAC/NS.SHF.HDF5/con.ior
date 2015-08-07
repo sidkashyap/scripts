@@ -1,6 +1,6 @@
 IOR START
    api=POSIX
-   repetitions=1
+   repetitions=2
    multiFile=0
    interTestDelay=10
    readFile=1

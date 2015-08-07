@@ -1,0 +1,234 @@
+20150806222608
+/fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS /nfs/home/users/dc-kash1
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Aug  6 22:26:09 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 22:26:09 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS
+FS: 145.5 TiB   Used FS: 97.5%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 16
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (16 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     106.51     16777216   4096       0.025115   2461.28    1457.52    2461.28    0   
+delaying 10 seconds . . .
+read      106.16     16777216   4096       0.002694   2469.42    1998.98    2469.42    0   
+remove    -          -          -          -          -          -          0.071295   0   
+remove    -          -          -          -          -          -          0.006662   1   
+
+Max Write: inf MiB/sec (inf MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write            inf     106.51        inf       -nan 1230.63855 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+read             inf     106.16        inf       -nan 1234.70977 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+
+Finished: Thu Aug  6 23:48:38 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Thu Aug  6 23:48:40 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 23:48:40 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS
+FS: 145.5 TiB   Used FS: 99.0%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 8
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (8 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     231.46     33554432   4096       0.009969   1132.54    698.98     1132.54    0   
+delaying 10 seconds . . .
+read      260.43     33554432   4096       0.001187   1006.57    635.42     1006.57    0   
+remove    -          -          -          -          -          -          0.056264   0   
+delaying 10 seconds . . .
+write     220.73     33554432   4096       0.012698   1187.63    703.88     1187.64    1   
+delaying 10 seconds . . .
+read      130.27     33554432   4096       0.001562   2012.30    1468.40    2012.30    1   
+remove    -          -          -          -          -          -          0.034379   1   
+
+Max Write: 231.46 MiB/sec (242.71 MB/sec)
+Max Read:  260.43 MiB/sec (273.08 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         231.46     220.73     226.10       5.37 1160.09002 0 8 8 2 1 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+read          260.43     130.27     195.35      65.08 1509.43747 0 8 8 2 1 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+
+Finished: Fri Aug  7 01:18:18 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Fri Aug  7 01:18:19 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 64g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 01:18:19 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS
+FS: 145.5 TiB   Used FS: 98.6%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 4
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (4 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 64 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     293.26     67108864   4096       0.005590   893.88     275.15     893.88     0   
+delaying 10 seconds . . .
+read      225.57     67108864   4096       0.001017   1162.13    686.05     1162.13    0   
+remove    -          -          -          -          -          -          0.017707   0   
+delaying 10 seconds . . .
+write     297.13     67108864   4096       0.005316   882.25     446.03     882.25     1   
+delaying 10 seconds . . .
+read      154.57     67108864   4096       0.000938   1695.98    555.01     1695.98    1   
+remove    -          -          -          -          -          -          0.014806   1   
+
+Max Write: 297.13 MiB/sec (311.56 MB/sec)
+Max Read:  225.57 MiB/sec (236.53 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         297.13     293.26     295.20       1.93  888.06771 0 4 4 2 1 0 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
+read          225.57     154.57     190.07      35.50 1429.05525 0 4 4 2 1 0 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
+
+Finished: Fri Aug  7 02:36:12 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Fri Aug  7 02:36:13 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 128g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 02:36:13 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS
+FS: 145.5 TiB   Used FS: 98.4%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 2
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (2 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 128 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     374.56     134217728  4096       0.006131   699.87     6.82       699.87     0   
+delaying 10 seconds . . .
+read      261.66     134217728  4096       0.000317   1001.83    327.62     1001.83    0   
+remove    -          -          -          -          -          -          0.008885   0   
+delaying 10 seconds . . .
+write     363.59     134217728  4096       0.003756   720.99     2.38       720.99     1   
+delaying 10 seconds . . .
+read      227.19     134217728  4096       0.000411   1153.84    108.54     1153.84    1   
+remove    -          -          -          -          -          -          0.008345   1   
+
+Max Write: 374.56 MiB/sec (392.75 MB/sec)
+Max Read:  261.66 MiB/sec (274.38 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         374.56     363.59     369.07       5.49  710.43305 0 2 2 2 1 0 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
+read          261.66     227.19     244.43      17.24 1077.83368 0 2 2 2 1 0 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
+
+Finished: Fri Aug  7 03:36:29 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Fri Aug  7 03:36:30 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 256g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 03:36:30 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS
+FS: 145.5 TiB   Used FS: 98.5%   Inodes: 4096.0 Mi   Used Inodes: 0.1%
+Participating tasks: 1
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NS.FPS/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 256 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     369.30     268435456  4096       0.001528   709.83     0.000031   709.83     0   
+delaying 10 seconds . . .
+read      200.33     268435456  4096       0.000322   1308.57    0.000018   1308.57    0   
+remove    -          -          -          -          -          -          0.004374   0   
+delaying 10 seconds . . .
+write     349.14     268435456  4096       0.002356   750.83     0.000021   750.84     1   
+delaying 10 seconds . . .
+read      153.04     268435456  4096       0.000388   1712.89    0.000018   1712.89    1   
+remove    -          -          -          -          -          -          0.004433   1   
+
+Max Write: 369.30 MiB/sec (387.24 MB/sec)
+Max Read:  200.33 MiB/sec (210.06 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         369.30     349.14     359.22      10.08  730.33492 0 1 1 2 1 0 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
+read          200.33     153.04     176.69      23.64 1510.72569 0 1 1 2 1 0 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
+
+Finished: Fri Aug  7 04:51:51 2015
+/nfs/home/users/dc-kash1
