@@ -1,0 +1,11 @@
+Cannot open display "default display"
+Commencing write performance test: Thu Aug  6 09:00:48 2015
+Commencing read performance test: Thu Aug  6 09:24:51 2015
+Commencing write performance test: Thu Aug  6 09:56:09 2015
+Commencing read performance test: Thu Aug  6 10:35:52 2015
+Commencing write performance test: Thu Aug  6 11:08:01 2015
+Commencing write performance test: Thu Aug  6 12:44:15 2015
+=>> PBS: job killed: walltime 19836 exceeded limit 19800
+aprun: Apid 16690593: Caught signal Terminated, sending to application
+_pmiu_daemon(SIGCHLD): [NID 02457] [c4-1c2s6n1] [Thu Aug  6 14:31:11 2015] PE RANK 0 exit signal Terminated
+_pmiu_daemon(SIGCHLD): [NID 02458] [c4-1c2s6n2] [Thu Aug  6 14:31:11 2015] PE RANK 1 exit signal Terminated
