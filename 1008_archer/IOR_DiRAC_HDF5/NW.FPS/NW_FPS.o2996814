@@ -1,0 +1,97 @@
+--------------------------------------------------------------------------------
+*** skashyap   Job: 2996814.sdb   started: 04/07/15 01:44:16   host: mom1 ***
+*** skashyap   Job: 2996814.sdb   started: 04/07/15 01:44:16   host: mom1 ***
+*** skashyap   Job: 2996814.sdb   started: 04/07/15 01:44:16   host: mom1 ***
+*** skashyap   Job: 2996814.sdb   started: 04/07/15 01:44:16   host: mom1 ***
+
+--------------------------------------------------------------------------------
+Hello, [1;34mskashyap[0m. today is, Sat Jul  4 01:44:16 BST 2015
+[0;34mSysinfo: 01:44am  up 9 days 10:34,  0 users,  load average: 10.32, 10.32, 10.49
+[0m20150704014417
+/work/d63/d63/shared/IOR_DiRAC/NW.FPS /home4/d63/d63/skashyap
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Sat Jul  4 01:44:18 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 32g -f /work/d63/d63/shared/IOR_DiRAC/NW.FPS/con.ior
+Machine: Linux nid02150
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Sat Jul  4 01:44:18 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NW.FPS/testDir
+FS: 1344.2 TiB   Used FS: 26.2%   Inodes: 1890.6 Mi   Used Inodes: 5.0%
+Participating tasks: 1
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NW.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 32 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     11.29      33554432   4096       0.000881   2902.59    0.008442   2902.60    0   
+Verifying contents of the file(s) just written.
+Sat Jul  4 02:32:50 2015
+
+remove    -          -          -          -          -          -          0.013134   0   
+
+Max Write: 11.29 MiB/sec (11.84 MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          11.29      11.29      11.29       0.00 2902.59885 0 1 1 1 1 0 1 0 0 1 34359738368 4194304 34359738368 POSIX 0
+read             inf        inf        inf       -nan    0.00000 0 1 1 1 1 0 1 0 0 1 34359738368 4194304 34359738368 POSIX 0
+
+Finished: Sat Jul  4 02:59:33 2015
+Application 16095934 resources: utime ~6s, stime ~36s, Rss ~11980, inblocks ~67109136, outblocks ~67109410
+testDir
+stripe_count:   4 stripe_size:    1048576 stripe_offset:  -1 
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Sat Jul  4 02:59:34 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 32g -f /work/d63/d63/shared/IOR_DiRAC/NW.FPS/con.ior
+Machine: Linux nid02150
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Sat Jul  4 02:59:34 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NW.FPS/testDir
+FS: 1344.2 TiB   Used FS: 26.2%   Inodes: 1890.6 Mi   Used Inodes: 5.0%
+Participating tasks: 2
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NW.FPS/testDir/iorTest
+	access             = file-per-process
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 64 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+Application 16096466 exit codes: 143
+Application 16096466 resources: utime ~10s, stime ~13s, Rss ~13152, inblocks ~1478, outblocks ~47744062
+--------------------------------------------------------------------------------
+
+Resources requested: ncpus=192,place=free,walltime=01:30:00
+Resources allocated: cpupercent=0,cput=00:00:00,mem=6620kb,ncpus=192,vmem=143504kb,walltime=01:30:27
+
+*** skashyap   Job: 2996814.sdb   ended: 04/07/15 03:14:53   queue: standard ***
+*** skashyap   Job: 2996814.sdb   ended: 04/07/15 03:14:53   queue: standard ***
+*** skashyap   Job: 2996814.sdb   ended: 04/07/15 03:14:53   queue: standard ***
+*** skashyap   Job: 2996814.sdb   ended: 04/07/15 03:14:53   queue: standard ***
+--------------------------------------------------------------------------------

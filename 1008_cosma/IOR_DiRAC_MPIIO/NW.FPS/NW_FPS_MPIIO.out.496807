@@ -1,0 +1,91 @@
+20150807211841
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5232>
+Subject: Job 496807: <NW_FPS_MPIIO> Exited
+
+Job <NW_FPS_MPIIO> was submitted from host <cosma-c> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <1*m5232>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <1*m5233>
+                            <1*m5234>
+                            <1*m5259>
+                            <1*m5291>
+                            <1*m5292>
+                            <1*m5293>
+                            <1*m5294>
+                            <1*m5295>
+                            <1*m5296>
+                            <1*m5299>
+                            <1*m5300>
+                            <1*m5301>
+                            <1*m5321>
+                            <1*m5322>
+                            <1*m5323>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NW.FPS> was used as the working directory.
+Started at Fri Aug  7 21:18:36 2015
+Results reported at Fri Aug  7 21:18:41 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 16
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NW_FPS_MPIIO
+#BSUB -oo NW_FPS_MPIIO.out.%J
+#BSUB -eo NW_FPS_MPIIO.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 10:00
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NW.FPS.HDF5"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/con.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+setenv HDF5_DISABLE_VERSION_CHECK 1
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 16 16 16 16 )
+
+foreach test (`seq 5`)
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time   :      0.18 sec.
+    Max Memory :         2 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NW_FPS_MPIIO.err.496807> for stderr output of this job.
+

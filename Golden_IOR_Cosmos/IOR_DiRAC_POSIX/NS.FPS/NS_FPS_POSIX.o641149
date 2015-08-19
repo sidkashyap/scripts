@@ -39,8 +39,8 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write            inf     106.51        inf       -nan 1230.63855 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
-read             inf     106.16        inf       -nan 1234.70977 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+write            106.51     106.51        inf       -nan 1230.63855 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+read             106.16      106.16        inf       -nan 1234.70977 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
 
 Finished: Thu Aug  6 23:48:38 2015
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O

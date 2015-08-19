@@ -1,4 +1,4 @@
-20150806222658
+i20150806222658
 /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NW.FPS /nfs/home/users/dc-kash1
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O
 
@@ -46,8 +46,8 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write            inf      90.12        inf       -nan 1454.35349 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
-read             inf     104.10        inf       -nan 1259.11248 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+write            90.12       90.12        inf       -nan 1454.35349 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+read             104.10     104.10        inf       -nan 1259.11248 0 16 16 2 1 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
 
 Finished: Thu Aug  6 23:57:44 2015
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O

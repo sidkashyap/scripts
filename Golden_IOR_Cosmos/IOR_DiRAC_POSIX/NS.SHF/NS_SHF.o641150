@@ -37,7 +37,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write            inf      66.57        inf       -nan 1968.83468 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+write            66.57     66.57        inf       -nan 1968.83468 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
 read             inf        inf        inf       -nan    0.00000 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
 
 Finished: Thu Aug  6 23:31:56 2015
@@ -80,8 +80,8 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write            inf     410.59        inf       -nan  319.23172 0 8 8 2 0 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
-read             inf      64.74        inf       -nan 2024.52675 0 8 8 2 0 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+write            410.59     410.59        inf       -nan  319.23172 0 8 8 2 0 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+read             64.74      64.74        inf       -nan 2024.52675 0 8 8 2 0 0 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
 
 Finished: Fri Aug  7 00:50:23 2015
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O
@@ -123,8 +123,8 @@ Max Read:  78.54 MiB/sec (82.35 MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write           -nan       -nan       -nan       -nan  543.98585 0 4 4 2 0 0 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
-read            -nan       -nan       -nan       -nan 1668.92781 0 4 4 2 0 0 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
+write           240.95       -nan       -nan       -nan  543.98585 0 4 4 2 0 0 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
+read            78.54       -nan       -nan       -nan 1668.92781 0 4 4 2 0 0 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
 
 Finished: Fri Aug  7 02:04:29 2015
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O
@@ -166,8 +166,8 @@ Max Read:  111.47 MiB/sec (116.89 MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write           -nan       -nan       -nan       -nan  674.61018 0 2 2 2 0 0 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
-read            -nan       -nan       -nan       -nan 1175.82534 0 2 2 2 0 0 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
+write           194.29       -nan       -nan       -nan  674.61018 0 2 2 2 0 0 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
+read            111.47     -nan       -nan       -nan 1175.82534 0 2 2 2 0 0 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
 
 Finished: Fri Aug  7 03:06:30 2015
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O
@@ -212,7 +212,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
 write         343.43     206.81     275.12      68.31 1015.42991 0 1 1 2 0 0 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
-read             inf     129.83        inf       -nan 1009.56543 0 1 1 2 0 0 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
+read          129.83     129.83        inf       -nan 1009.56543 0 1 1 2 0 0 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
 
 Finished: Fri Aug  7 04:14:30 2015
 /nfs/home/users/dc-kash1

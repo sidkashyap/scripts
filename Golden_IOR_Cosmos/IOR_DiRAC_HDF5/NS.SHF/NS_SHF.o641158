@@ -40,7 +40,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write            inf      26.00        inf       -nan 5041.12980 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+write            26.00      26.00        inf       -nan 5041.12980 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
 read             inf        inf        inf       -nan    0.00000 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
 
 Finished: Fri Aug  7 01:15:08 2015
@@ -84,7 +84,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write            inf      35.34        inf       -nan 3708.49932 0 8 8 2 0 0 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+write            35.34      35.34        inf       -nan 3708.49932 0 8 8 2 0 0 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
 read             inf        inf        inf       -nan    0.00000 0 8 8 2 0 0 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
 
 Finished: Fri Aug  7 03:18:54 2015
@@ -128,7 +128,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write           -nan       -nan       -nan       -nan 2816.48083 0 4 4 2 0 0 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
+write           46.54       -nan       -nan       -nan 2816.48083 0 4 4 2 0 0 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
 read            -nan       -nan       -nan       -nan    0.00000 0 4 4 2 0 0 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
 
 Finished: Fri Aug  7 04:52:57 2015
@@ -178,8 +178,8 @@ Max Read:  624.49 MiB/sec (654.83 MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write           -nan       -nan       -nan       -nan 1750.83756 0 2 2 2 0 0 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
-read            -nan       -nan       -nan       -nan  209.88615 0 2 2 2 0 0 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
+write           74.86       -nan       -nan       -nan 1750.83756 0 2 2 2 0 0 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
+read            624.49       -nan       -nan       -nan  209.88615 0 2 2 2 0 0 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
 
 Finished: Fri Aug  7 05:58:38 2015
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O
@@ -235,7 +235,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
 write         118.93      76.49      97.71      21.22 2815.66609 0 1 1 2 0 0 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
-read             inf     530.33        inf       -nan  247.15259 0 1 1 2 0 0 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
+read          530.33     530.33        inf       -nan  247.15259 0 1 1 2 0 0 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
 
 Finished: Fri Aug  7 07:41:13 2015
 /nfs/home/users/dc-kash1

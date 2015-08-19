@@ -1,0 +1,124 @@
+20150807123607
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF 
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 12:36:10 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 12:36:10 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.6%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 16
+Summary:
+	api                = MPIIO (version=2, subversion=2)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5001>
+Subject: Job 496789: <NS_SHF_MPIIO> Exited
+
+Job <NS_SHF_MPIIO> was submitted from host <cosma-c> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <1*m5001>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <1*m5002>
+                            <1*m5003>
+                            <1*m5010>
+                            <1*m5011>
+                            <1*m5012>
+                            <1*m5013>
+                            <1*m5014>
+                            <1*m5051>
+                            <1*m5052>
+                            <1*m5053>
+                            <1*m5054>
+                            <1*m5055>
+                            <1*m5056>
+                            <1*m5057>
+                            <1*m5058>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF> was used as the working directory.
+Started at Fri Aug  7 12:36:06 2015
+Results reported at Fri Aug  7 12:36:18 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 16
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NS_SHF_MPIIO
+#BSUB -oo NS_SHF_MPIIO.out.%J
+#BSUB -eo NS_SHF_MPIIO.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 08:00
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/con.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+set HDF5_DISABLE_VERSION_CHECK=1
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 32 64 128 256 )
+
+foreach test (`seq 5`)
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+
+
+
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with signal termination: Killed.
+
+Resource usage summary:
+
+    CPU time   :     35.03 sec.
+    Max Memory :         2 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NS_SHF_MPIIO.err.496789> for stderr output of this job.
+
