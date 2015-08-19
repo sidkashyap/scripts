@@ -1,0 +1,91 @@
+20150819151517
+/fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.SHF /nfs/home/users/dc-kash1
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Wed Aug 19 15:15:18 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug 19 15:15:18 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.SHF
+FS: 145.5 TiB   Used FS: 97.9%   Inodes: 4096.0 Mi   Used Inodes: 0.2%
+Participating tasks: 16
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = HDF5-1.8.9 (Parallel)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 16 (16 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     55.58      16777216   4096       0.027544   4717       7.58       4717       0   
+remove    -          -          -          -          -          -          0.004619   0   
+
+Max Write: 55.58 MiB/sec (58.28 MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          55.58      55.58      55.58       0.00 4716.75170 0 16 16 1 0 1 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+read             inf        inf        inf       -nan    0.00000 0 16 16 1 0 1 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+
+Finished: Wed Aug 19 16:34:03 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Wed Aug 19 16:34:04 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug 19 16:34:04 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.SHF
+FS: 145.5 TiB   Used FS: 98.7%   Inodes: 4096.0 Mi   Used Inodes: 0.2%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = HDF5-1.8.9 (Parallel)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 8 (8 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     53.44      33554432   4096       0.041465   4905       2.08       4905       0   
+remove    -          -          -          -          -          -          0.002959   0   
+
+Max Write: 53.44 MiB/sec (56.04 MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          53.44      53.44      53.44       0.00 4905.23278 0 8 8 1 0 1 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+read             inf        inf        inf       -nan    0.00000 0 8 8 1 0 1 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+
+Finished: Wed Aug 19 17:55:58 2015
+/nfs/home/users/dc-kash1

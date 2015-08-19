@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#PBS -l nodes=8:ppn=1
+#PBS -l walltime=10:00:00
+#PBS -A dr002
+#PBS -N NS_FPS
+#PBS -m bea
+#PBS -M sid.kashyap@ed.ac.uk
+source /etc/profile.d/modules.sh
+
+
+
+module load hdf5
+
+TARGET="/fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.FPS"
+IOR="/fast/space/projects/dr002/dc-kash1/ior/bin/ior"
+IOR_SCRIPT="$TARGET/con.ior"
+export MPI_DSM_PPM=1
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+numNodes=(  8 )
+blockSize=( 32 )
+
+for test in `seq 1` 
+do 
+    test=$(( $test - 1 ))
+    cmd="$IOR -vvv  -b ${blockSize[$test]}g -f $IOR_SCRIPT"
+    mpirun -np ${numNodes[$test]} $IOR -vvv  -b ${blockSize[$test]}g -f $IOR_SCRIPT
+done
+popd

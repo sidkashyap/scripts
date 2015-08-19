@@ -1,0 +1,114 @@
+Cannot open display "default display"
+Commencing write performance test: Wed Aug 12 10:35:45 2015
+MPT: Global rank 14 is aborting with error code -1.
+     Process ID: 272300, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: Attaching to program: /proc/272300/exe, process 272300
+MPT: Try: zypper install -C "debuginfo(build-id)=bf68e74bb76519b8748d888d18b5d3b2c0b58593"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=d4191084441e39a7b480fc4b41f67083812e9811"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=4aee0c3923838575483ebd16be6db85ecb6f0b75"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=32c1c7a7a20b54ac3af6b2f436b3375ffeb12f0b"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=3b149eccd897f1f37dce50ad22614043eba757a2"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=91334fd8105f0b62c0bdbbec14b45a9fd043f4c3"
+MPT: (no debugging symbols found)...done.
+MPT: [Thread debugging using libthread_db enabled]
+MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+MPT: Try: zypper install -C "debuginfo(build-id)=682e4f7a27ee294a58f17249a0717861db546f2d"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=a95c0ce9f9752baf052d3b55b3b8ce19f662d2eb"
+MPT: (no debugging symbols found)...done.
+MPT: 0x00002aaaabe2b435 in waitpid () from /lib64/libc.so.6
+MPT: (gdb) #0  0x00002aaaabe2b435 in waitpid () from /lib64/libc.so.6
+MPT: #1  0x00002aaaabaf0d5c in mpi_sgi_system (command=<optimized out>) at sig.c:96
+MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:280
+MPT: #3  0x00002aaaaba4a7da in print_traceback (ecode=-1) at abort.c:192
+MPT: #4  0x00002aaaaba4a8f8 in PMPI_Abort (comm=<optimized out>, errorcode=-1)
+MPT:     at abort.c:61
+MPT: #5  0x000000000040f6c1 in POSIX_Xfer (access=0, file=<optimized out>, 
+MPT:     buffer=<optimized out>, length=4194304, param=0x1734500)
+MPT:     at aiori-POSIX.c:335
+MPT: #6  0x0000000000408a6a in WriteOrRead (test=0x1734500, fd=0x1739a30, access=0)
+MPT:     at ior.c:2557
+MPT: #7  0x000000000040a000 in TestIoSys (test=<optimized out>) at ior.c:2041
+MPT: #8  main (argc=6, argv=0x7fffffffcbb8) at ior.c:141
+MPT: (gdb) A debugging session is active.
+MPT: 
+MPT: 	Inferior 1 [process 272300] will be detached.
+MPT: 
+MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+MPT: Detaching from program: /proc/272300/exe, process 272300
+
+MPT: -----stack traceback ends-----
+MPT: MPI_COMM_WORLD rank 14 has terminated without calling MPI_Finalize()
+	aborting job
+Commencing write performance test: Wed Aug 12 11:32:46 2015
+MPT: Global rank 6 is aborting with error code -1.
+     Process ID: 374873, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: Attaching to program: /proc/374873/exe, process 374873
+MPT: Try: zypper install -C "debuginfo(build-id)=bf68e74bb76519b8748d888d18b5d3b2c0b58593"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=d4191084441e39a7b480fc4b41f67083812e9811"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=4aee0c3923838575483ebd16be6db85ecb6f0b75"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=32c1c7a7a20b54ac3af6b2f436b3375ffeb12f0b"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=3b149eccd897f1f37dce50ad22614043eba757a2"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=91334fd8105f0b62c0bdbbec14b45a9fd043f4c3"
+MPT: (no debugging symbols found)...done.
+MPT: [Thread debugging using libthread_db enabled]
+MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+MPT: Try: zypper install -C "debuginfo(build-id)=682e4f7a27ee294a58f17249a0717861db546f2d"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=a95c0ce9f9752baf052d3b55b3b8ce19f662d2eb"
+MPT: (no debugging symbols found)...done.
+MPT: 0x00002aaaabe2b435 in waitpid () from /lib64/libc.so.6
+MPT: (gdb) #0  0x00002aaaabe2b435 in waitpid () from /lib64/libc.so.6
+MPT: #1  0x00002aaaabaf0d5c in mpi_sgi_system (command=<optimized out>) at sig.c:96
+MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:280
+MPT: #3  0x00002aaaaba4a7da in print_traceback (ecode=-1) at abort.c:192
+MPT: #4  0x00002aaaaba4a8f8 in PMPI_Abort (comm=<optimized out>, errorcode=-1)
+MPT:     at abort.c:61
+MPT: #5  0x000000000040f6c1 in POSIX_Xfer (access=0, file=<optimized out>, 
+MPT:     buffer=<optimized out>, length=4194304, param=0x1733030)
+MPT:     at aiori-POSIX.c:335
+MPT: #6  0x0000000000408a6a in WriteOrRead (test=0x1733030, fd=0x17385d0, access=0)
+MPT:     at ior.c:2557
+MPT: #7  0x000000000040a000 in TestIoSys (test=<optimized out>) at ior.c:2041
+MPT: #8  main (argc=6, argv=0x7fffffffcbb8) at ior.c:141
+MPT: (gdb) A debugging session is active.
+MPT: 
+MPT: 	Inferior 1 [process 374873] will be detached.
+MPT: 
+MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+MPT: Detaching from program: /proc/374873/exe, process 374873
+
+MPT: -----stack traceback ends-----
+MPT: MPI_COMM_WORLD rank 6 has terminated without calling MPI_Finalize()
+	aborting job
+Commencing write performance test: Wed Aug 12 11:58:29 2015
+Commencing read performance test: Wed Aug 12 12:18:45 2015
+Commencing write performance test: Wed Aug 12 12:38:26 2015
+MPT: Global rank 0 is aborting with error code -1.
+     Process ID: 32521, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: MPI_COMM_WORLD rank 3 has terminated without calling MPI_Finalize()
+	aborting job
+Commencing write performance test: Wed Aug 12 12:48:24 2015
+Commencing read performance test: Wed Aug 12 12:56:02 2015
+Commencing write performance test: Wed Aug 12 13:01:21 2015
+Commencing read performance test: Wed Aug 12 13:08:34 2015
+Commencing write performance test: Wed Aug 12 13:10:07 2015
+Commencing read performance test: Wed Aug 12 13:13:32 2015
+Commencing write performance test: Wed Aug 12 13:14:28 2015
+Commencing read performance test: Wed Aug 12 13:17:04 2015

@@ -1,0 +1,230 @@
+Cannot open display "default display"
+/opt/torque/home/mom_priv/jobs/641317.cosmos.private.damtp.cam.ac.uk.SC: line 28: pushd: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC/NW.SHF: No such file or directory
+MPT: Global rank 13 is aborting with error code -1.
+     Process ID: 351661, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: Attaching to program: /proc/351661/exe, process 351661
+MPT: Try: zypper install -C "debuginfo(build-id)=bf68e74bb76519b8748d888d18b5d3b2c0b58593"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=d4191084441e39a7b480fc4b41f67083812e9811"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=4aee0c3923838575483ebd16be6db85ecb6f0b75"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=32c1c7a7a20b54ac3af6b2f436b3375ffeb12f0b"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=3b149eccd897f1f37dce50ad22614043eba757a2"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=91334fd8105f0b62c0bdbbec14b45a9fd043f4c3"
+MPT: (no debugging symbols found)...done.
+MPT: [Thread debugging using libthread_db enabled]
+MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+MPT: Try: zypper install -C "debuginfo(build-id)=682e4f7a27ee294a58f17249a0717861db546f2d"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=a95c0ce9f9752baf052d3b55b3b8ce19f662d2eb"
+MPT: (no debugging symbols found)...done.
+MPT: 0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: (gdb) #0  0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: #1  0x00002aaaabaefd5c in mpi_sgi_system (command=<optimized out>) at sig.c:96
+MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:280
+MPT: #3  0x00002aaaaba497da in print_traceback (ecode=-1) at abort.c:192
+MPT: #4  0x00002aaaaba498f8 in PMPI_Abort (comm=<optimized out>, errorcode=-1)
+MPT:     at abort.c:61
+MPT: #5  0x000000000040e868 in ReadConfigScript (scriptName=<optimized out>)
+MPT:     at parse_options.c:354
+MPT: #6  0x000000000040ec3b in ParseCommandLine (argc=6, argv=0x7fffffffc9f8)
+MPT:     at parse_options.c:467
+MPT: #7  0x0000000000408f98 in SetupTests (argv=<optimized out>, 
+MPT:     argc=<optimized out>) at ior.c:1316
+MPT: #8  main (argc=6, argv=0x7fffffffc9f8) at ior.c:121
+MPT: (gdb) A debugging session is active.
+MPT: 
+MPT: 	Inferior 1 [process 351661] will be detached.
+MPT: 
+MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+MPT: Detaching from program: /proc/351661/exe, process 351661
+MPT: MPI_COMM_WORLD rank 12 has terminated without calling MPI_Finalize()
+	aborting job
+MPT: Global rank 0 is aborting with error code -1.
+     Process ID: 351694, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: Attaching to program: /proc/351694/exe, process 351694
+MPT: Try: zypper install -C "debuginfo(build-id)=bf68e74bb76519b8748d888d18b5d3b2c0b58593"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=d4191084441e39a7b480fc4b41f67083812e9811"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=4aee0c3923838575483ebd16be6db85ecb6f0b75"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=32c1c7a7a20b54ac3af6b2f436b3375ffeb12f0b"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=3b149eccd897f1f37dce50ad22614043eba757a2"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=91334fd8105f0b62c0bdbbec14b45a9fd043f4c3"
+MPT: (no debugging symbols found)...done.
+MPT: [Thread debugging using libthread_db enabled]
+MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+MPT: Try: zypper install -C "debuginfo(build-id)=682e4f7a27ee294a58f17249a0717861db546f2d"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=a95c0ce9f9752baf052d3b55b3b8ce19f662d2eb"
+MPT: (no debugging symbols found)...done.
+MPT: 0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: (gdb) #0  0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: #1  0x00002aaaabaefd5c in mpi_sgi_system (command=<optimized out>) at sig.c:96
+MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:280
+MPT: #3  0x00002aaaaba497da in print_traceback (ecode=-1) at abort.c:192
+MPT: #4  0x00002aaaaba498f8 in PMPI_Abort (comm=<optimized out>, errorcode=-1)
+MPT:     at abort.c:61
+MPT: #5  0x000000000040e868 in ReadConfigScript (scriptName=<optimized out>)
+MPT:     at parse_options.c:354
+MPT: #6  0x000000000040ec3b in ParseCommandLine (argc=6, argv=0x7fffffffc9f8)
+MPT:     at parse_options.c:467
+MPT: #7  0x0000000000408f98 in SetupTests (argv=<optimized out>, 
+MPT:     argc=<optimized out>) at ior.c:1316
+MPT: #8  main (argc=6, argv=0x7fffffffc9f8) at ior.c:121
+MPT: (gdb) A debugging session is active.
+MPT: 
+MPT: 	Inferior 1 [process 351694] will be detached.
+MPT: 
+MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+MPT: Detaching from program: /proc/351694/exe, process 351694
+MPT: MPI_COMM_WORLD rank 5 has terminated without calling MPI_Finalize()
+	aborting job
+MPT: Global rank 3 is aborting with error code -1.
+     Process ID: 351735, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: Attaching to program: /proc/351735/exe, process 351735
+MPT: Try: zypper install -C "debuginfo(build-id)=bf68e74bb76519b8748d888d18b5d3b2c0b58593"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=d4191084441e39a7b480fc4b41f67083812e9811"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=4aee0c3923838575483ebd16be6db85ecb6f0b75"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=32c1c7a7a20b54ac3af6b2f436b3375ffeb12f0b"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=3b149eccd897f1f37dce50ad22614043eba757a2"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=91334fd8105f0b62c0bdbbec14b45a9fd043f4c3"
+MPT: (no debugging symbols found)...done.
+MPT: [Thread debugging using libthread_db enabled]
+MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+MPT: Try: zypper install -C "debuginfo(build-id)=682e4f7a27ee294a58f17249a0717861db546f2d"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=a95c0ce9f9752baf052d3b55b3b8ce19f662d2eb"
+MPT: (no debugging symbols found)...done.
+MPT: 0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: (gdb) #0  0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: #1  0x00002aaaabaefd5c in mpi_sgi_system (command=<optimized out>) at sig.c:96
+MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:280
+MPT: #3  0x00002aaaaba497da in print_traceback (ecode=-1) at abort.c:192
+MPT: #4  0x00002aaaaba498f8 in PMPI_Abort (comm=<optimized out>, errorcode=-1)
+MPT:     at abort.c:61
+MPT: #5  0x000000000040e868 in ReadConfigScript (scriptName=<optimized out>)
+MPT:     at parse_options.c:354
+MPT: #6  0x000000000040ec3b in ParseCommandLine (argc=6, argv=0x7fffffffc9f8)
+MPT:     at parse_options.c:467
+MPT: #7  0x0000000000408f98 in SetupTests (argv=<optimized out>, 
+MPT:     argc=<optimized out>) at ior.c:1316
+MPT: #8  main (argc=6, argv=0x7fffffffc9f8) at ior.c:121
+MPT: (gdb) A debugging session is active.
+MPT: 
+MPT: 	Inferior 1 [process 351735] will be detached.
+MPT: 
+MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+MPT: Detaching from program: /proc/351735/exe, process 351735
+MPT: MPI_COMM_WORLD rank 1 has terminated without calling MPI_Finalize()
+	aborting job
+MPT: Global rank 0 is aborting with error code -1.
+     Process ID: 351766, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: Attaching to program: /proc/351766/exe, process 351766
+MPT: Try: zypper install -C "debuginfo(build-id)=bf68e74bb76519b8748d888d18b5d3b2c0b58593"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=d4191084441e39a7b480fc4b41f67083812e9811"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=4aee0c3923838575483ebd16be6db85ecb6f0b75"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=32c1c7a7a20b54ac3af6b2f436b3375ffeb12f0b"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=3b149eccd897f1f37dce50ad22614043eba757a2"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=91334fd8105f0b62c0bdbbec14b45a9fd043f4c3"
+MPT: (no debugging symbols found)...done.
+MPT: [Thread debugging using libthread_db enabled]
+MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+MPT: Try: zypper install -C "debuginfo(build-id)=682e4f7a27ee294a58f17249a0717861db546f2d"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=a95c0ce9f9752baf052d3b55b3b8ce19f662d2eb"
+MPT: (no debugging symbols found)...done.
+MPT: 0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: (gdb) #0  0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: #1  0x00002aaaabaefd5c in mpi_sgi_system (command=<optimized out>) at sig.c:96
+MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:280
+MPT: #3  0x00002aaaaba497da in print_traceback (ecode=-1) at abort.c:192
+MPT: #4  0x00002aaaaba498f8 in PMPI_Abort (comm=<optimized out>, errorcode=-1)
+MPT:     at abort.c:61
+MPT: #5  0x000000000040e868 in ReadConfigScript (scriptName=<optimized out>)
+MPT:     at parse_options.c:354
+MPT: #6  0x000000000040ec3b in ParseCommandLine (argc=6, argv=0x7fffffffc9f8)
+MPT:     at parse_options.c:467
+MPT: #7  0x0000000000408f98 in SetupTests (argv=<optimized out>, 
+MPT:     argc=<optimized out>) at ior.c:1316
+MPT: #8  main (argc=6, argv=0x7fffffffc9f8) at ior.c:121
+MPT: (gdb) A debugging session is active.
+MPT: 
+MPT: 	Inferior 1 [process 351766] will be detached.
+MPT: 
+MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+MPT: Detaching from program: /proc/351766/exe, process 351766
+MPT: MPI_COMM_WORLD rank 1 has terminated without calling MPI_Finalize()
+	aborting job
+MPT: Global rank 0 is aborting with error code -1.
+     Process ID: 351798, Host: cosmos, Program: /fast/space/projects/dr002/dc-kash1/ior/bin/ior
+
+MPT: --------stack traceback-------
+MPT: Attaching to program: /proc/351798/exe, process 351798
+MPT: Try: zypper install -C "debuginfo(build-id)=bf68e74bb76519b8748d888d18b5d3b2c0b58593"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=d4191084441e39a7b480fc4b41f67083812e9811"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=4aee0c3923838575483ebd16be6db85ecb6f0b75"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=32c1c7a7a20b54ac3af6b2f436b3375ffeb12f0b"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=3b149eccd897f1f37dce50ad22614043eba757a2"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=91334fd8105f0b62c0bdbbec14b45a9fd043f4c3"
+MPT: (no debugging symbols found)...done.
+MPT: [Thread debugging using libthread_db enabled]
+MPT: Using host libthread_db library "/lib64/libthread_db.so.1".
+MPT: Try: zypper install -C "debuginfo(build-id)=682e4f7a27ee294a58f17249a0717861db546f2d"
+MPT: (no debugging symbols found)...done.
+MPT: Try: zypper install -C "debuginfo(build-id)=a95c0ce9f9752baf052d3b55b3b8ce19f662d2eb"
+MPT: (no debugging symbols found)...done.
+MPT: 0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: (gdb) #0  0x00002aaaabe2a435 in waitpid () from /lib64/libc.so.6
+MPT: #1  0x00002aaaabaefd5c in mpi_sgi_system (command=<optimized out>) at sig.c:96
+MPT: #2  MPI_SGI_stacktraceback (header=<optimized out>) at sig.c:280
+MPT: #3  0x00002aaaaba497da in print_traceback (ecode=-1) at abort.c:192
+MPT: #4  0x00002aaaaba498f8 in PMPI_Abort (comm=<optimized out>, errorcode=-1)
+MPT:     at abort.c:61
+MPT: #5  0x000000000040e868 in ReadConfigScript (scriptName=<optimized out>)
+MPT:     at parse_options.c:354
+MPT: #6  0x000000000040ec3b in ParseCommandLine (argc=6, argv=0x7fffffffc9f8)
+MPT:     at parse_options.c:467
+MPT: #7  0x0000000000408f98 in SetupTests (argv=<optimized out>, 
+MPT:     argc=<optimized out>) at ior.c:1316
+MPT: #8  main (argc=6, argv=0x7fffffffc9f8) at ior.c:121
+MPT: (gdb) A debugging session is active.
+MPT: 
+MPT: 	Inferior 1 [process 351798] will be detached.
+MPT: 
+MPT: Quit anyway? (y or n) [answered Y; input not from terminal]
+MPT: Detaching from program: /proc/351798/exe, process 351798
+
+MPT: -----stack traceback ends-----
+MPT: MPI_COMM_WORLD rank 0 has terminated without calling MPI_Finalize()
+	aborting job
+/opt/torque/home/mom_priv/jobs/641317.cosmos.private.damtp.cam.ac.uk.SC: line 39: popd: directory stack empty
