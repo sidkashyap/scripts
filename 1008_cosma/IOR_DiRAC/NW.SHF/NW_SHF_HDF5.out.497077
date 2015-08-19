@@ -1,0 +1,128 @@
+20150810123026
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NW.SHF /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NW.SHF 
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Mon Aug 10 12:30:27 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16m -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NW.SHF/con.ior
+Machine: Linux m5413
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Mon Aug 10 12:30:27 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NW.SHF
+FS: 2435.9 TiB   Used FS: 82.2%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 1
+Summary:
+	api                = HDF5-1.8.15 (Serial)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NW.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 MiB
+	aggregate filesize = 16 MiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     419.42     16384      4096       0.005206   0.031517   0.001380   0.038148   0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      1258.35    16384      4096       0.000936   0.011563   0.000165   0.012715   0   
+remove    -          -          -          -          -          -          0.000579   0   
+
+Max Write: 419.42 MiB/sec (439.79 MB/sec)
+Max Read:  1258.35 MiB/sec (1319.47 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         419.42     419.42     419.42       0.00    0.03815 0 1 1 1 0 0 1 0 0 1 16777216 4194304 16777216 HDF5 0
+read         1258.35    1258.35    1258.35       0.00    0.01272 0 1 1 1 0 0 1 0 0 1 16777216 4194304 16777216 HDF5 0
+
+Finished: Mon Aug 10 12:30:47 2015
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NW.SHF 
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5413>
+Subject: Job 497077: <NW_SHF_HDF5> Done
+
+Job <NW_SHF_HDF5> was submitted from host <cosma-a> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <m5413>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC/NW.SHF> was used as the working directory.
+Started at Mon Aug 10 12:30:20 2015
+Results reported at Mon Aug 10 12:30:47 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 1
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NW_SHF_HDF5
+#BSUB -o NW_SHF_HDF5.out.%J
+#BSUB -e NW_SHF_HDF5.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 00:10
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NW.SHF"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/con.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+setenv HDF5_DISABLE_VERSION_CHECK 1
+
+set numNodes= ( 1 )
+set blockSize= ( 16 )
+
+foreach test (`seq 1`)
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]m -f $IOR_SCRIPT
+end
+popd
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :      0.54 sec.
+    Max Memory :         2 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NW_SHF_HDF5.err.497077> for stderr output of this job.
+

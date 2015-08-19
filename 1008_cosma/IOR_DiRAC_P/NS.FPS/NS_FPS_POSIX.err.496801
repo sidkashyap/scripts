@@ -1,0 +1,17 @@
+mpirun: 	mpirun [-help] [-version]
+		-prun|-srun <prun-or-srun-options> <program> [<args>]
+mpirun: 	mpirun [-help] [-version] [-stdio=<options>]
+		      [-np #] [-hostlist <quoted-list-of-hosts>]
+		      [-hostfile <filename-of-hosts> | -machinefile <filename-of-hosts>]
+		      [-lsb_hosts] [-lsb_mcpu_hosts] [-lsf]
+		      <program> [<args>]
+mpirun: 	mpirun [-help] [-version] [-stdio=<options>]
+		      -f <appfile> [-- [<extra_args>]]
+mpirun: Internal Error: Bad argument to mpirun.  -vvv
+Commencing write performance test: Fri Aug  7 12:59:45 2015
+Commencing read performance test: Fri Aug  7 13:22:37 2015
+Commencing write performance test: Fri Aug  7 13:43:57 2015
+Commencing read performance test: Fri Aug  7 14:28:56 2015
+Commencing write performance test: Fri Aug  7 15:11:40 2015
+Commencing read performance test: Fri Aug  7 16:09:34 2015
+Commencing write performance test: Fri Aug  7 17:20:44 2015

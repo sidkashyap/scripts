@@ -1,4 +1,4 @@
-20150806222658
+i20150806222658
 /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NW.SHF /nfs/home/users/dc-kash1
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O
 
@@ -40,7 +40,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write           -nan       -nan       -nan       -nan 5419.65580 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+write           24.18        -nan       -nan       -nan 5419.65580 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
 read            -nan       -nan       -nan       -nan    0.00000 0 16 16 2 0 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
 
 Finished: Fri Aug  7 01:27:54 2015
@@ -84,7 +84,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
-write            inf      28.68        inf       -nan 2285.10769 0 8 8 2 0 0 1 0 0 1 17179869184 4194304 137438953472 HDF5 0
+write            28.68      28.68        inf       -nan 2285.10769 0 8 8 2 0 0 1 0 0 1 17179869184 4194304 137438953472 HDF5 0
 read             inf        inf        inf       -nan    0.00000 0 8 8 2 0 0 1 0 0 1 17179869184 4194304 137438953472 HDF5 0
 
 Finished: Fri Aug  7 02:44:15 2015
@@ -141,7 +141,7 @@ Max Read:  inf MiB/sec (inf MB/sec)
 Summary of all tests:
 Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
 write          40.72      32.78      36.75       3.97 1804.46202 0 4 4 2 0 0 1 0 0 1 17179869184 4194304 68719476736 HDF5 0
-read             inf     242.18        inf       -nan  135.30193 0 4 4 2 0 0 1 0 0 1 17179869184 4194304 68719476736 HDF5 0
+read           242.18     242.18        inf       -nan  135.30193 0 4 4 2 0 0 1 0 0 1 17179869184 4194304 68719476736 HDF5 0
 
 Finished: Fri Aug  7 03:49:24 2015
 IOR-3.0.1: MPI Coordinated Test of Parallel I/O

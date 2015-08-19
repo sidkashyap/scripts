@@ -1,0 +1,270 @@
+--------------------------------------------------------------------------------
+*** skashyap   Job: 3068576.sdb   started: 06/08/15 08:47:36   host: mom1 ***
+*** skashyap   Job: 3068576.sdb   started: 06/08/15 08:47:36   host: mom1 ***
+*** skashyap   Job: 3068576.sdb   started: 06/08/15 08:47:36   host: mom1 ***
+*** skashyap   Job: 3068576.sdb   started: 06/08/15 08:47:36   host: mom1 ***
+
+--------------------------------------------------------------------------------
+20150806084737
+/work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS /home4/d63/d63/skashyap
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 08:47:39 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 16g -f /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/con.ior
+Machine: Linux nid00381
+Start time skew across all tasks: 0.06 sec
+
+Test 0 started: Thu Aug  6 08:47:39 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS
+FS: 1344.2 TiB   Used FS: 27.5%   Inodes: 1890.6 Mi   Used Inodes: 5.8%
+Participating tasks: 16
+Summary:
+	api                = HDF5-1.8.13 (Parallel)
+	test filename      = /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/iorTest
+	access             = file-per-process, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     5329       16777216   4096       0.013229   48.33      22.09      49.19      0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      93764      16777216   4096       0.004971   2.79       0.320102   2.80       0   
+remove    -          -          -          -          -          -          6.77       0   
+
+Max Write: 5329.39 MiB/sec (5588.27 MB/sec)
+Max Read:  93764.18 MiB/sec (98318.86 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        5329.39    5329.39    5329.39       0.00   49.18840 0 16 1 1 1 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+read        93764.18   93764.18   93764.18       0.00    2.79578 0 16 1 1 1 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+
+Finished: Thu Aug  6 08:48:57 2015
+Application 16689946 resources: utime ~489s, stime ~503s, Rss ~36036, inblocks ~537023254, outblocks ~537246532
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 08:48:59 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 32g -f /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/con.ior
+Machine: Linux nid00381
+Start time skew across all tasks: 0.05 sec
+
+Test 0 started: Thu Aug  6 08:48:59 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS
+FS: 1344.2 TiB   Used FS: 27.5%   Inodes: 1890.6 Mi   Used Inodes: 5.8%
+Participating tasks: 8
+Summary:
+	api                = HDF5-1.8.13 (Parallel)
+	test filename      = /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/iorTest
+	access             = file-per-process, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     1450.52    33554432   4096       0.005135   177.06     122.04     180.72     0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      42647      33554432   4096       0.004313   6.14       0.501800   6.15       0   
+remove    -          -          -          -          -          -          14.28      0   
+
+Max Write: 1450.52 MiB/sec (1520.98 MB/sec)
+Max Read:  42647.47 MiB/sec (44719.12 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1450.52    1450.52    1450.52       0.00  180.72460 0 8 1 1 1 0 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+read        42647.47   42647.47   42647.47       0.00    6.14676 0 8 1 1 1 0 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+
+Finished: Thu Aug  6 08:52:40 2015
+Application 16689952 resources: utime ~730s, stime ~549s, Rss ~57368, inblocks ~536946990, outblocks ~537058724
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 08:52:42 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 64g -f /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/con.ior
+Machine: Linux nid00381
+Start time skew across all tasks: 0.02 sec
+
+Test 0 started: Thu Aug  6 08:52:42 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS
+FS: 1344.2 TiB   Used FS: 27.6%   Inodes: 1890.6 Mi   Used Inodes: 5.8%
+Participating tasks: 4
+Summary:
+	api                = HDF5-1.8.13 (Parallel)
+	test filename      = /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/iorTest
+	access             = file-per-process, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 64 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     1628.40    67108864   4096       0.004647   160.52     37.45      160.98     0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      234.89     67108864   4096       0.007915   1116.03    362.78     1116.03    0   
+remove    -          -          -          -          -          -          22.44      0   
+
+Max Write: 1628.40 MiB/sec (1707.50 MB/sec)
+Max Read:  234.89 MiB/sec (246.30 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1628.40    1628.40    1628.40       0.00  160.98238 0 4 1 1 1 0 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
+read          234.89     234.89     234.89       0.00 1116.03106 0 4 1 1 1 0 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
+
+Finished: Thu Aug  6 09:14:41 2015
+Application 16689968 resources: utime ~1076s, stime ~801s, Rss ~100024, inblocks ~536908858, outblocks ~536964820
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 09:14:43 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 128g -f /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/con.ior
+Machine: Linux nid00381
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 09:14:43 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS
+FS: 1344.2 TiB   Used FS: 27.6%   Inodes: 1890.6 Mi   Used Inodes: 5.8%
+Participating tasks: 2
+Summary:
+	api                = HDF5-1.8.13 (Parallel)
+	test filename      = /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/iorTest
+	access             = file-per-process, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 128 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     968.89     134217728  4096       0.020403   270.52     4.22       270.56     0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      542.38     134217728  4096       0.015928   483.32     31.87      483.33     0   
+remove    -          -          -          -          -          -          26.30      0   
+
+Max Write: 968.89 MiB/sec (1015.95 MB/sec)
+Max Read:  542.38 MiB/sec (568.72 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         968.89     968.89     968.89       0.00  270.56186 0 2 1 1 1 0 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
+read          542.38     542.38     542.38       0.00  483.32510 0 2 1 1 1 0 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
+
+Finished: Thu Aug  6 09:28:03 2015
+Application 16690021 resources: utime ~59s, stime ~1010s, Rss ~184356, inblocks ~536889792, outblocks ~536917868
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug  6 09:28:05 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 256g -f /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/con.ior
+Machine: Linux nid00381
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug  6 09:28:05 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS
+FS: 1344.2 TiB   Used FS: 27.6%   Inodes: 1890.6 Mi   Used Inodes: 5.8%
+Participating tasks: 1
+Summary:
+	api                = HDF5-1.8.13 (Parallel)
+	test filename      = /work/d63/d63/shared/IOR_DiRAC_HDF5/NS.FPS/iorTest
+	access             = file-per-process, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 256 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     475.42     268435456  4096       0.003960   550.63     0.765876   551.40     0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      250.39     268435456  4096       0.003357   1046.95    0.000636   1046.96    0   
+remove    -          -          -          -          -          -          28.73      0   
+
+Max Write: 475.42 MiB/sec (498.51 MB/sec)
+Max Read:  250.39 MiB/sec (262.55 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         475.42     475.42     475.42       0.00  551.39865 0 1 1 1 1 0 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
+read          250.39     250.39     250.39       0.00 1046.95865 0 1 1 1 1 0 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
+
+Finished: Thu Aug  6 09:55:32 2015
+Application 16690055 resources: utime ~3s, stime ~1044s, Rss ~349880, inblocks ~536880244, outblocks ~536894392
+/home4/d63/d63/skashyap
+--------------------------------------------------------------------------------
+
+Resources requested: ncpus=384,place=free,walltime=05:30:00
+Resources allocated: cpupercent=0,cput=00:00:02,mem=6824kb,ncpus=384,vmem=142748kb,walltime=01:07:57
+
+*** skashyap   Job: 3068576.sdb   ended: 06/08/15 09:55:33   queue: standard ***
+*** skashyap   Job: 3068576.sdb   ended: 06/08/15 09:55:33   queue: standard ***
+*** skashyap   Job: 3068576.sdb   ended: 06/08/15 09:55:33   queue: standard ***
+*** skashyap   Job: 3068576.sdb   ended: 06/08/15 09:55:33   queue: standard ***
+--------------------------------------------------------------------------------

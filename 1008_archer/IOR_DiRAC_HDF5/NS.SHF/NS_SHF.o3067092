@@ -1,0 +1,49 @@
+--------------------------------------------------------------------------------
+*** skashyap   Job: 3067092.sdb   started: 05/08/15 09:21:19   host: mom2 ***
+*** skashyap   Job: 3067092.sdb   started: 05/08/15 09:21:19   host: mom2 ***
+*** skashyap   Job: 3067092.sdb   started: 05/08/15 09:21:19   host: mom2 ***
+*** skashyap   Job: 3067092.sdb   started: 05/08/15 09:21:19   host: mom2 ***
+
+--------------------------------------------------------------------------------
+20150805092120
+/work/d63/d63/shared/IOR_DiRAC/NS.SHF /home4/d63/d63/skashyap
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Aug  5 09:21:22 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 256g -f /work/d63/d63/shared/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux nid02899
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug  5 09:21:22 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NS.SHF/testDir
+FS: 1344.2 TiB   Used FS: 27.4%   Inodes: 1890.6 Mi   Used Inodes: 5.9%
+Participating tasks: 1
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NS.SHF/testDir/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 256 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+Application 16684994 exit codes: 143
+Application 16684994 resources: utime ~0s, stime ~102s, Rss ~8352, inblocks ~280, outblocks ~407978528
+--------------------------------------------------------------------------------
+
+Resources requested: ncpus=192,place=free,walltime=03:30:00
+Resources allocated: cpupercent=0,cput=00:00:00,mem=6556kb,ncpus=192,vmem=76904kb,walltime=03:30:31
+
+*** skashyap   Job: 3067092.sdb   ended: 05/08/15 12:52:01   queue: standard ***
+*** skashyap   Job: 3067092.sdb   ended: 05/08/15 12:52:01   queue: standard ***
+*** skashyap   Job: 3067092.sdb   ended: 05/08/15 12:52:01   queue: standard ***
+*** skashyap   Job: 3067092.sdb   ended: 05/08/15 12:52:01   queue: standard ***
+--------------------------------------------------------------------------------

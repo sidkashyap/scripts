@@ -1,0 +1,13 @@
+mpirun: 	mpirun [-help] [-version]
+		-prun|-srun <prun-or-srun-options> <program> [<args>]
+mpirun: 	mpirun [-help] [-version] [-stdio=<options>]
+		      [-np #] [-hostlist <quoted-list-of-hosts>]
+		      [-hostfile <filename-of-hosts> | -machinefile <filename-of-hosts>]
+		      [-lsb_hosts] [-lsb_mcpu_hosts] [-lsf]
+		      <program> [<args>]
+mpirun: 	mpirun [-help] [-version] [-stdio=<options>]
+		      -f <appfile> [-- [<extra_args>]]
+mpirun: Internal Error: Bad argument to mpirun.  -vvv
+MPI Application rank 0 exited before MPI_Finalize() with status 13
+MPI Application rank 0 exited before MPI_Finalize() with status 13
+MPI Application rank 0 exited before MPI_Finalize() with status 13

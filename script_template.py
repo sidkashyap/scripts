@@ -129,9 +129,11 @@ def processFile(file_contents):
 
 
            
-            if(read[IOR_Summary.Max]=="inf"):
+            if("inf" in read[IOR_Summary.Max] or "nan" in read[IOR_Summary.Max] ):
+                print "here "+read[IOR_Summary.Max]
                 read[IOR_Summary.Max]= 0
-            if(write[IOR_Summary.Max]=="inf"):
+            if("inf" in write[IOR_Summary.Max] or "nan" in write[IOR_Summary.Max]):
+                print "here "+write[IOR_Summary.Max]
                 write[IOR_Summary.Max]= 0
 
             readMax=float(read[IOR_Summary.Max])
@@ -199,7 +201,7 @@ axs.set_ylabel('Max Bandwidth, MiB/s')
 axs.set_xlabel('Number of Nodes')
 
 
-plt.title("cosmos2\n"+chartTitle, fontsize=10, y=0.80)
+plt.title("Archer\n"+chartTitle, fontsize=10, y=0.80)
 axs.set_xticks(np.log2(read_nodes)+0.1)
 axs.set_xticklabels(read_nodes)
 axs.legend(API)

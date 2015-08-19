@@ -1,0 +1,48 @@
+#!/bin/tcsh
+
+  
+echo "1"
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NS.FPS"
+
+echo "2"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+
+
+echo "3"
+
+set IOR_SCRIPT="$TARGET/con.ior"
+
+
+echo "4"
+
+date '+%Y%m%d%H%M%S'
+
+echo "5"
+pushd $TARGET
+
+echo "6"
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+
+echo "7"
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+
+echo "8"
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+echo "9"
+set POSIX_DISABLE_VERSION_CHECK=1
+
+echo "10"
+set numNodes= ( 16 8 4 2 1 )
+echo "11"
+set blockSize=( 16 32 64 128 256 )
+echo "12"
+foreach test (`seq 5`)
+    echo "$test 13"
+    @ test= $test - 1
+    #mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+

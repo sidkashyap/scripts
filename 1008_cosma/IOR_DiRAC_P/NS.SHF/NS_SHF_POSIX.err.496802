@@ -1,0 +1,11 @@
+Commencing write performance test: Fri Aug  7 20:45:27 2015
+Commencing read performance test: Fri Aug  7 21:31:05 2015
+Commencing write performance test: Fri Aug  7 22:06:34 2015
+Commencing read performance test: Fri Aug  7 22:40:30 2015
+Commencing write performance test: Fri Aug  7 23:19:03 2015
+Commencing read performance test: Fri Aug  7 23:48:08 2015
+Commencing write performance test: Sat Aug  8 00:54:58 2015
+Commencing read performance test: Sat Aug  8 01:48:30 2015
+Commencing write performance test: Sat Aug  8 04:03:35 2015
+User defined signal 2
+MPI Application rank 0 killed before MPI_Finalize() with signal 12

@@ -1,0 +1,51 @@
+--------------------------------------------------------------------------------
+*** skashyap   Job: 2996795.sdb   started: 04/07/15 01:43:01   host: mom1 ***
+*** skashyap   Job: 2996795.sdb   started: 04/07/15 01:43:01   host: mom1 ***
+*** skashyap   Job: 2996795.sdb   started: 04/07/15 01:43:01   host: mom1 ***
+*** skashyap   Job: 2996795.sdb   started: 04/07/15 01:43:01   host: mom1 ***
+
+--------------------------------------------------------------------------------
+Hello, [1;34mskashyap[0m. today is, Sat Jul  4 01:43:02 BST 2015
+[0;34mSysinfo: 01:43am  up 9 days 10:33,  0 users,  load average: 10.23, 10.31, 10.50
+[0m20150704014302
+/work/d63/d63/shared/IOR_DiRAC/NS.SHF /home4/d63/d63/skashyap
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Sat Jul  4 01:43:04 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 128g -f /work/d63/d63/shared/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux nid00326
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Sat Jul  4 01:43:04 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NS.SHF/testDir
+FS: 1344.2 TiB   Used FS: 26.2%   Inodes: 1890.6 Mi   Used Inodes: 5.0%
+Participating tasks: 1
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NS.SHF/testDir/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 128 GiB
+	aggregate filesize = 128 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+Application 16095920 exit codes: 143
+Application 16095920 resources: utime ~0s, stime ~42s, Rss ~8092, inblocks ~279, outblocks ~136921632
+--------------------------------------------------------------------------------
+
+Resources requested: ncpus=192,place=free,walltime=01:30:00
+Resources allocated: cpupercent=0,cput=00:00:00,mem=6620kb,ncpus=192,vmem=77968kb,walltime=01:30:23
+
+*** skashyap   Job: 2996795.sdb   ended: 04/07/15 03:13:35   queue: standard ***
+*** skashyap   Job: 2996795.sdb   ended: 04/07/15 03:13:35   queue: standard ***
+*** skashyap   Job: 2996795.sdb   ended: 04/07/15 03:13:35   queue: standard ***
+*** skashyap   Job: 2996795.sdb   ended: 04/07/15 03:13:35   queue: standard ***
+--------------------------------------------------------------------------------

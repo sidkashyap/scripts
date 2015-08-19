@@ -1,0 +1,462 @@
+20150807211841
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF 
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 21:18:44 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5179
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 21:18:44 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.7%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 16
+Summary:
+	api                = MPIIO (version=2, subversion=2)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 16
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+write     2556.38    16777216   4096       0.018182   102.43     19.73      102.55     0   
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 16
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+read      1382.84    16777216   4096       0.000786   188.94     9.76       189.57     0   
+remove    -          -          -          -          -          -          0.019931   0   
+
+Max Write: 2556.38 MiB/sec (2680.56 MB/sec)
+Max Read:  1382.84 MiB/sec (1450.01 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        2556.38    2556.38    2556.38       0.00  102.54500 0 16 1 1 0 0 1 0 0 1 17179869184 4194304 274877906944 MPIIO 0
+read         1382.84    1382.84    1382.84       0.00  189.56907 0 16 1 1 0 0 1 0 0 1 17179869184 4194304 274877906944 MPIIO 0
+
+Finished: Fri Aug  7 21:23:56 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 21:23:58 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5179
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 21:23:58 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.8%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 8
+Summary:
+	api                = MPIIO (version=2, subversion=2)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 8
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+write     3124.33    33554432   4096       1.18       82.75      3.42       83.90      0   
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 8
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+read      1460.79    33554432   4096       0.000647   179.30     9.08       179.45     0   
+remove    -          -          -          -          -          -          0.013210   0   
+
+Max Write: 3124.33 MiB/sec (3276.10 MB/sec)
+Max Read:  1460.79 MiB/sec (1531.75 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        3124.33    3124.33    3124.33       0.00   83.90396 0 8 1 1 0 0 1 0 0 1 34359738368 4194304 274877906944 MPIIO 0
+read         1460.79    1460.79    1460.79       0.00  179.45346 0 8 1 1 0 0 1 0 0 1 34359738368 4194304 274877906944 MPIIO 0
+
+Finished: Fri Aug  7 21:28:41 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 21:28:43 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 64g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5179
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 21:28:43 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.7%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 4
+Summary:
+	api                = MPIIO (version=2, subversion=2)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 64 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 4
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+write     3337.79    67108864   4096       0.156878   78.38      2.12       78.54      0   
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 4
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+read      1704.79    67108864   4096       0.000845   153.38     1.86       153.77     0   
+remove    -          -          -          -          -          -          0.154838   0   
+
+Max Write: 3337.79 MiB/sec (3499.93 MB/sec)
+Max Read:  1704.79 MiB/sec (1787.61 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        3337.79    3337.79    3337.79       0.00   78.53821 0 4 1 1 0 0 1 0 0 1 68719476736 4194304 274877906944 MPIIO 0
+read         1704.79    1704.79    1704.79       0.00  153.76877 0 4 1 1 0 0 1 0 0 1 68719476736 4194304 274877906944 MPIIO 0
+
+Finished: Fri Aug  7 21:32:56 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 21:32:59 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 128g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5179
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 21:32:59 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.7%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 2
+Summary:
+	api                = MPIIO (version=2, subversion=2)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 128 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 2
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+write     2838.64    134217728  4096       0.022580   92.33      0.139912   92.35      0   
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 2
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+read      1303.87    134217728  4096       0.000589   200.95     6.87       201.05     0   
+remove    -          -          -          -          -          -          0.011977   0   
+
+Max Write: 2838.64 MiB/sec (2976.53 MB/sec)
+Max Read:  1303.87 MiB/sec (1367.21 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        2838.64    2838.64    2838.64       0.00   92.34851 0 2 1 1 0 0 1 0 0 1 137438953472 4194304 274877906944 MPIIO 0
+read         1303.87    1303.87    1303.87       0.00  201.05094 0 2 1 1 0 0 1 0 0 1 137438953472 4194304 274877906944 MPIIO 0
+
+Finished: Fri Aug  7 21:38:12 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 21:38:13 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 256g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/con.ior
+Machine: Linux m5179
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 21:38:13 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.7%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 1
+Summary:
+	api                = MPIIO (version=2, subversion=2)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 256 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 1
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+write     1260.51    268435456  4096       0.050583   207.91     0.000727   207.97     0   
+delaying 10 seconds . . .
+
+hints passed to MPI_File_open() {
+}
+
+hints returned from opened file {
+	cb_buffer_size = 4194304
+	romio_cb_read = automatic
+	romio_cb_write = automatic
+	cb_nodes = 1
+	romio_no_indep_rw = false
+	ind_rd_buffer_size = 4194304
+	ind_wr_buffer_size = 524288
+	romio_ds_read = automatic
+	romio_ds_write = automatic
+	cb_config_list = *:1
+}
+read      1037.72    268435456  4096       0.000430   252.60     0.000271   252.61     0   
+remove    -          -          -          -          -          -          0.005916   0   
+
+Max Write: 1260.51 MiB/sec (1321.74 MB/sec)
+Max Read:  1037.72 MiB/sec (1088.13 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1260.51    1260.51    1260.51       0.00  207.96624 0 1 1 1 0 0 1 0 0 1 274877906944 4194304 274877906944 MPIIO 0
+read         1037.72    1037.72    1037.72       0.00  252.61496 0 1 1 1 0 0 1 0 0 1 274877906944 4194304 274877906944 MPIIO 0
+
+Finished: Fri Aug  7 21:46:14 2015
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF 
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5179>
+Subject: Job 496806: <NS_SHF_MPIIO> Done
+
+Job <NS_SHF_MPIIO> was submitted from host <cosma-c> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <1*m5179>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <1*m5180>
+                            <1*m5181>
+                            <1*m5184>
+                            <1*m5189>
+                            <1*m5190>
+                            <1*m5191>
+                            <1*m5192>
+                            <1*m5193>
+                            <1*m5196>
+                            <1*m5197>
+                            <1*m5198>
+                            <1*m5199>
+                            <1*m5213>
+                            <1*m5223>
+                            <1*m5224>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF> was used as the working directory.
+Started at Fri Aug  7 21:18:36 2015
+Results reported at Fri Aug  7 21:46:15 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 16
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NS_SHF_MPIIO
+#BSUB -oo NS_SHF_MPIIO.out.%J
+#BSUB -eo NS_SHF_MPIIO.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 08:00
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC_MPIIO/NS.SHF"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/con.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+setenv HDF5_DISABLE_VERSION_CHECK 1
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 32 64 128 256 )
+
+foreach test (`seq 5`)
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1690.51 sec.
+    Max Memory :       225 MB
+    Max Swap   :      1395 MB
+
+    Max Processes  :        30
+    Max Threads    :        30
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NS_SHF_MPIIO.err.496806> for stderr output of this job.
+

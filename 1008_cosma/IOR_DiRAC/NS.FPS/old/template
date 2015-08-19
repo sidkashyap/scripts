@@ -1,0 +1,10 @@
+#BSUB -L /bin/tcsh
+#BSUB -n 32
+#BSUB -x
+#BSUB -J IMB
+#BSUB -oo out
+#BSUB -eo err
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 1:00
+

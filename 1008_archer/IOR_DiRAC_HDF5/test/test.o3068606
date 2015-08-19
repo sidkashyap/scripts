@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------
+*** skashyap   Job: 3068606.sdb   started: 05/08/15 15:42:46   host: mom1 ***
+*** skashyap   Job: 3068606.sdb   started: 05/08/15 15:42:46   host: mom1 ***
+*** skashyap   Job: 3068606.sdb   started: 05/08/15 15:42:46   host: mom1 ***
+*** skashyap   Job: 3068606.sdb   started: 05/08/15 15:42:46   host: mom1 ***
+
+--------------------------------------------------------------------------------
+20150805154247
+/work/d63/d63/shared/IOR_DiRAC_HDF5/test /home4/d63/d63/skashyap
+/home4/d63/d63/skashyap
+--------------------------------------------------------------------------------
+
+Resources requested: ncpus=24,place=free,walltime=00:10:00
+Resources allocated: cpupercent=0,cput=00:00:01,mem=0kb,ncpus=24,vmem=0kb,walltime=00:00:04
+
+*** skashyap   Job: 3068606.sdb   ended: 05/08/15 15:42:49   queue: S3058798 ***
+*** skashyap   Job: 3068606.sdb   ended: 05/08/15 15:42:49   queue: S3058798 ***
+*** skashyap   Job: 3068606.sdb   ended: 05/08/15 15:42:49   queue: S3058798 ***
+*** skashyap   Job: 3068606.sdb   ended: 05/08/15 15:42:49   queue: S3058798 ***
+--------------------------------------------------------------------------------

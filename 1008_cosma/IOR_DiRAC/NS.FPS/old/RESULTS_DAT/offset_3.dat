@@ -1,0 +1,12 @@
+# This data file contains the size of the offset in bytes 
+#   versus time for a specific file. 
+# The x axis data is time relative to the beginning of the run 
+#   where 0 is the start of the run. 
+# The y axis data is the offset in bytes for the specific file.
+# 
+# File: ./test.sh 
+# 
+# It is best to plot this data as a scatter chart with no lines 
+#   connecting the data points. 
+# 
+0.0 0.0 

@@ -1,0 +1,70 @@
+--------------------------------------------------------------------------------
+*** skashyap   Job: 3068637.sdb   started: 05/08/15 15:53:45   host: mom2 ***
+*** skashyap   Job: 3068637.sdb   started: 05/08/15 15:53:45   host: mom2 ***
+*** skashyap   Job: 3068637.sdb   started: 05/08/15 15:53:45   host: mom2 ***
+*** skashyap   Job: 3068637.sdb   started: 05/08/15 15:53:45   host: mom2 ***
+
+--------------------------------------------------------------------------------
+20150805155346
+/work/d63/d63/shared/IOR_DiRAC_HDF5/test /home4/d63/d63/skashyap
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Wed Aug  5 15:53:48 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 512m -f /work/d63/d63/shared/IOR_DiRAC_HDF5/test/con.ior
+Machine: Linux nid01944
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug  5 15:53:48 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC_HDF5/test
+FS: 1344.2 TiB   Used FS: 27.4%   Inodes: 1890.6 Mi   Used Inodes: 5.8%
+Participating tasks: 1
+Summary:
+	api                = HDF5-1.8.13 (Parallel)
+	test filename      = /work/d63/d63/shared/IOR_DiRAC_HDF5/test/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 512 MiB
+	aggregate filesize = 512 MiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     400.38     524288     4096       0.004976   0.749851   0.523949   1.28       0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      5763       524288     4096       0.004895   0.083604   0.000335   0.088845   0   
+remove    -          -          -          -          -          -          0.218272   0   
+
+Max Write: 400.38 MiB/sec (419.83 MB/sec)
+Max Read:  5762.84 MiB/sec (6042.78 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         400.38     400.38     400.38       0.00    1.27878 0 1 1 1 0 0 1 0 0 1 536870912 4194304 536870912 HDF5 0
+read         5762.84    5762.84    5762.84       0.00    0.08885 0 1 1 1 0 0 1 0 0 1 536870912 4194304 536870912 HDF5 0
+
+Finished: Wed Aug  5 15:54:09 2015
+Application 16686511 resources: utime ~0s, stime ~1s, Rss ~9284, inblocks ~1057909, outblocks ~1072056
+/home4/d63/d63/skashyap
+--------------------------------------------------------------------------------
+
+Resources requested: ncpus=24,place=free,walltime=00:10:00
+Resources allocated: cpupercent=0,cput=00:00:01,mem=6820kb,ncpus=24,vmem=77212kb,walltime=00:00:24
+
+*** skashyap   Job: 3068637.sdb   ended: 05/08/15 15:54:09   queue: S3058798 ***
+*** skashyap   Job: 3068637.sdb   ended: 05/08/15 15:54:09   queue: S3058798 ***
+*** skashyap   Job: 3068637.sdb   ended: 05/08/15 15:54:09   queue: S3058798 ***
+*** skashyap   Job: 3068637.sdb   ended: 05/08/15 15:54:09   queue: S3058798 ***
+--------------------------------------------------------------------------------
