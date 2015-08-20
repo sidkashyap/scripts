@@ -1,0 +1,2162 @@
+20150807124108
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF 
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 12:41:10 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 12:41:10 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.6%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 16
+Summary:
+	api                = HDF5-1.8.15 (Serial)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 16 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+
+hints passed to access property list {
+}
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+ior WARNING: showHints not working for HDF5.
+write     4604       16777216   4096       0.152796   55.70      7.16       56.94      0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      3729       16777216   4096       0.095517   70.11      1.90       70.30      0   
+remove    -          -          -          -          -          -          0.013601   0   
+
+Max Write: 4604.14 MiB/sec (4827.79 MB/sec)
+Max Read:  3729.13 MiB/sec (3910.28 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        4604.14    4604.14    4604.14       0.00   56.93653 0 16 1 1 0 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+read         3729.13    3729.13    3729.13       0.00   70.29622 0 16 1 1 0 0 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+
+Finished: Fri Aug  7 12:43:37 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 12:43:40 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 12:43:40 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.6%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 8
+Summary:
+	api                = HDF5-1.8.15 (Serial)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 8 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     4336       33554432   4096       0.047523   60.13      11.19      60.46      0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      3598.30    33554432   4096       0.077671   72.60      1.73       72.85      0   
+remove    -          -          -          -          -          -          0.009888   0   
+
+Max Write: 4335.72 MiB/sec (4546.33 MB/sec)
+Max Read:  3598.30 MiB/sec (3773.09 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        4335.72    4335.72    4335.72       0.00   60.46151 0 8 1 1 0 0 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+read         3598.30    3598.30    3598.30       0.00   72.85225 0 8 1 1 0 0 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+
+Finished: Fri Aug  7 12:46:13 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 12:46:16 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 64g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 12:46:16 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.6%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 4
+Summary:
+	api                = HDF5-1.8.15 (Serial)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 4 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 64 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     4776       67108864   4096       0.082086   54.56      9.93       54.89      0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      3373.42    67108864   4096       0.053343   77.57      2.11       77.71      0   
+remove    -          -          -          -          -          -          0.011652   0   
+
+Max Write: 4776.10 MiB/sec (5008.11 MB/sec)
+Max Read:  3373.42 MiB/sec (3537.29 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        4776.10    4776.10    4776.10       0.00   54.88661 0 4 1 1 0 0 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
+read         3373.42    3373.42    3373.42       0.00   77.70871 0 4 1 1 0 0 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
+
+Finished: Fri Aug  7 12:48:48 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 12:48:52 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 128g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 12:48:52 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.6%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 2
+Summary:
+	api                = HDF5-1.8.15 (Serial)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 2 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 128 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.14, library is 1.8.15
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+		   HDF5 Version: 1.8.15-patch1
+		  Configured on: Fri Jul 31 18:24:27 BST 2015
+		  Configured by: dc-kash1@cosma-c
+		 Configure mode: production
+		    Host system: x86_64-unknown-linux-gnu
+	      Uname information: Linux cosma-c 2.6.32-220.el6.x86_64 #1 SMP Tue Dec 6 19:48:22 GMT 2011 x86_64 x86_64 x86_64 GNU/Linux
+		       Byte sex: little-endian
+		      Libraries: static, shared
+	     Installation point: /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1
+
+Compiling Options:
+------------------
+               Compilation Mode: production
+                     C Compiler: /cosma/local/platform_mpi/9.1.2/bin/mpicc ( built with icc version 15.0.3 (gcc version 4.4.6 compatibility))
+                         CFLAGS: 
+                      H5_CFLAGS: -std=c99  -O3
+                      AM_CFLAGS: 
+                       CPPFLAGS: -I/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/include -I/cosma/local/gsl//c5/intel_2015/1.16/include -I/cosma/local/hdf5//c5/intel_2015/1.8.14/include -I/cosma/local/platform_mpi/9.1.2/include
+                    H5_CPPFLAGS: -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: -D_LARGEFILE64_SOURCE -D_LARGEFILE_SOURCE 
+               Shared C Library: yes
+               Static C Library: yes
+  Statically Linked Executables: no
+                        LDFLAGS: -L/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -Wl,-rpath=/cosma/local/fftw//c5/intel_2015_platform_mpi_9.1.2/2.1.5/lib -L/cosma/local/gsl//c5/intel_2015/1.16/lib -Wl,-rpath=/cosma/local/gsl//c5/intel_2015/1.16/lib -L/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -Wl,-rpath=/cosma/local/hdf5//c5/intel_2015/1.8.14/lib -L/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -Wl,-rpath=/cosma/local/platform_mpi/9.1.2/lib/linux_amd64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/lib/intel64 -L/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64 -Wl,-rpath=/cosma/local/intel/Parallel_Studio_XE_2015-update3/mkl/lib/intel64
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+ 	 	Extra libraries: -lrt -lz -ldl -lm 
+ 		       Archiver: ar
+ 		 	 Ranlib: ranlib
+ 	      Debugged Packages: 
+		    API Tracing: no
+
+Languages:
+----------
+                        Fortran: no
+
+                            C++: no
+
+Features:
+---------
+                  Parallel HDF5: yes
+             High Level library: yes
+                   Threadsafety: no
+            Default API Mapping: v18
+ With Deprecated Public Symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: 
+                     Direct VFD: no
+                        dmalloc: no
+Clear file buffers before write: yes
+           Using memory checker: no
+         Function Stack Tracing: no
+      Strict File Format Checks: no
+   Optimization Instrumentation: no
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     2772.15    134217728  4096       0.026960   94.33      3.48       94.56      0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      2410.83    134217728  4096       0.041251   108.63     2.22       108.74     0   
+remove    -          -          -          -          -          -          0.006321   0   
+
+Max Write: 2772.15 MiB/sec (2906.81 MB/sec)
+Max Read:  2410.83 MiB/sec (2527.94 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        2772.15    2772.15    2772.15       0.00   94.56337 0 2 1 1 0 0 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
+read         2410.83    2410.83    2410.83       0.00  108.73601 0 2 1 1 0 0 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
+
+Finished: Fri Aug  7 12:52:35 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Fri Aug  7 12:52:35 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 256g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/con.ior
+Machine: Linux m5001
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Fri Aug  7 12:52:35 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF
+FS: 2435.9 TiB   Used FS: 81.6%   Inodes: 1280.0 Mi   Used Inodes: 5.9%
+Participating tasks: 1
+Summary:
+	api                = HDF5-1.8.15 (Serial)
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF/iorTest
+	access             = single-shared-file, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= no tasks offsets
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 256 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     1450.45    268435456  4096       0.019182   180.71     0.001310   180.73     0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      1249.91    268435456  4096       0.000982   209.73     0.000360   209.73     0   
+remove    -          -          -          -          -          -          0.011414   0   
+
+Max Write: 1450.45 MiB/sec (1520.90 MB/sec)
+Max Read:  1249.91 MiB/sec (1310.63 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1450.45    1450.45    1450.45       0.00  180.73325 0 1 1 1 0 0 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
+read         1249.91    1249.91    1249.91       0.00  209.72963 0 1 1 1 0 0 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
+
+Finished: Fri Aug  7 12:59:26 2015
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF 
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5001>
+Subject: Job 496798: <NS_SHF_HDF5> Done
+
+Job <NS_SHF_HDF5> was submitted from host <cosma-c> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <1*m5001>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <1*m5002>
+                            <1*m5003>
+                            <1*m5010>
+                            <1*m5011>
+                            <1*m5012>
+                            <1*m5013>
+                            <1*m5014>
+                            <1*m5051>
+                            <1*m5052>
+                            <1*m5053>
+                            <1*m5054>
+                            <1*m5055>
+                            <1*m5056>
+                            <1*m5057>
+                            <1*m5058>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF> was used as the working directory.
+Started at Fri Aug  7 12:41:08 2015
+Results reported at Fri Aug  7 12:59:27 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 16
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NS_SHF_HDF5
+#BSUB -oo NS_SHF_HDF5.out.%J
+#BSUB -eo NS_SHF_HDF5.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 08:00
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC/NS.SHF"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/con.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+setenv HDF5_DISABLE_VERSION_CHECK 1
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 32 64 128 256 )
+
+foreach test (`seq 5`)
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+
+
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :   1551.40 sec.
+    Max Memory :       398 MB
+    Max Swap   :      1551 MB
+
+    Max Processes  :        30
+    Max Threads    :        30
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NS_SHF_HDF5.err.496798> for stderr output of this job.
+

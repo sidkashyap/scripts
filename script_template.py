@@ -122,7 +122,7 @@ def processFile(file_contents):
 
 
                 global chartTitle
-                chartTitle ="FilePerProcess = %d\n fileSize = %d gB \n transferSize=%d mB" % (filePP, fileSize, transferSize)
+                chartTitle ="FilePerProcess = %d\nFile Size = %dgB\nTransfer Size = %dmB" % (filePP, fileSize, transferSize)
                 flag=1
 
 
@@ -139,6 +139,9 @@ def processFile(file_contents):
             readMax=float(read[IOR_Summary.Max])
             writeMax=float(write[IOR_Summary.Max])
             NumberOfNodes=int(read[IOR_Summary.Tasks])
+
+            if(NumberOfNodes ==1 or NumberOfNodes ==2 ):
+                print "here123"
 
             
 
@@ -180,8 +183,13 @@ def plotFile(counter):
 
 width=0.1
 counter=1
+Title = ""
 for IOR_file_i in sys.argv[1:]:
 
+    if("Title" in IOR_file_i):
+        Title=IOR_file_i
+        continue
+        
 
     write_bandwidth_max=[]
     read_bandwidth_max=[] 
@@ -200,11 +208,31 @@ for IOR_file_i in sys.argv[1:]:
 axs.set_ylabel('Max Bandwidth, MiB/s')
 axs.set_xlabel('Number of Nodes')
 
+font = {'family' : 'monospace',
+        'color'  : 'black',
+        'weight' : 'normal',
+        'size'   : 12,
+        }
 
-plt.title("Archer\n"+chartTitle, fontsize=10, y=0.80)
+Title = Title.replace("Title:", "")
+
+# these are matplotlib.patch.Patch properties
+props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+
+# place a text box in upper left in axes coords
+axs.text(0.05, 0.95, chartTitle, transform=axs.transAxes, fontsize=14,
+        verticalalignment='top', bbox=props, fontdict=font)
+
+
+
+plt.text(0.5, 1.08, Title, horizontalalignment='center', family='monospace',fontsize=20,  transform = axs.transAxes)
+
+#plt.title(Title,fontsize=16,family='monospace',y=0.9)
 axs.set_xticks(np.log2(read_nodes)+0.1)
 axs.set_xticklabels(read_nodes)
-axs.legend(API)
+axs.legend(API, loc='best', bbox_to_anchor=(1, 0.5),
+          fancybox=True, shadow=True)
+
 
 
 for i in rects:

@@ -1,0 +1,259 @@
+--------------------------------------------------------------------------------
+*** skashyap   Job: 3078631.sdb   started: 10/08/15 20:56:22   host: mom5 ***
+*** skashyap   Job: 3078631.sdb   started: 10/08/15 20:56:22   host: mom5 ***
+*** skashyap   Job: 3078631.sdb   started: 10/08/15 20:56:22   host: mom5 ***
+*** skashyap   Job: 3078631.sdb   started: 10/08/15 20:56:22   host: mom5 ***
+
+--------------------------------------------------------------------------------
+20150810205623
+/work/d63/d63/shared/IOR_DiRAC/NW.SHF /home4/d63/d63/skashyap
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Mon Aug 10 20:56:24 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 16g -f /work/d63/d63/shared/IOR_DiRAC/NW.SHF/con.ior
+Machine: Linux nid00073
+Start time skew across all tasks: 0.11 sec
+
+Test 0 started: Mon Aug 10 20:56:24 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NW.SHF
+FS: 1344.2 TiB   Used FS: 27.9%   Inodes: 1890.6 Mi   Used Inodes: 6.1%
+Participating tasks: 16
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 16 (1 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     104.01     16777216   4096       0.001749   2520.30    40.64      2520.30    0   
+delaying 10 seconds . . .
+read      202.83     16777216   4096       0.007956   1292.42    183.86     1292.42    0   
+remove    -          -          -          -          -          -          0.002272   0   
+remove    -          -          -          -          -          -          0.000409   1   
+
+Max Write: 104.01 MiB/sec (109.07 MB/sec)
+Max Read:  202.83 MiB/sec (212.68 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write           -nan       -nan       -nan       -nan 1260.15233 0 16 1 2 0 1 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+read            -nan       -nan       -nan       -nan  646.20904 0 16 1 2 0 1 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+
+Finished: Mon Aug 10 22:00:17 2015
+Application 16809939 resources: utime ~2496s, stime ~328s, Rss ~12044, inblocks ~537021375, outblocks ~537246484
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Mon Aug 10 22:00:18 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 16g -f /work/d63/d63/shared/IOR_DiRAC/NW.SHF/con.ior
+Machine: Linux nid00073
+Start time skew across all tasks: 0.10 sec
+
+Test 0 started: Mon Aug 10 22:00:18 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NW.SHF
+FS: 1344.2 TiB   Used FS: 28.0%   Inodes: 1890.6 Mi   Used Inodes: 6.1%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 8 (1 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 128 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     65.10      16777216   4096       0.001339   2013.24    41.01      2013.24    0   
+delaying 10 seconds . . .
+read      105.99     16777216   4096       0.003849   1236.68    58.24      1236.68    0   
+remove    -          -          -          -          -          -          0.001928   0   
+delaying 10 seconds . . .
+write     124.81     16777216   4096       0.007633   1050.16    49.79      1050.16    1   
+remove    -          -          -          -          -          -          0.001463   1   
+
+Max Write: 124.81 MiB/sec (130.87 MB/sec)
+Max Read:  inf MiB/sec (inf MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         124.81      65.10      94.96      29.85 1531.70253 0 8 1 2 0 1 1 0 0 1 17179869184 4194304 137438953472 POSIX 0
+read             inf     105.99        inf       -nan  618.33893 0 8 1 2 0 1 1 0 0 1 17179869184 4194304 137438953472 POSIX 0
+
+Finished: Mon Aug 10 23:12:29 2015
+Application 16810368 resources: utime ~835s, stime ~238s, Rss ~12032, inblocks ~268510655, outblocks ~537058701
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Mon Aug 10 23:12:30 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 16g -f /work/d63/d63/shared/IOR_DiRAC/NW.SHF/con.ior
+Machine: Linux nid00073
+Start time skew across all tasks: 0.01 sec
+
+Test 0 started: Mon Aug 10 23:12:30 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NW.SHF
+FS: 1344.2 TiB   Used FS: 28.0%   Inodes: 1890.6 Mi   Used Inodes: 6.1%
+Participating tasks: 4
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 4 (1 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 64 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     46.07      16777216   4096       0.002020   1422.51    37.04      1422.52    0   
+delaying 10 seconds . . .
+read      112.54     16777216   4096       0.008233   582.35     11.22      582.36     0   
+remove    -          -          -          -          -          -          0.001544   0   
+delaying 10 seconds . . .
+write     98.34      16777216   4096       0.002902   666.41     19.66      666.41     1   
+delaying 10 seconds . . .
+read      138.17     16777216   4096       0.003173   474.33     5.02       474.33     1   
+remove    -          -          -          -          -          -          0.000997   1   
+
+Max Write: 98.34 MiB/sec (103.12 MB/sec)
+Max Read:  138.17 MiB/sec (144.88 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          98.34      46.07      72.21      26.14 1044.46354 0 4 1 2 0 1 1 0 0 1 17179869184 4194304 68719476736 POSIX 0
+read          138.17     112.54     125.35      12.81  528.34194 0 4 1 2 0 1 1 0 0 1 17179869184 4194304 68719476736 POSIX 0
+
+Finished: Tue Aug 11 00:05:36 2015
+Application 16810938 resources: utime ~257s, stime ~153s, Rss ~12024, inblocks ~268473023, outblocks ~268529353
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Tue Aug 11 00:05:37 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 16g -f /work/d63/d63/shared/IOR_DiRAC/NW.SHF/con.ior
+Machine: Linux nid00073
+Start time skew across all tasks: 0.01 sec
+
+Test 0 started: Tue Aug 11 00:05:37 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NW.SHF
+FS: 1344.2 TiB   Used FS: 28.0%   Inodes: 1890.6 Mi   Used Inodes: 6.2%
+Participating tasks: 2
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 2 (1 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 32 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     28.36      16777216   4096       0.001384   1155.25    0.022119   1155.25    0   
+delaying 10 seconds . . .
+read      40.78      16777216   4096       0.001160   803.54     0.334735   803.54     0   
+remove    -          -          -          -          -          -          0.001568   0   
+delaying 10 seconds . . .
+write     51.69      16777216   4096       0.001808   633.97     5.11       633.97     1   
+delaying 10 seconds . . .
+read      83.99      16777216   4096       0.003574   390.12     1.74       390.12     1   
+remove    -          -          -          -          -          -          0.001222   1   
+
+Max Write: 51.69 MiB/sec (54.20 MB/sec)
+Max Read:  83.99 MiB/sec (88.07 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          51.69      28.36      40.03      11.66  894.61300 0 2 1 2 0 1 1 0 0 1 17179869184 4194304 34359738368 POSIX 0
+read           83.99      40.78      62.39      21.61  596.83046 0 2 1 2 0 1 1 0 0 1 17179869184 4194304 34359738368 POSIX 0
+
+Finished: Tue Aug 11 00:56:00 2015
+Application 16811285 resources: utime ~48s, stime ~72s, Rss ~11036, inblocks ~134236479, outblocks ~134264679
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Tue Aug 11 00:56:02 2015
+Command line used: /work/d63/d63/skashyap/sid/ior_install/ior_intel_dyn/ior/ior_build/bin/ior -vvv -b 16g -f /work/d63/d63/shared/IOR_DiRAC/NW.SHF/con.ior
+Machine: Linux nid00073
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Tue Aug 11 00:56:02 2015
+Path: /fs3/d63/d63/shared/IOR_DiRAC/NW.SHF
+FS: 1344.2 TiB   Used FS: 27.9%   Inodes: 1890.6 Mi   Used Inodes: 6.2%
+Participating tasks: 1
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /work/d63/d63/shared/IOR_DiRAC/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 1 (1 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 16 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     21.60      16777216   4096       0.001312   758.41     0.000207   758.41     0   
+delaying 10 seconds . . .
+read      47.79      16777216   4096       0.001844   342.81     0.000307   342.81     0   
+remove    -          -          -          -          -          -          0.000818   0   
+delaying 10 seconds . . .
+write     24.67      16777216   4096       0.000305   664.19     0.007198   664.19     1   
+delaying 10 seconds . . .
+read      44.64      16777216   4096       0.001738   367.00     0.000343   367.00     1   
+remove    -          -          -          -          -          -          0.000676   1   
+
+Max Write: 24.67 MiB/sec (25.87 MB/sec)
+Max Read:  47.79 MiB/sec (50.12 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          24.67      21.60      23.14       1.53  711.30436 0 1 1 2 0 1 1 0 0 1 17179869184 4194304 17179869184 POSIX 0
+read           47.79      44.64      46.22       1.58  354.90398 0 1 1 2 0 1 1 0 0 1 17179869184 4194304 17179869184 POSIX 0
+
+Finished: Tue Aug 11 01:32:14 2015
+Application 16811639 resources: utime ~0s, stime ~36s, Rss ~5816, inblocks ~67118192, outblocks ~67132342
+/home4/d63/d63/skashyap
+--------------------------------------------------------------------------------
+
+Resources requested: ncpus=384,place=free,walltime=05:30:00
+Resources allocated: cpupercent=2,cput=00:00:03,mem=6800kb,ncpus=384,vmem=142748kb,walltime=04:35:54
+
+*** skashyap   Job: 3078631.sdb   ended: 11/08/15 01:32:15   queue: standard ***
+*** skashyap   Job: 3078631.sdb   ended: 11/08/15 01:32:15   queue: standard ***
+*** skashyap   Job: 3078631.sdb   ended: 11/08/15 01:32:15   queue: standard ***
+*** skashyap   Job: 3078631.sdb   ended: 11/08/15 01:32:15   queue: standard ***
+--------------------------------------------------------------------------------

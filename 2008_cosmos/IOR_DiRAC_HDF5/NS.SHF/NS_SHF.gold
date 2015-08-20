@@ -1,0 +1,27 @@
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          55.58      55.58      55.58       0.00 4716.75170 0 16 16 1 0 1 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+read             inf        inf        inf       -nan    0.00000 0 16 16 1 0 1 1 0 0 1 17179869184 4194304 274877906944 HDF5 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          53.44      53.44      53.44       0.00 4905.23278 0 8 8 1 0 1 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+read             inf        inf        inf       -nan    0.00000 0 8 8 1 0 1 1 0 0 1 34359738368 4194304 274877906944 HDF5 0
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write            98.32      98.32        inf       -nan 1333.15641 0 4 4 2 0 1 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
+read             204.95     204.95        inf       -nan  639.52175 0 4 4 2 0 1 1 0 0 1 68719476736 4194304 274877906944 HDF5 0
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         162.42      90.60     126.51      35.91 2253.71208 0 2 2 2 0 1 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
+read          397.19     397.19        inf       -nan  329.99817 0 2 2 2 0 1 1 0 0 1 137438953472 4194304 274877906944 HDF5 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         257.49     214.78     236.14      21.36 1119.28922 0 1 1 2 0 1 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
+read          642.63     611.24     626.93      15.69  418.39998 0 1 1 2 0 1 1 0 0 1 274877906944 4194304 274877906944 HDF5 0
+

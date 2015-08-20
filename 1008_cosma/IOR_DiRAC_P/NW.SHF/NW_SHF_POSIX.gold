@@ -1,0 +1,93 @@
+20150807211841
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5106>
+Subject: Job 496804: <NW_SHF_POSIX> Exited
+
+Job <NW_SHF_POSIX> was submitted from host <cosma-c> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <1*m5106>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <1*m5107>
+                            <1*m5108>
+                            <1*m5109>
+                            <1*m5110>
+                            <1*m5116>
+                            <1*m5117>
+                            <1*m5118>
+                            <1*m5119>
+                            <1*m5120>
+                            <1*m5121>
+                            <1*m5134>
+                            <1*m5135>
+                            <1*m5136>
+                            <1*m5137>
+                            <1*m5138>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NW.SHF> was used as the working directory.
+Started at Fri Aug  7 21:18:36 2015
+Results reported at Fri Aug  7 21:18:41 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 16
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NW_SHF_POSIX
+#BSUB -oo NW_SHF_POSIX.out.%J
+#BSUB -eo NW_SHF_POSIX.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 10:00
+ 
+  
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC_P/NW.SHF.POSIX"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/conhdf5.ior"
+
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+
+setenv  LD_LIBRARY_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_LIBRARY_PATH
+setenv  LD_RUN_PATH /cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib:$LD_RUN_PATH
+setenv  LDFLAGS "-L/cosma5/data/dr002/dc-kash1/hdf5-1.8.15-patch1/lib"
+
+
+set POSIX_DISABLE_VERSION_CHECK=1
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 16 16 16 16 )
+
+foreach test (`seq 5`)
+    set cmd="$IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT"
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time   :      0.19 sec.
+    Max Memory :         2 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NW_SHF_POSIX.err.496804> for stderr output of this job.
+

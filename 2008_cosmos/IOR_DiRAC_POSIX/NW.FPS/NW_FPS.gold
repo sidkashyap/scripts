@@ -1,0 +1,27 @@
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write            161.87     161.87        inf       -nan  809.71686 0 16 16 2 1 1 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+read             88.46      88.46        inf       -nan 1481.73596 0 16 16 2 1 1 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         166.42     166.42     166.42       0.00  787.58693 0 8 8 1 1 1 1 0 0 1 17179869184 4194304 137438953472 POSIX 0
+read          191.11     191.11     191.11       0.00  685.84928 0 8 8 1 1 1 1 0 0 1 17179869184 4194304 137438953472 POSIX 0
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          54.33  166.42     166.42       0.00  787.58693 0 4 8 1 1 1 1 0 0 1 17179869184 4194304 137438953472 POSIX 0
+read           55.96  191.11     191.11       0.00  685.84928 0 4 8 1 1 1 1 0 0 1 17179869184 4194304 137438953472 POSIX 0
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          77.28      73.10      75.19       2.09  436.13487 0 2 2 2 1 1 1 0 0 1 17179869184 4194304 34359738368 POSIX 0
+read          402.96     106.12     254.54     148.42  195.05267 0 2 2 2 1 1 1 0 0 1 17179869184 4194304 34359738368 POSIX 0
+
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         111.68      84.04      97.86      13.82  170.83019 0 1 1 2 1 1 1 0 0 1 17179869184 4194304 17179869184 POSIX 0
+read          356.97     306.47     331.72      25.25   49.67851 0 1 1 2 1 1 1 0 0 1 17179869184 4194304 17179869184 POSIX 0
