@@ -203,3 +203,16 @@ access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   tota
 delaying 10 seconds . . .
 write     343.29     268435456  4096       0.001838   763.62     0.000041   763.63     0   
 delaying 10 seconds . . .
+read      233.35     268435456  4096       0.000169   1123.41    0.000015   1123.41    0   
+remove    -          -          -          -          -          -          0.004486   0   
+
+Max Write: 343.29 MiB/sec (359.96 MB/sec)
+Max Read:  233.35 MiB/sec (244.68 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         343.29     343.29     343.29       0.00  763.62605 0 1 1 1 1 1 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
+read          233.35     233.35     233.35       0.00 1123.41067 0 1 1 1 1 1 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
+
+Finished: Wed Aug 19 18:45:12 2015
+/nfs/home/users/dc-kash1

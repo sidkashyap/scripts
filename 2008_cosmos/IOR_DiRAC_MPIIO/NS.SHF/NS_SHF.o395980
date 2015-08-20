@@ -428,3 +428,16 @@ hints returned from opened file {
 	romio_ds_write = automatic
 	cb_config_list = *:1
 }
+read      167.94     268435456  4096       0.001177   1560.93    0.000100   1560.93    0   
+remove    -          -          -          -          -          -          0.005051   0   
+
+Max Write: 263.54 MiB/sec (276.34 MB/sec)
+Max Read:  167.94 MiB/sec (176.10 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         263.54     263.54     263.54       0.00  994.70232 0 1 1 1 0 1 1 0 0 1 274877906944 4194304 274877906944 MPIIO 0
+read          167.94     167.94     167.94       0.00 1560.92997 0 1 1 1 0 1 1 0 0 1 274877906944 4194304 274877906944 MPIIO 0
+
+Finished: Wed Aug 19 18:40:46 2015
+/nfs/home/users/dc-kash1
