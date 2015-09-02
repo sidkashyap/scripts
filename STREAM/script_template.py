@@ -49,65 +49,70 @@ def processFile(file_contents):
         if(line_check):
             
             thread_split = line.split()
-            threads = (int)thread_split[5]
+            threads = thread_split[5]
             numThreads.append(threads)
             continue
 
         line_check = re.search(copy_pattern, line)
         if(line_check):
             copy_split = line.split()
-            temp = (float)copy_split[1]
+            temp = copy_split[1]
             copyBW.append(temp)
             continue
 
         line_check = re.search(add_pattern, line)
         if(line_check):
             add_split = line.split()
-            temp = (float)add_split[1]
+            temp = add_split[1]
             addBW.append(temp)
             continue
 
         line_check = re.search(scale_pattern, line)
         if(line_check):
             scale_split = line.split()
-            temp = (float)scale_split[1]
+            temp = scale_split[1]
             scaleBW.append(temp)
             continue
 
         line_check = re.search(triad_pattern, line)
         if(line_check):
             triad_split = line.split()
-            temp = (float)triad_split[1]
+            temp = triad_split[1]
             triadBW.append(temp)
             continue
 
 
 
             
-def plotFile(counter):
+def plotFile():
 
-    one=[]
-    two=[]
-    basewidth=0.1
-    init = counter -1;
 
+    numThreads_i = [int(x) for x in numThreads]
+    triad_S = [str(x) for x in triadBW]
+    scale_S =  [str(x) for x in scaleBW]
+    add_S = [str(x) for x in addBW]
+    copy_S = [str(x) for x in copyBW]
+
+    axs.plot(np.log2(numThreads_i), triadBW, label='triad',marker='o', linestyle='--')
+    axs.plot(np.log2(numThreads_i), copyBW, marker='+', linestyle='-', color='r', label='copy')
+    axs.plot(np.log2(numThreads_i), addBW, marker='*', linestyle='-', color='m', label='add')
+    axs.plot(np.log2(numThreads_i), scaleBW, marker='_', linestyle='-', color='y', label='scale')
+	
 
     
-    width1 = counter/10 + (counter-1)/10
-    width2= width1+basewidth
+       
+    axs.set_xticks(np.log2(numThreads_i))
+    axs.set_xticklabels(numThreads)
 
-    color1 = colors[counter+init]
-    color2 = colors[counter+init+1]
-    
-    one = np.log2(read_nodes)+width1
-    rects1 = axs.bar(one, write_bandwidth_max, basewidth,color=color1)
-    rects.append(rects1)
+    for x,y,z in zip(np.log2(numThreads_i),triadBW,triad_S):
+        axs.text(x,y,z)
 
-    two = np.log2(read_nodes)+width2
-    rects2 = axs.bar(two, read_bandwidth_max, basewidth,color=color2)
-    rects.append(rects2)
-
-
+    for x,y,z in zip(np.log2(numThreads_i),copyBW,copy_S):
+        axs.text(x,y,z)
+    for x,y,z in zip(np.log2(numThreads_i),addBW,add_S):
+       axs.text(x,y,z)
+    for x,y,z in zip(np.log2(numThreads_i),scaleBW,scale_S):
+    	axs.text(x,y,z)
 
 
 ### MAIN #####
@@ -123,15 +128,17 @@ for stream_file in sys.argv[1:]:
         continue
     
     IOR_file = open(str(stream_file))
-    read_file = stream_file.readlines()
+    read_file = IOR_file.readlines()
     line_count=len(stream_file)
     processFile(read_file)
     counter=counter+1
 
 
+plotFile()
+
 # add some text for labels, title and axes ticks
 axs.set_ylabel('Max Bandwidth, MiB/s')
-axs.set_xlabel('Number of Nodes')
+axs.set_xlabel('Number of Threads')
 
 font = {'family' : 'monospace',
         'color'  : 'black',
@@ -152,16 +159,10 @@ axs.text(0.05, 0.95, chartTitle, transform=axs.transAxes, fontsize=14,
 
 plt.text(0.5, 1.08, Title, horizontalalignment='center', family='monospace',fontsize=20,  transform = axs.transAxes)
 
-#plt.title(Title,fontsize=16,family='monospace',y=0.9)
-axs.set_xticks(np.log2(read_nodes)+0.1)
-axs.set_xticklabels(read_nodes)
+#plt.title(Title,fontsize=16,fami
+API = ['triad','copy','add','scale']
 axs.legend(API, loc='best', bbox_to_anchor=(1, 0.5),
           fancybox=True, shadow=True)
-
-
-
-for i in rects:
-    autolabel(i)
 
 plt.show()
 
