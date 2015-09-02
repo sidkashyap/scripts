@@ -220,7 +220,7 @@ Title = Title.replace("Title:", "")
 props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
 
 # place a text box in upper left in axes coords
-axs.text(0.05, 0.95, chartTitle, transform=axs.transAxes, fontsize=14,
+axs.text(0.95, 0.95, chartTitle, transform=axs.transAxes, fontsize=14,
         verticalalignment='top', bbox=props, fontdict=font)
 
 
