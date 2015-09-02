@@ -6,44 +6,18 @@ import re
 
 
 
-grep_pattern = re.compile(r'Summary of all tests:')
+threads_pattern = re.compile(r'Number of Threads counted =')
+copy_pattern = re.compile(r'Copy:')
+add_pattern= re.compile(r'Add:')
+scale_pattern=re.compile(r'Scale:')
+triad_pattern=re.compile(r'Triad:')
 
 i=0
-write = []
-read = []
-API=[]
-
-
-write=[]
-read=[]
-flag=0
-
-transferSize=0
-fileSize=0
-filePP=0
-tasksPerNode=0
-readMax=0.0
-readMin=0.0
-readMean=0.0
-writeMax=0.0
-writeMin=0.0
-writeMean=0.0
-NumberOfNodes=0
-blockSize=0.0
-
-
-write_nodes = []
-read_nodes = []
-
-
-read_bandwidth_max = []
-write_bandwidth_max = []
-
-read_bandwidth_min = []
-write_bandwidth_min = []
-
-read_bandwidth_mean = []
-
+numThreads = []
+copyBW = []
+addBW=[]
+scaleBW=[]
+triadBW=[]
 
 chartTitle=""
 
@@ -52,30 +26,6 @@ write_bandwidth_mean = []
 
 colors = ['b','g','r','c','m','y','k']
 
-#IOR_Summary = Enum('Operation','Max','Min','Mean','StdDev','Mean','TestNum','Tasks','tPN','reps','fPP','reord','reordoff','reordrand','seed', 'segcnt', 'blksiz', 'xsize', 'aggsize', 'API', 'RefNum')
-class IOR_Summary:
-    Operation=0
-    Max=1
-    Min=2
-    Mean=3
-    StdDev=4
-    Mean=5
-    TestNum=6
-    Tasks=7
-    tPN=8
-    reps=9
-    fPP=10
-    reord=11
-    reordoff=12
-    reordrand=13
-    seed=14
-    segcnt=15
-    blksiz=16
-    xsize=17
-    aggsize=18
-    API=19
-    RefNum=20
-    
 
 fig,axs = plt.subplots()
 rects=[]
@@ -95,63 +45,45 @@ def processFile(file_contents):
     for i in range(line_count):
         line = read_file[i]
         line.rstrip()
-        line_check = re.search(grep_pattern, line)
+        line_check = re.search(threads_pattern, line)
         if(line_check):
-            i=i+2
-            write = read_file[i].split()
-            i=i+1
-            read = read_file[i].split()
-            transferSize=float(read[IOR_Summary.xsize])/(1024*1024)
-            fileSize=int(read[IOR_Summary.aggsize])
-
-            fileSize= fileSize / (1024*1024*1024)
-            blockSize= int(read[IOR_Summary.blksiz]) / (1024*1024*1024)
-            filePP=int(read[IOR_Summary.fPP])
-            tasksPerNode=int(read[IOR_Summary.tPN])
             
-            if(flag==0):
-                rAPI=read[IOR_Summary.API]
-                rAPI=rAPI+" read "
+            thread_split = line.split()
+            threads = (int)thread_split[5]
+            numThreads.append(threads)
+            continue
 
-                wAPI= write[IOR_Summary.API]
-                wAPI = wAPI+" write "
+        line_check = re.search(copy_pattern, line)
+        if(line_check):
+            copy_split = line.split()
+            temp = (float)copy_split[1]
+            copyBW.append(temp)
+            continue
+
+        line_check = re.search(add_pattern, line)
+        if(line_check):
+            add_split = line.split()
+            temp = (float)add_split[1]
+            addBW.append(temp)
+            continue
+
+        line_check = re.search(scale_pattern, line)
+        if(line_check):
+            scale_split = line.split()
+            temp = (float)scale_split[1]
+            scaleBW.append(temp)
+            continue
+
+        line_check = re.search(triad_pattern, line)
+        if(line_check):
+            triad_split = line.split()
+            temp = (float)triad_split[1]
+            triadBW.append(temp)
+            continue
 
 
-                API.append(wAPI)
-                API.append(rAPI)
-
-
-                global chartTitle
-                chartTitle ="FilePerProcess = %d\nFile Size = %dgB\nTransfer Size = %dmB" % (filePP, fileSize, transferSize)
-                flag=1
-
-
-
-
-           
-            if("inf" in read[IOR_Summary.Max] or "nan" in read[IOR_Summary.Max] ):
-                print "here "+read[IOR_Summary.Max]
-                read[IOR_Summary.Max]= 0
-            if("inf" in write[IOR_Summary.Max] or "nan" in write[IOR_Summary.Max]):
-                print "here "+write[IOR_Summary.Max]
-                write[IOR_Summary.Max]= 0
-
-            readMax=float(read[IOR_Summary.Max])
-            writeMax=float(write[IOR_Summary.Max])
-            NumberOfNodes=int(read[IOR_Summary.Tasks])
-
-            if(NumberOfNodes ==1 or NumberOfNodes ==2 ):
-                print "here123"
 
             
-
-            write_nodes.append(NumberOfNodes)
-            read_nodes.append(NumberOfNodes)
-
-            write_bandwidth_max.append(writeMax)
-           
-            read_bandwidth_max.append(readMax)
-
 def plotFile(counter):
 
     one=[]
@@ -184,23 +116,16 @@ def plotFile(counter):
 width=0.1
 counter=1
 Title = ""
-for IOR_file_i in sys.argv[1:]:
+for stream_file in sys.argv[1:]:
 
-    if("Title" in IOR_file_i):
-        Title=IOR_file_i
+    if("Title" in stream_file):
+        Title=stream_file
         continue
-        
-
-    write_bandwidth_max=[]
-    read_bandwidth_max=[] 
-    read_nodes=[]
-
     
-    IOR_file = open(str(IOR_file_i))
-    read_file = IOR_file.readlines()
-    line_count=len(read_file)
+    IOR_file = open(str(stream_file))
+    read_file = stream_file.readlines()
+    line_count=len(stream_file)
     processFile(read_file)
-    plotFile(counter)
     counter=counter+1
 
 
