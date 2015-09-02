@@ -230,11 +230,9 @@ plt.text(0.5, 1.08, Title, horizontalalignment='center', family='monospace',font
 #plt.title(Title,fontsize=16,family='monospace',y=0.9)
 axs.set_xticks(np.log2(read_nodes)+0.1)
 axs.set_xticklabels(read_nodes)
-axs.legend(API, loc='best', bbox_to_anchor=(1, 0.5),
-          fancybox=True, shadow=True)
+#axs.legend(API, loc='best', bbox_to_anchor=(1, 0.5),fancybox=True, shadow=True)
 
-
-
+axs.legend(API, loc='best', bbox_to_anchor=(1, 0.5))
 for i in rects:
     autolabel(i)
 

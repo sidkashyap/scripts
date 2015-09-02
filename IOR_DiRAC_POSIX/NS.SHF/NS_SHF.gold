@@ -1,0 +1,26 @@
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         300.37     300.37     300.37       0.00  872.74806 0 16 1 1 0 1 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+read          214.05     214.05     214.05       0.00 1224.68295 0 16 1 1 0 1 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         171.54     171.54     171.54       0.00 1528.20322 0 8 1 1 0 1 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+read             inf        inf        inf       -nan    0.00000 0 8 1 1 0 1 1 0 0 1 34359738368 4194304 274877906944 POSIX 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          68.96      68.96      68.96       0.00 3801.53627 0 4 1 1 0 1 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
+read             inf        inf        inf       -nan    0.00000 0 4 1 1 0 1 1 0 0 1 68719476736 4194304 274877906944 POSIX 0
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          44.64      44.64      44.64       0.00 5871.76714 0 2 1 1 0 1 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
+read             inf        inf        inf       -nan    0.00000 0 2 1 1 0 1 1 0 0 1 137438953472 4194304 274877906944 POSIX 0
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          43.56      43.56      43.56       0.00 6018.52355 0 1 1 1 0 1 1 0 0 1 274877906944 4194304 274877906944 POSIX 0
+read             inf        inf        inf       -nan    0.00000 0 1 1 1 0 1 1 0 0 1 274877906944 4194304 274877906944 POSIX 0

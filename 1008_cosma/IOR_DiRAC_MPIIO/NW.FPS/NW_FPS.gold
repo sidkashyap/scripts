@@ -1,0 +1,30 @@
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        9591.46    9591.46    9591.46       0.00   27.33097 0 16 1 1 1 1 1 0 0 1 17179869184 4194304 274877906944 MPIIO 0
+read         3783.58    3783.58    3783.58       0.00   69.28462 0 16 1 1 1 1 1 0 0 1 17179869184 4194304 274877906944 MPIIO 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        6783.79    6783.79    6783.79       0.00   19.32136 0 8 1 1 1 1 1 0 0 1 17179869184 4194304 137438953472 MPIIO 0
+read         3883.25    3883.25    3883.25       0.00   33.75320 0 8 1 1 1 1 1 0 0 1 17179869184 4194304 137438953472 MPIIO 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        5416.12    5416.12    5416.12       0.00   12.10018 0 4 1 1 1 1 1 0 0 1 17179869184 4194304 68719476736 MPIIO 0
+read         3488.12    3488.12    3488.12       0.00   18.78833 0 4 1 1 1 1 1 0 0 1 17179869184 4194304 68719476736 MPIIO 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        2915.61    2915.61    2915.61       0.00   11.23882 0 2 1 1 1 1 1 0 0 1 17179869184 4194304 34359738368 MPIIO 0
+read         2238.26    2238.26    2238.26       0.00   14.63997 0 2 1 1 1 1 1 0 0 1 17179869184 4194304 34359738368 MPIIO 0
+
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write        1548.35    1548.35    1548.35       0.00   10.58160 0 1 1 1 1 1 1 0 0 1 17179869184 4194304 17179869184 MPIIO 0
+read         1314.49    1314.49    1314.49       0.00   12.46417 0 1 1 1 1 1 1 0 0 1 17179869184 4194304 17179869184 MPIIO 0
+
+

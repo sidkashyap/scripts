@@ -1,0 +1,322 @@
+20150902013723
+/cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF ~/cosma5/IOR_DiRAC_POSIX/NW.SHF 
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Sep  2 01:37:27 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux m5054
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Sep  2 01:37:27 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 2435.9 TiB   Used FS: 83.3%   Inodes: 1280.0 Mi   Used Inodes: 4.6%
+Participating tasks: 16
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 16 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     189.64     16777216   4096       0.495853   1382.32    0.005013   1382.32    0   
+Verifying contents of the file(s) just written.
+Wed Sep  2 02:00:39 2015
+
+delaying 10 seconds . . .
+read      160.47     16777216   4096       0.002293   1633.60    0.001460   1633.60    0   
+
+Max Write: 189.64 MiB/sec (198.85 MB/sec)
+Max Read:  160.47 MiB/sec (168.26 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         189.64     189.64     189.64       0.00 1382.32477 0 16 1 1 0 1 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+read          160.47     160.47     160.47       0.00 1633.60389 0 16 1 1 0 1 1 0 0 1 17179869184 4194304 274877906944 POSIX 0
+
+Finished: Wed Sep  2 02:59:27 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Sep  2 02:59:30 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux m5054
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Sep  2 02:59:30 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 2435.9 TiB   Used FS: 83.3%   Inodes: 1280.0 Mi   Used Inodes: 4.6%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 8 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 128 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     109.01     16777216   4096       0.059374   1202.35    0.006058   1202.35    0   
+Verifying contents of the file(s) just written.
+Wed Sep  2 03:19:43 2015
+
+delaying 10 seconds . . .
+read      98.13      16777216   4096       0.000826   1335.69    0.001595   1335.69    0   
+
+Max Write: 109.01 MiB/sec (114.31 MB/sec)
+Max Read:  98.13 MiB/sec (102.90 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         109.01     109.01     109.01       0.00 1202.35326 0 8 1 1 0 1 1 0 0 1 17179869184 4194304 137438953472 POSIX 0
+read           98.13      98.13      98.13       0.00 1335.68973 0 8 1 1 0 1 1 0 0 1 17179869184 4194304 137438953472 POSIX 0
+
+Finished: Wed Sep  2 04:03:16 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Sep  2 04:03:19 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux m5054
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Sep  2 04:03:19 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 2435.9 TiB   Used FS: 83.3%   Inodes: 1280.0 Mi   Used Inodes: 4.6%
+Participating tasks: 4
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 4 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 64 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     66.87      16777216   4096       0.056738   980.01     0.001736   980.01     0   
+Verifying contents of the file(s) just written.
+Wed Sep  2 04:19:49 2015
+
+delaying 10 seconds . . .
+read      57.20      16777216   4096       0.000553   1145.69    0.000515   1145.69    0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Wed Sep  2 04:56:08 2015
+
+
+Max Write: 66.87 MiB/sec (70.12 MB/sec)
+Max Read:  57.20 MiB/sec (59.98 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          66.87      66.87      66.87       0.00  980.01110 0 4 1 1 0 1 1 0 0 1 17179869184 4194304 68719476736 POSIX 0
+read           57.20      57.20      57.20       0.00 1145.68678 0 4 1 1 0 1 1 0 0 1 17179869184 4194304 68719476736 POSIX 0
+
+Finished: Wed Sep  2 05:28:36 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Sep  2 05:28:38 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux m5054
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Sep  2 05:28:38 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 2435.9 TiB   Used FS: 83.3%   Inodes: 1280.0 Mi   Used Inodes: 4.6%
+Participating tasks: 2
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 2 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 32 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     70.76      16777216   4096       0.058509   463.10     0.001476   463.10     0   
+Verifying contents of the file(s) just written.
+Wed Sep  2 05:36:32 2015
+
+delaying 10 seconds . . .
+read      34.16      16777216   4096       0.000111   959.37     0.000085   959.37     0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Wed Sep  2 06:10:27 2015
+
+
+Max Write: 70.76 MiB/sec (74.19 MB/sec)
+Max Read:  34.16 MiB/sec (35.81 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          70.76      70.76      70.76       0.00  463.10294 0 2 1 1 0 1 1 0 0 1 17179869184 4194304 34359738368 POSIX 0
+read           34.16      34.16      34.16       0.00  959.37278 0 2 1 1 0 1 1 0 0 1 17179869184 4194304 34359738368 POSIX 0
+
+Finished: Wed Sep  2 06:32:36 2015
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Sep  2 06:32:37 2015
+Command line used: /cosma5/data/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux m5054
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Sep  2 06:32:37 2015
+Path: /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 2435.9 TiB   Used FS: 83.3%   Inodes: 1280.0 Mi   Used Inodes: 4.6%
+Participating tasks: 1
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 1 (1 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 16 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+write     79.01      16777216   4096       0.001714   207.35     0.001803   207.35     0   
+Verifying contents of the file(s) just written.
+Wed Sep  2 06:36:14 2015
+
+delaying 10 seconds . . .
+read      17.99      16777216   4096       0.000061   910.67     0.000019   910.67     0   
+Re-reading the file(s) twice to verify that reads are consistent.
+Wed Sep  2 07:07:35 2015
+
+
+Max Write: 79.01 MiB/sec (82.85 MB/sec)
+Max Read:  17.99 MiB/sec (18.87 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write          79.01      79.01      79.01       0.00  207.35450 0 1 1 1 0 1 1 0 0 1 17179869184 4194304 17179869184 POSIX 0
+read           17.99      17.99      17.99       0.00  910.66676 0 1 1 1 0 1 1 0 0 1 17179869184 4194304 17179869184 POSIX 0
+
+Finished: Wed Sep  2 07:28:23 2015
+~/cosma5/IOR_DiRAC_POSIX/NW.SHF 
+
+------------------------------------------------------------
+Sender: LSF System <hpcadmin@m5054>
+Subject: Job 527349: <NW_SHF> Done
+
+Job <NW_SHF> was submitted from host <cosma-c> by user <dc-kash1> in cluster <cosma-p_cluster1>.
+Job was executed on host(s) <1*m5054>, in queue <cosma5>, as user <dc-kash1> in cluster <cosma-p_cluster1>.
+                            <1*m5067>
+                            <1*m5069>
+                            <1*m5070>
+                            <1*m5071>
+                            <1*m5072>
+                            <1*m5073>
+                            <1*m5074>
+                            <1*m5075>
+                            <1*m5085>
+                            <1*m5086>
+                            <1*m5090>
+                            <1*m5091>
+                            <1*m5092>
+                            <1*m5093>
+                            <1*m5097>
+</cosma/home/dr002/dc-kash1> was used as the home directory.
+</cosma/home/dr002/dc-kash1/cosma5/IOR_DiRAC_POSIX/NW.SHF> was used as the working directory.
+Started at Wed Sep  2 01:37:23 2015
+Results reported at Wed Sep  2 07:28:40 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/tcsh
+
+#BSUB -n 16
+#BSUB -x
+#BSUB -R "span[ptile=1]"
+#BSUB -J NW_SHF
+#BSUB -oo NW_SHF.out.%J
+#BSUB -eo NW_SHF.err.%J
+#BSUB -q cosma5
+#BSUB -P dr002
+#BSUB -W 12:00
+ 
+  
+
+module load intel_comp/c5/2015
+
+set TARGET="/cosma5/data/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF"
+set IOR="/cosma5/data/dr002/dc-kash1/ior/bin/ior"
+set IOR_SCRIPT="$TARGET/con.ior"
+
+date '+%Y%m%d%H%M%S'
+
+pushd $TARGET
+
+set numNodes= ( 16 8 4 2 1 )
+set blockSize= ( 16 16 16 16 16 )
+
+foreach test (`seq 5`)
+    set cmd="$IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT"
+    mpirun -np $numNodes[$test]  $IOR -vvv  -b $blockSize[$test]g -f $IOR_SCRIPT
+end
+popd
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :  11340.34 sec.
+    Max Memory :       273 MB
+    Max Swap   :      1440 MB
+
+    Max Processes  :        30
+    Max Threads    :        30
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <NW_SHF.err.527349> for stderr output of this job.
+
