@@ -19,10 +19,10 @@ date '+%Y%m%d%H%M%S'
 
 pushd $TARGET
 
-numNodes=(  16 8 4  2 1 )
-blockSize=( 16 16 16 16 16 )
+numNodes=(  16 )
+blockSize=( 16 )
 
-for test in `seq 5` 
+for test in `seq 1` 
 do 
     test=$(( $test - 1 ))
     cmd="$IOR -vvv  -b ${blockSize[$test]}g -f $IOR_SCRIPT"

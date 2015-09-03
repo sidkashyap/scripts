@@ -1,6 +1,6 @@
 IOR START
    api=HDF5
-   repetitions=2
+   repetitions=1
    multiFile=0
    interTestDelay=10
    readFile=1
