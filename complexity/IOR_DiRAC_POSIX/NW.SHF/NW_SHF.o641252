@@ -1,0 +1,186 @@
+20150812103535
+/fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF /nfs/home/users/dc-kash1
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Aug 12 10:35:35 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug 12 10:35:35 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 145.5 TiB   Used FS: 99.2%   Inodes: 4096.0 Mi   Used Inodes: 0.2%
+Participating tasks: 16
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 16 (16 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+ior ERROR: write() failed, errno 28, No space left on device (aiori-POSIX.c:335)
+ior ERROR: write() failed, errno 28, No space left on device (aiori-POSIX.c:335)
+ior ERROR: write() failed, errno 28, No space left on device (aiori-POSIX.c:335)
+ior ERROR: write() failed, errno 28, No space left on device (aiori-POSIX.c:335)
+ior ERROR: write() failed, errno 28, No space left on device (aiori-POSIX.c:335)
+ior ERROR: write() failed, errno 28, No space left on device (aiori-POSIX.c:335)
+ior ERROR: write() failed, errno 28, No space left on device (aiori-POSIX.c:335)
+ior ERROR: write() failed, errno 28, No space left on device (aiori-POSIX.c:335)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Aug 12 11:58:18 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug 12 11:58:18 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 145.5 TiB   Used FS: 100.0%   Inodes: 126.9 Mi   Used Inodes: 4.8%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 8 (8 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 128 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+WARNING: Expected aggregate file size       = 137438953472.
+WARNING: Stat() of aggregate file size      = 31197233152.
+WARNING: Using actual aggregate bytes moved = 137438953472.
+write     38.94      16777216   4096       0.003303   3362.86    153.41     3365.75    0   
+delaying 10 seconds . . .
+ior ERROR: read() returned EOF prematurely, errno 11, Resource temporarily unavailable (aiori-POSIX.c:347)
+ior ERROR: read() returned EOF prematurely, errno 11, Resource temporarily unavailable (aiori-POSIX.c:347)
+ior ERROR: read() returned EOF prematurely, errno 11, Resource temporarily unavailable (aiori-POSIX.c:347)
+ior ERROR: read() returned EOF prematurely, errno 11, Resource temporarily unavailable (aiori-POSIX.c:347)
+ior ERROR: read() returned EOF prematurely, errno 11, Resource temporarily unavailable (aiori-POSIX.c:347)
+ior ERROR: read() returned EOF prematurely, errno 11, Resource temporarily unavailable (aiori-POSIX.c:347)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Aug 12 12:55:48 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug 12 12:55:48 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 145.5 TiB   Used FS: 97.9%   Inodes: 4096.0 Mi   Used Inodes: 0.2%
+Participating tasks: 4
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 4 (4 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 64 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+WARNING: Expected aggregate file size       = 68719476736.
+WARNING: Stat() of aggregate file size      = 34359738368.
+WARNING: Using actual aggregate bytes moved = 68719476736.
+write     88.38      16777216   4096       0.001719   741.25     34.52      741.54     0   
+delaying 10 seconds . . .
+ior ERROR: read() returned EOF prematurely, errno 0, Success (aiori-POSIX.c:347)
+ior ERROR: read() returned EOF prematurely, errno 0, Success (aiori-POSIX.c:347)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Aug 12 13:08:31 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug 12 13:08:31 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 145.5 TiB   Used FS: 97.7%   Inodes: 4096.0 Mi   Used Inodes: 0.2%
+Participating tasks: 2
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 2 (2 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 32 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+WARNING: Expected aggregate file size       = 34359738368.
+WARNING: Stat() of aggregate file size      = 17179869184.
+WARNING: Using actual aggregate bytes moved = 34359738368.
+write     83.42      16777216   4096       0.002203   392.69     123.27     392.83     0   
+delaying 10 seconds . . .
+ior ERROR: read() returned EOF prematurely, errno 0, Success (aiori-POSIX.c:347)
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+ior WARNING: hints not available in POSIX.  Using value of 0.
+Began: Wed Aug 12 13:15:28 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Wed Aug 12 13:15:28 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF
+FS: 145.5 TiB   Used FS: 97.8%   Inodes: 4096.0 Mi   Used Inodes: 0.2%
+Participating tasks: 1
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = POSIX
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_POSIX/NW.SHF/iorTest
+	access             = single-shared-file
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 1 (1 per node)
+	repetitions        = 2
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 16 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+WARNING: Expected aggregate file size       = 17179869184.
+WARNING: Stat() of aggregate file size      = 4261412864.
+WARNING: Using actual aggregate bytes moved = 17179869184.
+write     117.37     16777216   4096       0.002409   139.49     0.100800   139.59     0   
+delaying 10 seconds . . .
+ior ERROR: read() returned EOF prematurely, errno 0, Success (aiori-POSIX.c:347)
+/nfs/home/users/dc-kash1

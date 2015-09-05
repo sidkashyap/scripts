@@ -1,0 +1,53 @@
+20150820135439
+/fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NW.FPS /nfs/home/users/dc-kash1
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Aug 20 13:54:39 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 16g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NW.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Aug 20 13:54:39 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NW.FPS
+FS: 145.5 TiB   Used FS: 97.9%   Inodes: 4096.0 Mi   Used Inodes: 0.2%
+Participating tasks: 4
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = HDF5-1.8.9 (Parallel)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NW.FPS/iorTest
+	access             = file-per-process, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 4 (4 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 16 GiB
+	aggregate filesize = 64 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+write     510.87     16777216   4096       0.012254   128.25     9.83       128.28     0   
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.
+read      780.59     16777216   4096       0.001724   83.95      14.87      83.96      0   
+remove    -          -          -          -          -          -          0.009892   0   
+
+Max Write: 510.87 MiB/sec (535.69 MB/sec)
+Max Read:  780.59 MiB/sec (818.51 MB/sec)
+
+Summary of all tests:
+Operation   Max(MiB)   Min(MiB)  Mean(MiB)     StdDev    Mean(s) Test# #Tasks tPN reps fPP reord reordoff reordrand seed segcnt blksiz xsize aggsize API RefNum
+write         510.87     510.87     510.87       0.00  128.28283 0 4 4 1 1 1 1 0 0 1 17179869184 4194304 68719476736 HDF5 0
+read          780.59     780.59     780.59       0.00   83.95656 0 4 4 1 1 1 1 0 0 1 17179869184 4194304 68719476736 HDF5 0
+
+Finished: Thu Aug 20 13:58:32 2015
+/nfs/home/users/dc-kash1

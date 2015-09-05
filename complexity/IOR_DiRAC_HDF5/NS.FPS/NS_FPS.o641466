@@ -1,0 +1,34 @@
+20150903140417
+/fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.FPS /nfs/home/users/dc-kash1
+IOR-3.0.1: MPI Coordinated Test of Parallel I/O
+
+Began: Thu Sep  3 14:04:18 2015
+Command line used: /fast/space/projects/dr002/dc-kash1/ior/bin/ior -vvv -b 32g -f /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.FPS/con.ior
+Machine: Linux cosmos
+Start time skew across all tasks: 0.00 sec
+
+Test 0 started: Thu Sep  3 14:04:18 2015
+Path: /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.FPS
+FS: 145.5 TiB   Used FS: 98.7%   Inodes: 4096.0 Mi   Used Inodes: 0.2%
+Participating tasks: 8
+Using reorderTasks '-C' (expecting block, not cyclic, task assignment)
+Summary:
+	api                = HDF5-1.8.9 (Parallel)
+	test filename      = /fast/space/projects/dr002/dc-kash1/IOR_DiRAC_HDF5/NS.FPS/iorTest
+	access             = file-per-process, independent
+	pattern            = segmented (1 segment)
+	ordering in a file = sequential offsets
+	ordering inter file= constant task offsets = 1
+	clients            = 8 (8 per node)
+	repetitions        = 1
+	xfersize           = 4 MiB
+	blocksize          = 32 GiB
+	aggregate filesize = 256 GiB
+
+access    bw(MiB/s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ---------- ---------  --------   --------   --------   --------   ----
+delaying 10 seconds . . .
+
+hints passed to access property list {
+}
+ior WARNING: showHints not working for HDF5.

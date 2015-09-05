@@ -1,0 +1,654 @@
+Cannot open display "default display"
+Commencing write performance test: Wed Aug 12 10:35:44 2015
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 0:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 12:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 14:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 13:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 6:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 7:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 2:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 10:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 15:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 11:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 8:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 9:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 3:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 1:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 5:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 4:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+MPT: MPI_COMM_WORLD rank 14 has terminated without calling MPI_Finalize()
+	aborting job
+Commencing write performance test: Wed Aug 12 11:58:29 2015
+Commencing write performance test: Wed Aug 12 13:21:32 2015
+Commencing read performance test: Wed Aug 12 14:06:08 2015
+Commencing write performance test: Wed Aug 12 14:27:37 2015
+Commencing read performance test: Wed Aug 12 15:16:00 2015
+Commencing write performance test: Wed Aug 12 15:27:10 2015
+Commencing write performance test: Wed Aug 12 15:54:15 2015
+Commencing read performance test: Wed Aug 12 16:14:45 2015
+Commencing write performance test: Wed Aug 12 16:22:04 2015
+Commencing read performance test: Wed Aug 12 16:39:11 2015

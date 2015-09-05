@@ -1,0 +1,62 @@
+Cannot open display "default display"
+Commencing write performance test: Wed Aug 12 10:35:44 2015
+Commencing read performance test: Wed Aug 12 10:58:11 2015
+Commencing write performance test: Wed Aug 12 11:40:49 2015
+Commencing read performance test: Wed Aug 12 11:54:20 2015
+Commencing write performance test: Wed Aug 12 12:13:39 2015
+Commencing read performance test: Wed Aug 12 12:22:53 2015
+Commencing write performance test: Wed Aug 12 12:41:18 2015
+HDF5-DIAG: Error detected in HDF5 (1.8.9) MPI-process 0:
+  #000: ../../hdf5-1.8.9/src/H5Dio.c line 266 in H5Dwrite(): can't write data
+    major: Dataset
+    minor: Write failed
+  #001: ../../hdf5-1.8.9/src/H5Dio.c line 673 in H5D_write(): can't write data
+    major: Dataset
+    minor: Write failed
+  #002: ../../hdf5-1.8.9/src/H5Dcontig.c line 597 in H5D_contig_write(): contiguous write failed
+    major: Dataset
+    minor: Write failed
+  #003: ../../hdf5-1.8.9/src/H5Dselect.c line 306 in H5D_select_write(): write error
+    major: Dataspace
+    minor: Write failed
+  #004: ../../hdf5-1.8.9/src/H5Dselect.c line 217 in H5D_select_io(): write error
+    major: Dataspace
+    minor: Write failed
+  #005: ../../hdf5-1.8.9/src/H5Dcontig.c line 1225 in H5D_contig_writevv(): can't perform vectorized read
+    major: Dataset
+    minor: Can't operate on object
+  #006: ../../hdf5-1.8.9/src/H5V.c line 1457 in H5V_opvv(): can't perform operation
+    major: Internal error (too specific to document in detail)
+    minor: Can't operate on object
+  #007: ../../hdf5-1.8.9/src/H5Dcontig.c line 1152 in H5D_contig_writevv_cb(): block write failed
+    major: Dataset
+    minor: Write failed
+  #008: ../../hdf5-1.8.9/src/H5Fio.c line 158 in H5F_block_write(): write through metadata accumulator failed
+    major: Low-level I/O
+    minor: Write failed
+  #009: ../../hdf5-1.8.9/src/H5Faccum.c line 808 in H5F_accum_write(): file write failed
+    major: Low-level I/O
+    minor: Write failed
+  #010: ../../hdf5-1.8.9/src/H5FDint.c line 185 in H5FD_write(): driver write request failed
+    major: Virtual File Layer
+    minor: Write failed
+  #011: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): MPI_File_write_at failed
+    major: Internal error (too specific to document in detail)
+    minor: Some MPI function failed
+  #012: ../../hdf5-1.8.9/src/H5FDmpio.c line 1900 in H5FD_mpio_write(): I/O error
+    major: Internal error (too specific to document in detail)
+    minor: MPI Error String
+MPT: On host cosmos, Program /fast/space/projects/dr002/dc-kash1/ior/bin/ior, Rank 3, Process 89028 received signal SIGBUS(7)
+
+
+MPT: --------stack traceback-------
+MPT: MPI_COMM_WORLD rank 0 has terminated without calling MPI_Finalize()
+	aborting job
+Commencing write performance test: Wed Aug 12 12:48:40 2015
+Commencing read performance test: Wed Aug 12 12:52:31 2015
+Commencing write performance test: Wed Aug 12 12:52:53 2015
+Commencing read performance test: Wed Aug 12 12:56:09 2015
+Commencing write performance test: Wed Aug 12 12:56:32 2015
+Commencing read performance test: Wed Aug 12 12:59:32 2015
+Commencing write performance test: Wed Aug 12 12:59:52 2015
+Commencing read performance test: Wed Aug 12 13:02:14 2015
